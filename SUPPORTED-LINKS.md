@@ -1,0 +1,37 @@
+# Supported Links
+* *.u.safelinkview.com
+* 94lauin.com
+* ani-share.com
+* bagilagi.com
+* bkshort.info
+* businessforyouand.me
+* coeg.in
+* delekke.com
+* dl-protect1.com
+* filmku21.website
+* fmlawkers.club
+* getinfos.net
+* indexmovie.biz
+* intercelestial.com
+* kuhaku.cf
+* kurosafe.club
+* kurosafe.web.id
+* lifesurance.com
+* lindung.in
+* linkpoi.in
+* linkshrink.net
+* malaysurance.com
+* safelinkreviewz.com
+* sflink.cc
+* short.anidesu.net
+* shtme.co
+* siherp.com
+* siotong.com
+* skinnycat.net
+* spacetica.com
+* telondasmu.com
+* tojros.tk
+* wptech.ga
+* yametesenpai.xyz
+* ytfire.host
+
