@@ -3,6 +3,7 @@
 // @namespace    https://github.com/yasawibu/LinksBypasser
 // @version      0.2.1
 // @description  Decrease your wasting time on short links
+// @author       Putu Ardi Dharmayasa
 // @copyright    2018+, Putu Ardi Dharmayasa (yasawibu)
 // @downloadURL  https://raw.githubusercontent.com/yasawibu/LinksBypasser/master/build/linksbypasser.user.js
 // @grant        none
