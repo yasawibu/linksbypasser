@@ -21,6 +21,14 @@ See [SUPPORTED-LINKS.md] for the details.
 
 [SUPPORTED-LINKS.md]: https://github.com/yasawibu/LinksBypasser/blob/master/SUPPORTED-LINKS.md
 
+## Change Log
+**v0.2.1** (18-Feb-2018)
+* Initial release
+
+See [CHANGELOG.md] for the details.
+
+[CHANGELOG.md]: https://github.com/yasawibu/LinksBypasser/blob/master/CHANGELOG.md
+
 ## Additional Informations
 This project inspired by [AdsBypasser].
 
