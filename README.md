@@ -21,7 +21,7 @@ See [SUPPORTED-LINKS.md] for the details.
 
 [SUPPORTED-LINKS.md]: https://github.com/yasawibu/LinksBypasser/blob/master/SUPPORTED-LINKS.md
 
-## Additional Information
+## Additional Informations
 This project inspired by [AdsBypasser].
 
 The main purposes i created this project are:
