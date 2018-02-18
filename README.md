@@ -27,3 +27,5 @@ This project inspired by [AdsBypasser].
 The main purposes i created this project are:
 * to learn javascript
 * to make our life easier (not waiting countdown or clicking a button to continue)
+
+[AdsBypasser]: https://github.com/adsbypasser/adsbypasser
