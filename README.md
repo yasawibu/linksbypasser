@@ -6,7 +6,7 @@
 2. Install [LinksBypasser]
 
 [Tampermonkey]: https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo
-[LinksBypasser]: https://yasawibu.github.io/LinksBypasser/release/linksbypasser.user.js
+[LinksBypasser]: https://yasawibu.github.io/linksbypasser/release/linksbypasser.user.js
 
 ## Features
 This userscript **CAN** bypass many short links that require:
@@ -19,7 +19,7 @@ This userscript **CANNOT** bypass short links that require:
 ## Supported Links
 See [SUPPORTED-LINKS.md] for the details.
 
-[SUPPORTED-LINKS.md]: https://github.com/yasawibu/LinksBypasser/blob/master/SUPPORTED-LINKS.md
+[SUPPORTED-LINKS.md]: https://github.com/yasawibu/linksbypasser/blob/master/SUPPORTED-LINKS.md
 
 ## Change Log
 **v0.2.1** (18-Feb-2018)
@@ -27,7 +27,7 @@ See [SUPPORTED-LINKS.md] for the details.
 
 See [CHANGELOG.md] for the details.
 
-[CHANGELOG.md]: https://github.com/yasawibu/LinksBypasser/blob/master/CHANGELOG.md
+[CHANGELOG.md]: https://github.com/yasawibu/linksbypasser/blob/master/CHANGELOG.md
 
 ## Additional Informations
 This project inspired by [AdsBypasser].
