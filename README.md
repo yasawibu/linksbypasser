@@ -6,7 +6,7 @@
 2. Install [LinksBypasser]
 
 [Tampermonkey]: https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo
-[LinksBypasser]: https://raw.githubusercontent.com/yasawibu/LinksBypasser/master/build/linksbypasser.user.js
+[LinksBypasser]: https://yasawibu.github.io/LinksBypasser/release/linksbypasser.user.js
 
 ## Features
 This userscript **CAN** bypass many short links that require:
