@@ -23,6 +23,11 @@ See [SUPPORTED-LINKS.md] for the details.
 [SUPPORTED-LINKS.md]: https://github.com/yasawibu/linksbypasser/blob/master/SUPPORTED-LINKS.md
 
 ## Change Log
+**v0.2.2** (19-Feb-2018)
+* Improved bypass methods
+* Fixed 1 supported links
+* Added 15 supported links
+
 **v0.2.1** (18-Feb-2018)
 * Initial release
 
