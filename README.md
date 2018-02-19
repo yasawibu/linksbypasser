@@ -32,7 +32,7 @@ See [CHANGELOG.md] for the details.
 ## Additional Informations
 This project inspired by [AdsBypasser].
 
-The main purposes I created this project are:
+The main purposes this project created are:
 * to help me learn javascript
 * to make our life easier (not waiting countdown or clicking a button to continue)
 
