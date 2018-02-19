@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         LinksBypasser
-// @namespace    https://github.com/yasawibu/LinksBypasser
+// @namespace    https://github.com/yasawibu/linksbypasser
 // @version      0.2.1
 // @description  Decrease your wasting time on short links
 // @author       Putu Ardi Dharmayasa
