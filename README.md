@@ -32,8 +32,8 @@ See [CHANGELOG.md] for the details.
 ## Additional Informations
 This project inspired by [AdsBypasser].
 
-The main purposes i created this project are:
-* to learn javascript
+The main purposes I created this project are:
+* to help me learn javascript
 * to make our life easier (not waiting countdown or clicking a button to continue)
 
 [AdsBypasser]: https://github.com/adsbypasser/adsbypasser
