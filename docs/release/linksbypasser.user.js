@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LinksBypasser
 // @namespace    https://github.com/yasawibu/linksbypasser
-// @version      0.2.1
+// @version      0.2.2
 // @description  Decrease your wasting time on short links
 // @author       Putu Ardi Dharmayasa
 // @copyright    2018+, Putu Ardi Dharmayasa (yasawibu)
@@ -55,7 +55,22 @@
         /indexmovie\.biz\/(?!get)/,
         /ytfire\.host/,
         /delekke\.com/,
-        /filmku21\.website\/(?=links)/
+        /filmku21\.website\/(?=links)/,
+        /plantaheim\.web\.id/,
+        /short\.awsubs\.co/,
+        /xydeyou\.com/,
+        /landscapenature\.pw/,
+        /dl\.animeindoku\.net/,
+        /inlink\.co/,
+        /menujulink\.online/,
+        /t4ank\.top/,
+        /healthtod\.com/,
+        /gomentod\.com/,
+        /hunstulovers\.net/,
+        /safelinku\.net/,
+        /newterusin\.ga/,
+        /zonawibu\.bid/,
+        /link\.shirogaze\.tk/
     ];
 
     // check the link.
@@ -64,7 +79,6 @@
     let linkCheck = false;
     for (let i = 0; i != linkMatch.length; ++i) {
         linkCheck = linkMatch[i].test(link);
-        console.log(linkCheck);
         if (linkCheck == true) {
             let host = window.document.location.hostname;
             let trimHost = host.match(/^(www\.|\w+\.u\.)?([^]+)/);
@@ -152,7 +166,7 @@
     }
 
     function openLink(url) {
-        window.open(url, '_self');
+        window.location.href = url;
     }
 
     function selectElement(selector) {
@@ -205,180 +219,273 @@
     }
 
     function bypassLink(host) {
-        window.document.addEventListener('DOMContentLoaded', function() {
-            window.stop();
-            window.document.title = 'LinksBypasser - Wait a moment...';
+        window.document.title = 'LinksBypasser - Wait a moment...';
+        switch (host) {
+            case 'zonawibu.bid':
+                {
+                    let url = getUrl(/go=([^#]+)/);
+                    url = b64(url);
+                    openLink(url);
+                    return;
+                }
 
-            switch (host) {
-                case 'filmku21.website':
-                    {
-                        let url = getScriptValue(/window\.location\.href='([^']+)'/);
-                        openLink(url);
-                        return;
-                    }
+            case 'hunstulovers.net':
+                {
+                    let url = getUrl(/go\/([^#]+)/);
+                    url = b64(url);
+                    openLink(url);
+                    return;
+                }
 
-                case 'ytfire.host':
-                    {
-                        let url = getUrl(/\?get=([^]+)/);
+            case 'healthtod.com':
+                {
+                    // case 1
+                    let url = getUrl(/d=([^#]+)/);
+                    if (url) {
                         url = b64(url);
                         openLink(url);
-                        return;
                     }
 
-                case 'indexmovie.biz':
-                    {
-                        let url = '/get' + window.location.pathname;
-                        openLink(url);
-                        return;
-                    }
-
-                case 'sflink.cc':
-                    {
-                        // first step
-                        let form = selectElement('#link-view');
-                        if (form) {
-                            form.submit();
+                    // case 2
+                    window.document.addEventListener('DOMContentLoaded', function() {
+                        url = getScriptValue(/var a='([^']+)'/);
+                        if (url) {
+                            window.stop();
+                            openLink(url);
                         }
+                    });
+                    return;
+                }
 
-                        // second step
-                        form = selectElement('#go-link');
-                        if (form) {
-                            const url = form.action;
-                            const data = serialize(form);
-                            const content = 'application/x-www-form-urlencoded';
-                            POST(url, data, content, true).then((respone) => {
-                                respone = JSON.parse(respone);
-                                let url = respone.url;
-                                openLink(url);
-                            });
-                        }
-                        return;
+            case 'inlink.co':
+                window.document.addEventListener('DOMContentLoaded', function() {
+                    window.stop();
+                    let form = selectElement('#go-link');
+                    if (form) {
+                        const url = form.action;
+                        const data = serialize(form);
+                        const content = 'application/x-www-form-urlencoded';
+                        POST(url, data, content, true).then((respone) => {
+                            respone = JSON.parse(respone);
+                            let url = respone.url;
+                            openLink(url);
+                        });
+                    }
+                });
+                return;
+
+            case 'dl.animeindoku.net':
+                window.document.addEventListener('DOMContentLoaded', function() {
+                    window.stop();
+                    let url = getUrl('a#download');
+                    openLink(url);
+                });
+                return;
+
+            case 'safelinkreviewz.com':
+                window.document.addEventListener('DOMContentLoaded', function() {
+                    window.stop();
+                    let url = getScriptValue(/var d_link = '([^]+)'/);
+                    url = decodeURIComponent(url);
+                    openLink(url);
+                });
+                return;
+
+            case 'short.awsubs.co':
+                window.document.addEventListener('DOMContentLoaded', function() {
+                    window.stop();
+                    let url = getUrl('div.kiri center a');
+                    openLink(url);
+                });
+                return;
+
+            case 'filmku21.website':
+                window.document.addEventListener('DOMContentLoaded', function() {
+                    window.stop();
+                    let url = getScriptValue(/window\.location\.href='([^']+)'/);
+                    openLink(url);
+                });
+                return;
+
+            case 'ytfire.host':
+                {
+                    let url = getUrl(/\?get=([^]+)/);
+                    url = b64(url);
+                    openLink(url);
+                    return;
+                }
+
+
+            case 'indexmovie.biz':
+                {
+                    let url = '/get' + window.location.pathname;
+                    openLink(url);
+                    return;
+                }
+
+            case 'safelinku.net':
+            case 'sflink.cc':
+                window.document.addEventListener('DOMContentLoaded', function() {
+                    window.stop();
+                    // first step
+                    let form = selectElement('#link-view');
+                    if (form) {
+                        form.submit();
                     }
 
-                case 'dl-protect1.com':
-                    {
-                        let form = selectElement('div.content form');
-                        if (form) {
-                            let url = form.action;
-                            let data = '------WebKitFormBoundaryiyVq4neKSEfeozRf\r\nContent-Disposition: form-data; name=\"submit\"\r\n\r\nContinuer\r\n------WebKitFormBoundaryiyVq4neKSEfeozRf--\r\n';
-                            let content = 'multipart/form-data; boundary=----WebKitFormBoundaryiyVq4neKSEfeozRf';
-                            POST(url, data, content).then((respone) => {
-                                let url = respone.match(/"lienet"><a href="([^"]+)"/);
-                                openLink(url[1]);
-                            });
-                        }
-                        return;
+                    // second step
+                    form = selectElement('#go-link');
+                    if (form) {
+                        const url = form.action;
+                        const data = serialize(form);
+                        const content = 'application/x-www-form-urlencoded';
+                        POST(url, data, content, true).then((respone) => {
+                            respone = JSON.parse(respone);
+                            let url = respone.url;
+                            openLink(url);
+                        });
                     }
+                });
+                return;
 
-                case '94lauin.com':
-                case 'skinnycat.net':
-                    {
-                        let url = getScriptValue(/;window\.location="([^"]+)"/);
-                        openLink(url);
-                        return;
+            case 'dl-protect1.com':
+                window.document.addEventListener('DOMContentLoaded', function() {
+                    window.stop();
+                    let form = selectElement('div.content form');
+                    if (form) {
+                        let url = form.action;
+                        let data = '------WebKitFormBoundaryiyVq4neKSEfeozRf\r\nContent-Disposition: form-data; name=\"submit\"\r\n\r\nContinuer\r\n------WebKitFormBoundaryiyVq4neKSEfeozRf--\r\n';
+                        let content = 'multipart/form-data; boundary=----WebKitFormBoundaryiyVq4neKSEfeozRf';
+                        POST(url, data, content).then((respone) => {
+                            let url = respone.match(/"lienet"><a href="([^"]+)"/);
+                            openLink(url[1]);
+                        });
                     }
+                });
+                return;
 
-                case 'delekke.com':
-                case 'kuhaku.cf':
-                case 'malaysurance.com':
-                case 'wptech.ga':
-                    {
-                        let url = getUrl(/\?([^]+)/);
-                        url = b64(url);
-                        openLink(url);
-                        return;
-                    }
+            case '94lauin.com':
+            case 'skinnycat.net':
+                window.document.addEventListener('DOMContentLoaded', function() {
+                    window.stop();
+                    let url = getScriptValue(/;window\.location="([^"]+)"/);
+                    openLink(url);
+                });
+                return;
 
-                case 'spacetica.com':
-                    {
-                        let url = getUrl('div p b a');
-                        openLink(url);
-                        return;
-                    }
+            case 'delekke.com':
+            case 'kuhaku.cf':
+            case 'malaysurance.com':
+            case 'wptech.ga':
+                {
+                    let url = getUrl(/\?([^]+)/);
+                    url = b64(url);
+                    openLink(url);
+                    return;
+                }
 
-                case 'shtme.co':
-                    {
-                        let url = getUrl('div.content div a');
-                        openLink(url);
-                        return;
-                    }
+            case 'spacetica.com':
+                window.document.addEventListener('DOMContentLoaded', function() {
+                    window.stop();
+                    let url = getUrl('div p b a');
+                    openLink(url);
+                });
+                return;
 
-                case 'safelinkreviewz.com':
-                case 'safelinkview.com':
-                case 'yametesenpai.xyz':
-                    {
-                        let url = getUrl(/id=([^&]+)[^]/);
-                        url = b64(url);
-                        openLink(url);
-                        return;
-                    }
+            case 'shtme.co':
+                window.document.addEventListener('DOMContentLoaded', function() {
+                    window.stop();
+                    let url = getUrl('div.content div a');
+                    openLink(url);
+                });
+                return;
 
-                case 'linkpoi.in':
-                    {
-                        let url = getUrl('a.btn');
-                        openLink(url);
-                        return;
-                    }
+            case 'newterusin.ga':
+            case 'safelinkview.com':
+            case 'yametesenpai.xyz':
+                {
+                    let url = getUrl(/id=([^&]+)[^]/);
+                    url = b64(url);
+                    openLink(url);
+                    return;
+                }
 
-                case 'ani-share.com':
-                case 'bagilagi.com':
-                case 'getinfos.net':
-                case 'intercelestial.com':
-                case 'lifesurance.info':
-                    {
-                        let url = getScriptValue(/var a='([^']+)'/);
-                        openLink(url);
-                        return;
-                    }
+            case 'linkpoi.in':
+                window.document.addEventListener('DOMContentLoaded', function() {
+                    window.stop();
+                    let url = getUrl('a.btn');
+                    openLink(url);
+                });
+                return;
 
-                case 'bkshort.info':
-                case 'fmlawkers.club':
-                case 'kurosafe.club':
-                case 'kurosafe.web.id':
-                    {
-                        let url = getUrl(/site=([^&]+)/);
-                        url = b64(url);
-                        openLink(url);
-                        return;
-                    }
+            case 'ani-share.com':
+            case 'bagilagi.com':
+            case 'getinfos.net':
+            case 'intercelestial.com':
+            case 'landscapenature.pw':
+            case 'lifesurance.info':
+                window.document.addEventListener('DOMContentLoaded', function() {
+                    window.stop();
+                    let url = getScriptValue(/var a='([^']+)'/);
+                    openLink(url);
+                });
+                return;
 
-                case 'businessforyouand.me':
-                case 'lindung.in':
-                    {
-                        let url = getUrl(/d=([^#]+)/);
-                        url = b64(url);
-                        openLink(url);
-                        return;
-                    }
+            case 'bkshort.info':
+            case 'fmlawkers.club':
+            case 'kurosafe.club':
+            case 'kurosafe.web.id':
+            case 'xydeyou.com':
+                {
+                    let url = getUrl(/site=([^&]+)/);
+                    url = b64(url);
+                    openLink(url);
+                    return;
+                }
 
-                case 'linkshrink.net':
-                    {
-                        let url = getScriptValue(/revC\("([^"]+)"\)/);
-                        url = b64(url, '/');
-                        openLink(url);
-                        return;
-                    }
+            case 'businessforyouand.me':
+            case 'gomentod.com':
+            case 'lindung.in':
+            case 'plantaheim.web.id':
+            case 't4ank.top':
+                {
+                    let url = getUrl(/d=([^#]+)/);
+                    url = b64(url);
+                    openLink(url);
+                    return;
+                }
 
-                case 'coeg.in':
-                case 'siherp.com':
-                case 'siotong.com':
-                case 'telondasmu.com':
-                    {
-                        let url = getUrl('.download-link a', /r=([^]+)/);
-                        url = b64(url);
-                        openLink(url);
-                        return;
-                    }
+            case 'linkshrink.net':
+                window.document.addEventListener('DOMContentLoaded', function() {
+                    window.stop();
+                    let url = getScriptValue(/revC\("([^"]+)"\)/);
+                    url = b64(url, '/');
+                    openLink(url);
+                });
+                return;
 
-                case 'short.anidesu.net':
-                case 'tojros.tk':
-                    {
-                        let url = getUrl(/url=([^]+)/);
-                        url = b64(url);
-                        openLink(url);
-                        return;
-                    }
-            }
-        });
+            case 'coeg.in':
+            case 'siherp.com':
+            case 'siotong.com':
+            case 'telondasmu.com':
+                window.document.addEventListener('DOMContentLoaded', function() {
+                    window.stop();
+                    let url = getUrl('.download-link a', /r=([^]+)/);
+                    url = b64(url);
+                    openLink(url);
+                });
+                return;
+
+            case 'link.shirogaze.tk':
+            case 'menujulink.online':
+            case 'short.anidesu.net':
+            case 'tojros.tk':
+                {
+                    let url = getUrl(/url=([^]+)/);
+                    url = b64(url);
+                    openLink(url);
+                    return;
+                }
+        }
     }
 })();
