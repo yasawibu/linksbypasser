@@ -5,7 +5,7 @@
 // @description  Decrease your wasting time on short links
 // @author       Putu Ardi Dharmayasa
 // @copyright    2018+, Putu Ardi Dharmayasa (yasawibu)
-// @downloadURL  https://yasawibu.github.io/LinksBypasser/release/linksbypasser.user.js
+// @downloadURL  https://yasawibu.github.io/linksbypasser/release/linksbypasser.user.js
 // @grant        none
 // @run-at       document-start
 // @include      http://*
