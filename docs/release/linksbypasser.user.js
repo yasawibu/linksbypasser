@@ -1,10 +1,9 @@
 // ==UserScript==
 // @name         LinksBypasser
 // @namespace    https://github.com/yasawibu/linksbypasser
-// @version      0.2.2
+// @version      0.2.3
 // @description  Decrease your wasting time on short links
 // @author       Putu Ardi Dharmayasa
-// @copyright    2018+, Putu Ardi Dharmayasa (yasawibu)
 // @downloadURL  https://yasawibu.github.io/linksbypasser/release/linksbypasser.user.js
 // @grant        none
 // @run-at       document-start
@@ -21,68 +20,76 @@
 
     // list of supported links.
     let linkMatch = [
-        /ani-share\.com/,
-        /coeg.in/,
-        /kurosafe\.club/,
-        /kurosafe\.web\.id/,
-        /lifesurance\.info/,
-        /lindung\.in/,
-        /linkshrink\.net/,
-        /siherp\.com/,
-        /siotong\.com/,
-        /telondasmu\.com/,
-        /tojros\.tk/,
-        /linkpoi.in/,
-        /safelinkview\.com/,
-        /safelinkreviewz\.com/,
-        /getinfos\.net/,
-        /shtme\.co\/(?!get)/,
-        /intercelestial\.com/,
-        /spacetica\.com/,
-        /malaysurance\.com/,
-        /94lauin\.com/,
-        /dl-protect1\.com/,
-        /sflink\.cc/,
-        /kuhaku\.cf/,
-        /fmlawkers\.club/,
-        /businessforyouand\.me/,
-        /bagilagi\.com/,
-        /skinnycat\.net/,
-        /bkshort\.info/,
-        /yametesenpai\.xyz/,
-        /wptech\.ga/,
-        /short\.anidesu\.net/,
-        /indexmovie\.biz\/(?!get)/,
-        /ytfire\.host/,
-        /delekke\.com/,
-        /filmku21\.website\/(?=links)/,
-        /plantaheim\.web\.id/,
-        /short\.awsubs\.co/,
-        /xydeyou\.com/,
-        /landscapenature\.pw/,
-        /dl\.animeindoku\.net/,
-        /inlink\.co/,
-        /menujulink\.online/,
-        /t4ank\.top/,
-        /healthtod\.com/,
-        /gomentod\.com/,
-        /hunstulovers\.net/,
-        /safelinku\.net/,
-        /newterusin\.ga/,
-        /zonawibu\.bid/,
-        /link\.shirogaze\.tk/
+        /^(?:\w+\.)?(ani-share\.com)/,
+        /^(?:\w+\.)?(coeg\.in)/,
+        /^(?:\w+\.)?(kurosafe\.club)/,
+        /^(?:\w+\.)?(kurosafe\.web\.id)/,
+        /^(?:\w+\.)?(lifesurance\.info)/,
+        /^(?:\w+\.)?(lindung\.in)/,
+        /^(?:\w+\.)?(linkshrink\.net)/,
+        /^(?:\w+\.)?(siherp\.com)/,
+        /^(?:\w+\.)?(siotong\.com)/,
+        /^(?:\w+\.)?(telondasmu\.com)/,
+        /^(?:\w+\.)?(tojros\.tk)/,
+        /^(?:\w+\.)?(linkpoi.in)/,
+        /^(?:\w+\.)?(u\.safelinkview\.com)/,
+        /^(?:\w+\.)?(safelinkreviewz\.com)/,
+        /^(?:\w+\.)?(getinfos\.net)/,
+        /^(?:\w+\.)?(shtme\.co\/(?!get))/,
+        /^(?:\w+\.)?(intercelestial\.com)/,
+        /^(?:\w+\.)?(spacetica\.com)/,
+        /^(?:\w+\.)?(malaysurance\.com)/,
+        /^(?:\w+\.)?(94lauin\.com)/,
+        /^(?:\w+\.)?(dl-protect1\.com)/,
+        /^(?:\w+\.)?(sflink\.cc)/,
+        /^(?:\w+\.)?(kuhaku\.cf)/,
+        /^(?:\w+\.)?(fmlawkers\.club)/,
+        /^(?:\w+\.)?(businessforyouand\.me)/,
+        /^(?:\w+\.)?(bagilagi\.com)/,
+        /^(?:\w+\.)?(skinnycat\.net)/,
+        /^(?:\w+\.)?(bkshort\.info)/,
+        /^(?:\w+\.)?(yametesenpai\.xyz)/,
+        /^(?:\w+\.)?(wptech\.ga)/,
+        /^(?:\w+\.)?(short\.anidesu\.net)/,
+        /^(?:\w+\.)?(indexmovie\.biz\/(?!get))/,
+        /^(?:\w+\.)?(ytfire\.host)/,
+        /^(?:\w+\.)?(delekke\.com)/,
+        /^(?:\w+\.)?(filmku21\.website\/(?=links))/,
+        /^(?:\w+\.)?(plantaheim\.web\.id)/,
+        /^(?:\w+\.)?(short\.awsubs\.co)/,
+        /^(?:\w+\.)?(xydeyou\.com)/,
+        /^(?:\w+\.)?(landscapenature\.pw)/,
+        /^(?:\w+\.)?(dl\.animeindoku\.net)/,
+        /^(?:\w+\.)?(inlink\.co)/,
+        /^(?:\w+\.)?(menujulink\.online)/,
+        /^(?:\w+\.)?(t4ank\.top)/,
+        /^(?:\w+\.)?(healthtod\.com)/,
+        /^(?:\w+\.)?(gomentod\.com)/,
+        /^(?:\w+\.)?(hunstulovers\.net)/,
+        /^(?:\w+\.)?(safelinku\.net)/,
+        /^(?:\w+\.)?(newterusin\.ga)/,
+        /^(?:\w+\.)?(zonawibu\.bid)/,
+        /^(?:\w+\.)?(link\.shirogaze\.tk)/,
+        /^(?:\w+\.)?(st\.tontonanime\.win)/,
+        /^(?:\w+\.)?(nasanimelink\.blogspot\.co\.id)/,
+        /^(?:\w+\.)?(dilanjut\.in)/,
+        /^(?:\w+\.)?(otololet\.com)/,
+        /^(?:\w+\.)?(dcindo\.com)/,
+        /^(?:\w+\.)?(verydelicius\.com)/,
+        /^(?:\w+\.)?(lewatilink\.us)/,
+        /^(?:\w+\.)?(apasih\.pw)/,
+        /^(?:\w+\.)?(wibu-san\.com)/,
+        /^(?:\w+\.)?(ani-short\.info)/
     ];
 
     // check the link.
     // is it supported or not.
-    let link = window.document.location.hostname + window.document.location.pathname;
+    let link = window.location.hostname + window.location.pathname;
     let linkCheck = false;
     for (let i = 0; i != linkMatch.length; ++i) {
-        linkCheck = linkMatch[i].test(link);
-        if (linkCheck == true) {
-            let host = window.document.location.hostname;
-            let trimHost = host.match(/^(www\.|\w+\.u\.)?([^]+)/);
-            host = trimHost[2];
+        linkCheck = link.match(linkMatch[i]);
+        if (linkCheck) {
+            let host = linkCheck[1];
             bypassLink(host);
             return;
         }
@@ -93,10 +100,9 @@
      * Bypass Methods *
      * * * * * * * * */
 
-    // serialize-0.2.min.js
+    // form-serialize
     // author: Dimitar Ivanov
-    // page  : https://code.google.com/archive/p/form-serialize/
-    // source: https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/form-serialize/serialize-0.2.min.js
+    // source: https://code.google.com/archive/p/form-serialize/
     function serialize(form){
         if(!form||form.nodeName!=="FORM"){ return; }
         var i,j,q=[];
@@ -221,6 +227,23 @@
     function bypassLink(host) {
         window.document.title = 'LinksBypasser - Wait a moment...';
         switch (host) {
+            case 'wibu-san.com':
+                window.document.addEventListener('DOMContentLoaded', function() {
+                    window.stop();
+                    let form = selectElement('.form-inline');
+                    form.submit();
+                });
+                return;
+
+            case 'verydelicius.com':
+                {
+                    let url = getUrl(/ref=([^#]+)/);
+                    url = b64(url);
+                    openLink(url);
+                    return;
+                }
+
+            case 'st.tontonanime.win':
             case 'zonawibu.bid':
                 {
                     let url = getUrl(/go=([^#]+)/);
@@ -375,10 +398,11 @@
 
             case 'delekke.com':
             case 'kuhaku.cf':
+            case 'lewatilink.us':
             case 'malaysurance.com':
             case 'wptech.ga':
                 {
-                    let url = getUrl(/\?([^]+)/);
+                    let url = getUrl(/\?([^#]+)/);
                     url = b64(url);
                     openLink(url);
                     return;
@@ -400,11 +424,12 @@
                 });
                 return;
 
+            case 'dcindo.com':
             case 'newterusin.ga':
-            case 'safelinkview.com':
+            case 'u.safelinkview.com':
             case 'yametesenpai.xyz':
                 {
-                    let url = getUrl(/id=([^&]+)[^]/);
+                    let url = getUrl(/id=([^&]+)/);
                     url = b64(url);
                     openLink(url);
                     return;
@@ -419,7 +444,9 @@
                 return;
 
             case 'ani-share.com':
+            case 'apasih.pw':
             case 'bagilagi.com':
+            case 'dilanjut.in':
             case 'getinfos.net':
             case 'intercelestial.com':
             case 'landscapenature.pw':
@@ -431,6 +458,7 @@
                 });
                 return;
 
+            case 'ani-short.info':
             case 'bkshort.info':
             case 'fmlawkers.club':
             case 'kurosafe.club':
@@ -446,6 +474,7 @@
             case 'businessforyouand.me':
             case 'gomentod.com':
             case 'lindung.in':
+            case 'otololet.com':
             case 'plantaheim.web.id':
             case 't4ank.top':
                 {
@@ -478,10 +507,11 @@
 
             case 'link.shirogaze.tk':
             case 'menujulink.online':
+            case 'nasanimelink.blogspot.co.id':
             case 'short.anidesu.net':
             case 'tojros.tk':
                 {
-                    let url = getUrl(/url=([^]+)/);
+                    let url = getUrl(/url=([^&]+)/);
                     url = b64(url);
                     openLink(url);
                     return;
