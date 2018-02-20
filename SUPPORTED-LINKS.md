@@ -1,13 +1,17 @@
 # Supported Links
-(total: 50)
+(total: 60)
 * *.u.safelinkview.com
 * 94lauin.com
 * ani-share.com
+* ani-short.info
+* apasih.pw
 * bagilagi.com
 * bkshort.info
 * businessforyouand.me
 * coeg.in
+* dcindo.com
 * delekke.com
+* dilanjut.in
 * dl.animeindoku.net
 * dl-protect1.com
 * filmku21.website
@@ -23,6 +27,7 @@
 * kurosafe.club
 * kurosafe.web.id
 * landscapenature.pw
+* lewatilink.us
 * lifesurance.com
 * lindung.in
 * link.shirogaze.tk
@@ -30,7 +35,9 @@
 * linkshrink.net
 * malaysurance.com
 * menujulink.online
+* nasanimelink.blogspot.co.id
 * newterusin.ga
+* otololet.com
 * plantaheim.web.id
 * safelinkreviewz.com
 * safelinku.net
@@ -42,9 +49,12 @@
 * siotong.com
 * skinnycat.net
 * spacetica.com
+* st.tontonanime.win
 * t4ank.top
 * telondasmu.com
 * tojros.tk
+* verydelicius.com
+* wibu-san.com
 * wptech.ga
 * xydeyou.com
 * yametesenpai.xyz
