@@ -24,12 +24,13 @@ See [SUPPORTED-LINKS.md] for the details.
 
 ## Change Log
 **v0.2.2** (19-Feb-2018)
+* Improved link match
+* Added 10 supported links
+
+**v0.2.2** (19-Feb-2018)
 * Improved bypass methods
 * Fixed 1 supported links
 * Added 15 supported links
-
-**v0.2.1** (18-Feb-2018)
-* Initial release
 
 See [CHANGELOG.md] for the details.
 
