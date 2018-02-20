@@ -1,3 +1,18 @@
+## v0.2.3
+(20-Feb-2018)
+* **Improved link match**
+* **Added 10 supported links:**
+  * ani-short.info
+  * apasih.pw
+  * dcindo.com
+  * dilanjut.in
+  * lewatilink.us
+  * nasanimelink.blogspot.co.id
+  * otololet.com
+  * st.tontonanime.win
+  * verydelicius.com
+  * wibu-san.com
+
 ## v0.2.2
 (19-Feb-2018)
 * **Improved bypass methods**
