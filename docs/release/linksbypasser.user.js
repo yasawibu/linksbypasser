@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LinksBypasser
 // @namespace    https://github.com/yasawibu/linksbypasser
-// @version      0.2.3
+// @version      0.2.4
 // @description  Decrease your wasting time on short links
 // @author       Putu Ardi Dharmayasa
 // @downloadURL  https://yasawibu.github.io/linksbypasser/release/linksbypasser.user.js
@@ -39,9 +39,9 @@
         /^(?:\w+\.)?(intercelestial\.com)/,
         /^(?:\w+\.)?(spacetica\.com)/,
         /^(?:\w+\.)?(malaysurance\.com)/,
+        /^(?:\w+\.)?(v1\.94lauin\.com)/,
         /^(?:\w+\.)?(94lauin\.com)/,
         /^(?:\w+\.)?(dl-protect1\.com)/,
-        /^(?:\w+\.)?(sflink\.cc)/,
         /^(?:\w+\.)?(kuhaku\.cf)/,
         /^(?:\w+\.)?(fmlawkers\.club)/,
         /^(?:\w+\.)?(businessforyouand\.me)/,
@@ -66,7 +66,6 @@
         /^(?:\w+\.)?(healthtod\.com)/,
         /^(?:\w+\.)?(gomentod\.com)/,
         /^(?:\w+\.)?(hunstulovers\.net)/,
-        /^(?:\w+\.)?(safelinku\.net)/,
         /^(?:\w+\.)?(newterusin\.ga)/,
         /^(?:\w+\.)?(zonawibu\.bid)/,
         /^(?:\w+\.)?(link\.shirogaze\.tk)/,
@@ -79,7 +78,10 @@
         /^(?:\w+\.)?(lewatilink\.us)/,
         /^(?:\w+\.)?(apasih\.pw)/,
         /^(?:\w+\.)?(wibu-san\.com)/,
-        /^(?:\w+\.)?(ani-short\.info)/
+        /^(?:\w+\.)?(ani-short\.info)/,
+        /^(?:\w+\.)?(bagisoft\.net)/,
+        /^(?:\w+\.)?(sweetlantern\.com)/,
+        /^(?:\w+\.)?(designmyhomee\.com)/
     ];
 
     // check the link.
@@ -227,6 +229,30 @@
     function bypassLink(host) {
         window.document.title = 'LinksBypasser - Wait a moment...';
         switch (host) {
+            case 'skinnycat.net':
+                let url = getUrl(/d=([^#]+)/);
+                if (url) {
+                    url = b64(url);
+                    openLink(url);
+                } else {
+                    window.document.addEventListener('DOMContentLoaded', function() {
+                        window.stop();
+                        let url = getScriptValue(/;window\.location="([^"]+)"/);
+                        openLink(url);
+                    });
+                }
+                return;
+
+            case 'v1.94lauin.com':
+                {
+                    window.document.addEventListener('DOMContentLoaded', function() {
+                        window.stop();
+                        let url = getScriptValue(/="([^"]+)",e=0/);
+                        openLink(url);
+                    });
+                    return;
+                }
+
             case 'wibu-san.com':
                 window.document.addEventListener('DOMContentLoaded', function() {
                     window.stop();
@@ -338,39 +364,6 @@
                     return;
                 }
 
-
-            case 'indexmovie.biz':
-                {
-                    let url = '/get' + window.location.pathname;
-                    openLink(url);
-                    return;
-                }
-
-            case 'safelinku.net':
-            case 'sflink.cc':
-                window.document.addEventListener('DOMContentLoaded', function() {
-                    window.stop();
-                    // first step
-                    let form = selectElement('#link-view');
-                    if (form) {
-                        form.submit();
-                    }
-
-                    // second step
-                    form = selectElement('#go-link');
-                    if (form) {
-                        const url = form.action;
-                        const data = serialize(form);
-                        const content = 'application/x-www-form-urlencoded';
-                        POST(url, data, content, true).then((respone) => {
-                            respone = JSON.parse(respone);
-                            let url = respone.url;
-                            openLink(url);
-                        });
-                    }
-                });
-                return;
-
             case 'dl-protect1.com':
                 window.document.addEventListener('DOMContentLoaded', function() {
                     window.stop();
@@ -388,7 +381,6 @@
                 return;
 
             case '94lauin.com':
-            case 'skinnycat.net':
                 window.document.addEventListener('DOMContentLoaded', function() {
                     window.stop();
                     let url = getScriptValue(/;window\.location="([^"]+)"/);
@@ -451,6 +443,7 @@
             case 'intercelestial.com':
             case 'landscapenature.pw':
             case 'lifesurance.info':
+            case 'sweetlantern.com':
                 window.document.addEventListener('DOMContentLoaded', function() {
                     window.stop();
                     let url = getScriptValue(/var a='([^']+)'/);
@@ -459,6 +452,7 @@
                 return;
 
             case 'ani-short.info':
+            case 'bagisoft.net':
             case 'bkshort.info':
             case 'fmlawkers.club':
             case 'kurosafe.club':
@@ -505,6 +499,7 @@
                 });
                 return;
 
+            case 'designmyhomee.com':
             case 'link.shirogaze.tk':
             case 'menujulink.online':
             case 'nasanimelink.blogspot.co.id':
