@@ -1,16 +1,18 @@
 # Supported Links
-(total: 60)
+(total: 61)
 * *.u.safelinkview.com
 * 94lauin.com
 * ani-share.com
 * ani-short.info
 * apasih.pw
 * bagilagi.com
+* bagisoft.net
 * bkshort.info
 * businessforyouand.me
 * coeg.in
 * dcindo.com
 * delekke.com
+* designmyhomee.com
 * dilanjut.in
 * dl.animeindoku.net
 * dl-protect1.com
@@ -40,8 +42,6 @@
 * otololet.com
 * plantaheim.web.id
 * safelinkreviewz.com
-* safelinku.net
-* sflink.cc
 * short.anidesu.net
 * short.awsubs.co
 * shtme.co
@@ -50,6 +50,7 @@
 * skinnycat.net
 * spacetica.com
 * st.tontonanime.win
+* sweetlantern.com
 * t4ank.top
 * telondasmu.com
 * tojros.tk
