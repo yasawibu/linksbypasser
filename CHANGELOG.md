@@ -1,3 +1,16 @@
+## v0.2.4
+(4-Mar-2018)
+* **Improved 2 supported links:**
+  * 94lauin.com
+  * skinnycat.net
+* **Added 3 supported links:**
+  * bagisoft.net
+  * designmyhomee.com
+  * sweetlantern.com
+* **Removed 2 supported links:**
+  * safelinku.net
+  * sflink.cc
+  
 ## v0.2.3
 (20-Feb-2018)
 * **Improved link match**
