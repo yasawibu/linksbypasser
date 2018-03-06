@@ -1,10 +1,11 @@
 # Supported Links
-(total: 61)
+(total: 63)
 * *.u.safelinkview.com
 * 94lauin.com
 * ani-share.com
 * ani-short.info
 * apasih.pw
+* awsubsco.ga
 * bagilagi.com
 * bagisoft.net
 * bkshort.info
@@ -39,6 +40,7 @@
 * menujulink.online
 * nasanimelink.blogspot.co.id
 * newterusin.ga
+* nimekaze.me
 * otololet.com
 * plantaheim.web.id
 * safelinkreviewz.com
