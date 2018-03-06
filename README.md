@@ -9,6 +9,12 @@
 [Greasemonkey]: https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/
 [LinksBypasser]: https://yasawibu.github.io/linksbypasser/release/linksbypasser.user.js
 
+## Testing
+1. Open link in [TESTED-LINKS.md]
+2. Wait until redirected to the real url
+
+[TESTED-LINKS.md]: https://github.com/yasawibu/linksbypasser/blob/master/TESTED-LINKS.md
+
 ## Features
 This userscript **CAN** bypass many short links that require:
 * waiting countdown to continue
@@ -23,14 +29,13 @@ See [SUPPORTED-LINKS.md] for the details.
 [SUPPORTED-LINKS.md]: https://github.com/yasawibu/linksbypasser/blob/master/SUPPORTED-LINKS.md
 
 ## Change Log
+**v0.2.5** (6-Mar-2018)
+* Added 2 supported links
+
 **v0.2.4** (4-Mar-2018)
 * Improved 2 supported links
 * Added 3 supported links
 * Removed 2 supported links
-
-**v0.2.3** (20-Feb-2018)
-* Improved link match
-* Added 10 supported links
 
 See [CHANGELOG.md] for the details.
 
