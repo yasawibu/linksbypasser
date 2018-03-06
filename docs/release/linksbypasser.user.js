@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LinksBypasser
 // @namespace    https://github.com/yasawibu/linksbypasser
-// @version      0.2.4
+// @version      0.2.5
 // @description  Decrease your wasting time on short links
 // @author       Putu Ardi Dharmayasa
 // @downloadURL  https://yasawibu.github.io/linksbypasser/release/linksbypasser.user.js
@@ -81,7 +81,9 @@
         /^(?:\w+\.)?(ani-short\.info)/,
         /^(?:\w+\.)?(bagisoft\.net)/,
         /^(?:\w+\.)?(sweetlantern\.com)/,
-        /^(?:\w+\.)?(designmyhomee\.com)/
+        /^(?:\w+\.)?(designmyhomee\.com)/,
+        /^(?:\w+\.)?(awsubsco\.ga)/,
+        /^(?:\w+\.)?(nimekaze\.me)/
     ];
 
     // check the link.
@@ -230,28 +232,28 @@
         window.document.title = 'LinksBypasser - Wait a moment...';
         switch (host) {
             case 'skinnycat.net':
-                let url = getUrl(/d=([^#]+)/);
-                if (url) {
-                    url = b64(url);
-                    openLink(url);
-                } else {
-                    window.document.addEventListener('DOMContentLoaded', function() {
-                        window.stop();
-                        let url = getScriptValue(/;window\.location="([^"]+)"/);
-                        openLink(url);
-                    });
-                }
-                return;
-
-            case 'v1.94lauin.com':
                 {
-                    window.document.addEventListener('DOMContentLoaded', function() {
-                        window.stop();
-                        let url = getScriptValue(/="([^"]+)",e=0/);
+                    let url = getUrl(/d=([^#]+)/);
+                    if (url) {
+                        url = b64(url);
                         openLink(url);
-                    });
+                    } else {
+                        window.document.addEventListener('DOMContentLoaded', function() {
+                            window.stop();
+                            let url = getScriptValue(/;window\.location="([^"]+)"/);
+                            openLink(url);
+                        });
+                    }
                     return;
                 }
+
+            case 'v1.94lauin.com':
+                window.document.addEventListener('DOMContentLoaded', function() {
+                    window.stop();
+                    let url = getScriptValue(/="([^"]+)",e=0/);
+                    openLink(url);
+                });
+                return;
 
             case 'wibu-san.com':
                 window.document.addEventListener('DOMContentLoaded', function() {
@@ -279,6 +281,7 @@
                 }
 
             case 'hunstulovers.net':
+            case 'nimekaze.me':
                 {
                     let url = getUrl(/go\/([^#]+)/);
                     url = b64(url);
@@ -331,6 +334,7 @@
                 });
                 return;
 
+            case 'awsubsco.ga':
             case 'safelinkreviewz.com':
                 window.document.addEventListener('DOMContentLoaded', function() {
                     window.stop();
