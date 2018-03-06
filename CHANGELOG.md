@@ -1,3 +1,9 @@
+## v0.2.5
+(6-Mar-2018)
+* **Added 2 supported links:**
+  * awsubsco.ga
+  * nimekaze.me
+
 ## v0.2.4
 (4-Mar-2018)
 * **Improved 2 supported links:**
