@@ -1,5 +1,5 @@
 ## v0.2.6
-(?-Mar-2018)
+(9-Mar-2018)
 * **Added 4 supported links:**
   * anjay.info
   * karung.in
