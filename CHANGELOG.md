@@ -4,6 +4,7 @@
   * autolinkach.com
   * eigamou.win
   * linx.cloud
+  * soralink.sinetronku.tv
   
 ## v0.2.6
 (9-Mar-2018)
