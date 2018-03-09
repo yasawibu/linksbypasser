@@ -1,11 +1,12 @@
 # Supported Links
-(total: 67)
+(total: 68)
 * *.u.safelinkview.com
 * 94lauin.com
 * ani-share.com
 * ani-short.info
 * anjay.info
 * apasih.pw
+* autolinkach.com
 * awsubsco.ga
 * bagilagi.com
 * bagisoft.net
