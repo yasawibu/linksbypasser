@@ -89,7 +89,8 @@
         /^(?:\w+\.)?(karung\.in)/,
         /^(?:\w+\.)?(anjay\.info)/,
         /^(?:\w+\.)?(safelinku\.net)/,
-        /^(?:\w+\.)?(autolinkach\.com)/
+        /^(?:\w+\.)?(autolinkach\.com)/,
+        /^(?:\w+\.)?(eigamou\.win)/
     ];
 
     // check the link.
@@ -543,6 +544,7 @@
 
             case 'anjay.info':
             case 'designmyhomee.com':
+            case 'eigamou.win':
             case 'link.shirogaze.tk':
             case 'menujulink.online':
             case 'nasanimelink.blogspot.co.id':
