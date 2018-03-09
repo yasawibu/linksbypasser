@@ -1,5 +1,5 @@
 # Supported Links
-(total: 69)
+(total: 70)
 * *.u.safelinkview.com
 * 94lauin.com
 * ani-share.com
@@ -40,6 +40,7 @@
 * link.shirogaze.tk
 * linkpoi.in
 * linkshrink.net
+* linx.cloud
 * losstor.com
 * malaysurance.com
 * menujulink.online
