@@ -5,3 +5,8 @@
 5. https://www.siherp.com/duVoV
 6. http://coeg.in/na3Ve
 7. http://www.siotong.com/zy4xN
+8. http://www.losstor.com/ini/?site=aHR0cDovL2thcnVuZy5pbi9HeXVjYw==&c=0&user=1
+9. http://karung.in/Gyucc
+10. https://www.anjay.info/131/support-and-reinforcement-in-the-mining-cycle/?url=aHR0cDovL3d3dzcwLnppcHB5c2hhcmUuY29tL3Yvd0hkNnA3TnovZmlsZS5odG1s
+11. http://safelinku.net/iCVL
+12. https://94lauin.com/FW6MZ
