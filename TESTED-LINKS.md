@@ -9,4 +9,3 @@
 9. http://karung.in/Gyucc
 10. https://www.anjay.info/131/support-and-reinforcement-in-the-mining-cycle/?url=aHR0cDovL3d3dzcwLnppcHB5c2hhcmUuY29tL3Yvd0hkNnA3TnovZmlsZS5odG1s
 11. http://safelinku.net/iCVL
-12. https://94lauin.com/FW6MZ
