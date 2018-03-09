@@ -92,6 +92,7 @@
         /^(?:\w+\.)?(autolinkach\.com)/,
         /^(?:\w+\.)?(eigamou\.win)/,
         /^(?:\w+\.)?(linx\.cloud)/,
+        /^(?:\w+\.)?(soralink\.sinetronku\.tv)/
     ];
 
     // check the link.
@@ -522,6 +523,7 @@
             case 'lindung.in':
             case 'otololet.com':
             case 'plantaheim.web.id':
+            case 'soralink.sinetronku.tv':
             case 't4ank.top':
                 {
                     let url = getUrl(/d=([^#]+)/);
