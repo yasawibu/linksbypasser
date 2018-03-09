@@ -1,6 +1,6 @@
 ## v0.2.7
 (?-Mar-2018)
-* **Added 1 supported links:**
+* **Added 2 supported links:**
   * autolinkach.com
   * eigamou.win
   
