@@ -1,5 +1,5 @@
 # Supported Links
-(total: 68)
+(total: 69)
 * *.u.safelinkview.com
 * 94lauin.com
 * ani-share.com
@@ -19,6 +19,7 @@
 * dilanjut.in
 * dl.animeindoku.net
 * dl-protect1.com
+* eigamou.win
 * filmku21.website
 * fmlawkers.club
 * getinfos.net
