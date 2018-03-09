@@ -1,6 +1,6 @@
 ## v0.2.7
 (?-Mar-2018)
-* **Added 3 supported links:**
+* **Added 4 supported links:**
   * autolinkach.com
   * eigamou.win
   * linx.cloud
