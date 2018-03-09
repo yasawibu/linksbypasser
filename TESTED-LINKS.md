@@ -10,3 +10,4 @@
 10. https://www.anjay.info/131/support-and-reinforcement-in-the-mining-cycle/?url=aHR0cDovL3d3dzcwLnppcHB5c2hhcmUuY29tL3Yvd0hkNnA3TnovZmlsZS5odG1s
 11. http://safelinku.net/iCVL
 12. http://autolinkach.com/?id=MkVEV3pXdmgrbzVWTkhxdzRDbDNPZnJBSkJobUpmclNXTmdpTEkwOU1wbFBQUnRGOWhmS21BWkJDUFBrUVMvTg==
+13. http://www.eigamou.win/p/generate.html?url=aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj05eFRFMUFwV2kwMA==
