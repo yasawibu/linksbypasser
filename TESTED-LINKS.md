@@ -11,3 +11,4 @@
 11. http://safelinku.net/iCVL
 12. http://autolinkach.com/?id=MkVEV3pXdmgrbzVWTkhxdzRDbDNPZnJBSkJobUpmclNXTmdpTEkwOU1wbFBQUnRGOWhmS21BWkJDUFBrUVMvTg==
 13. http://www.eigamou.win/p/generate.html?url=aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj05eFRFMUFwV2kwMA==
+14. https://linx.cloud/supergirl-s03e02-triggers-720p-webrip-2ch-x265-hevc-psa-85425/
