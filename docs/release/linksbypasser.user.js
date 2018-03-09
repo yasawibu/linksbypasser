@@ -1,9 +1,10 @@
 // ==UserScript==
 // @name         LinksBypasser
 // @namespace    https://github.com/yasawibu/linksbypasser
-// @version      0.2.5
+// @version      0.2.6
 // @description  Decrease your wasting time on short links
 // @author       Putu Ardi Dharmayasa
+// @supportURL   https://github.com/yasawibu/linksbypasser/issues
 // @downloadURL  https://yasawibu.github.io/linksbypasser/release/linksbypasser.user.js
 // @grant        none
 // @run-at       document-start
@@ -83,7 +84,11 @@
         /^(?:\w+\.)?(sweetlantern\.com)/,
         /^(?:\w+\.)?(designmyhomee\.com)/,
         /^(?:\w+\.)?(awsubsco\.ga)/,
-        /^(?:\w+\.)?(nimekaze\.me)/
+        /^(?:\w+\.)?(nimekaze\.me)/,
+        /^(?:\w+\.)?(losstor\.com)/,
+        /^(?:\w+\.)?(karung\.in)/,
+        /^(?:\w+\.)?(anjay\.info)/,
+        /^(?:\w+\.)?(safelinku\.net)/
     ];
 
     // check the link.
@@ -231,21 +236,51 @@
     function bypassLink(host) {
         window.document.title = 'LinksBypasser - Wait a moment...';
         switch (host) {
-            case 'skinnycat.net':
-                {
-                    let url = getUrl(/d=([^#]+)/);
-                    if (url) {
-                        url = b64(url);
-                        openLink(url);
-                    } else {
-                        window.document.addEventListener('DOMContentLoaded', function() {
-                            window.stop();
-                            let url = getScriptValue(/;window\.location="([^"]+)"/);
+            case 'safelinku.net':
+                window.document.addEventListener('DOMContentLoaded', function() {
+                    window.stop();
+                    // first step
+                    let form = selectElement('#link-view');
+                    if (form) {
+                        form.submit();
+                    }
+
+                    // second step
+                    form = selectElement('#go-link');
+                    if (form) {
+                        const url = form.action;
+                        const data = serialize(form);
+                        const content = 'application/x-www-form-urlencoded';
+                        POST(url, data, content, true).then((respone) => {
+                            respone = JSON.parse(respone);
+                            let url = respone.url;
                             openLink(url);
                         });
                     }
-                    return;
+                });
+                return;
+
+            case 'karung.in':
+                window.document.addEventListener('DOMContentLoaded', function() {
+                    window.stop();
+                    let url = getUrl('a#makingdifferenttimer.btn');
+                    openLink(url);
+                });
+                return;
+
+            case 'skinnycat.net':
+                let url = getUrl(/d=([^#]+)/);
+                if (url) {
+                    url = b64(url);
+                    openLink(url);
+                } else {
+                    window.document.addEventListener('DOMContentLoaded', function() {
+                        window.stop();
+                        let url = getScriptValue(/;window\.location="([^"]+)"/);
+                        openLink(url);
+                    });
                 }
+                return;
 
             case 'v1.94lauin.com':
                 window.document.addEventListener('DOMContentLoaded', function() {
@@ -461,6 +496,7 @@
             case 'fmlawkers.club':
             case 'kurosafe.club':
             case 'kurosafe.web.id':
+            case 'losstor.com':
             case 'xydeyou.com':
                 {
                     let url = getUrl(/site=([^&]+)/);
@@ -503,6 +539,7 @@
                 });
                 return;
 
+            case 'anjay.info':
             case 'designmyhomee.com':
             case 'link.shirogaze.tk':
             case 'menujulink.online':
