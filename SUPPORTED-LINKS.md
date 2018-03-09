@@ -1,9 +1,10 @@
 # Supported Links
-(total: 63)
+(total: 67)
 * *.u.safelinkview.com
 * 94lauin.com
 * ani-share.com
 * ani-short.info
+* anjay.info
 * apasih.pw
 * awsubsco.ga
 * bagilagi.com
@@ -26,6 +27,7 @@
 * indexmovie.biz
 * inlink.co
 * intercelestial.com
+* karung.in
 * kuhaku.cf
 * kurosafe.club
 * kurosafe.web.id
@@ -36,6 +38,7 @@
 * link.shirogaze.tk
 * linkpoi.in
 * linkshrink.net
+* losstor.com
 * malaysurance.com
 * menujulink.online
 * nasanimelink.blogspot.co.id
@@ -44,6 +47,7 @@
 * otololet.com
 * plantaheim.web.id
 * safelinkreviewz.com
+* safelinku.net
 * short.anidesu.net
 * short.awsubs.co
 * shtme.co
