@@ -90,7 +90,8 @@
         /^(?:\w+\.)?(anjay\.info)/,
         /^(?:\w+\.)?(safelinku\.net)/,
         /^(?:\w+\.)?(autolinkach\.com)/,
-        /^(?:\w+\.)?(eigamou\.win)/
+        /^(?:\w+\.)?(eigamou\.win)/,
+        /^(?:\w+\.)?(linx\.cloud)/,
     ];
 
     // check the link.
@@ -238,6 +239,14 @@
     function bypassLink(host) {
         window.document.title = 'LinksBypasser - Wait a moment...';
         switch (host) {
+            case 'linx.cloud':
+                window.document.addEventListener('DOMContentLoaded', function() {
+                    window.stop();
+                    let btn = selectElement('button#wtd');
+                    btn.click();
+                });
+                return;
+
             case 'safelinku.net':
                 window.document.addEventListener('DOMContentLoaded', function() {
                     window.stop();
