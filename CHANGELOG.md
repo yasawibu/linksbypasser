@@ -1,6 +1,7 @@
 ## v0.2.8
 (??-Mar-2018)
-* **Added 2 supported links:**
+* **Added 3 supported links:**
+  * animeindo.me
   * sehatlega.com
   * seputargratis.com
 
