@@ -1,5 +1,5 @@
 # Supported Links
-(total: 74)
+(total: 75)
 * *.u.safelinkview.com
 * 94lauin.com
 * ani-share.com
@@ -7,6 +7,7 @@
 * animeindo.me
 * anjay.info
 * apasih.pw
+* autokit.co
 * autolinkach.com
 * awsubsco.ga
 * bagilagi.com
