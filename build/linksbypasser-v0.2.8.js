@@ -95,7 +95,8 @@
         /^(?:\w+\.)?(soralink\.sinetronku\.tv)/,
         /^(?:\w+\.)?(sehatlega\.com)/,
         /^(?:\w+\.)?(seputargratis\.com)/,
-        /^(?:\w+\.)?(animeindo\.me)/
+        /^(?:\w+\.)?(animeindo\.me)/,
+        /^(?:\w+\.)?(autokit\.co)/,
     ];
 
     // check the link.
@@ -243,6 +244,14 @@
     function bypassLink(host) {
         window.document.title = 'LinksBypasser - Wait a moment...';
         switch (host) {
+            case 'autokit.co':
+                window.document.addEventListener('DOMContentLoaded', function() {
+                    window.stop();
+                    let url = getUrl('a#linko.golink');
+                    openLink(url);
+                });
+                return;
+
             case 'sehatlega.com':
                 {
                     let url = getUrl(/\lanjut=([^#]+)/);
