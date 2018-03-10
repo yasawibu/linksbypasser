@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LinksBypasser
 // @namespace    https://github.com/yasawibu/linksbypasser
-// @version      0.2.6
+// @version      0.2.7
 // @description  Decrease your wasting time on short links
 // @author       Putu Ardi Dharmayasa
 // @supportURL   https://github.com/yasawibu/linksbypasser/issues
@@ -88,7 +88,11 @@
         /^(?:\w+\.)?(losstor\.com)/,
         /^(?:\w+\.)?(karung\.in)/,
         /^(?:\w+\.)?(anjay\.info)/,
-        /^(?:\w+\.)?(safelinku\.net)/
+        /^(?:\w+\.)?(safelinku\.net)/,
+        /^(?:\w+\.)?(autolinkach\.com)/,
+        /^(?:\w+\.)?(eigamou\.win)/,
+        /^(?:\w+\.)?(linx\.cloud)/,
+        /^(?:\w+\.)?(soralink\.sinetronku\.tv)/
     ];
 
     // check the link.
@@ -236,6 +240,14 @@
     function bypassLink(host) {
         window.document.title = 'LinksBypasser - Wait a moment...';
         switch (host) {
+            case 'linx.cloud':
+                window.document.addEventListener('DOMContentLoaded', function() {
+                    window.stop();
+                    let btn = selectElement('button#wtd');
+                    btn.click();
+                });
+                return;
+
             case 'safelinku.net':
                 window.document.addEventListener('DOMContentLoaded', function() {
                     window.stop();
@@ -476,6 +488,7 @@
 
             case 'ani-share.com':
             case 'apasih.pw':
+            case 'autolinkach.com':
             case 'bagilagi.com':
             case 'dilanjut.in':
             case 'getinfos.net':
@@ -510,6 +523,7 @@
             case 'lindung.in':
             case 'otololet.com':
             case 'plantaheim.web.id':
+            case 'soralink.sinetronku.tv':
             case 't4ank.top':
                 {
                     let url = getUrl(/d=([^#]+)/);
@@ -541,6 +555,7 @@
 
             case 'anjay.info':
             case 'designmyhomee.com':
+            case 'eigamou.win':
             case 'link.shirogaze.tk':
             case 'menujulink.online':
             case 'nasanimelink.blogspot.co.id':
