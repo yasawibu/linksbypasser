@@ -1,11 +1,12 @@
 # Supported Links
-(total: 67)
+(total: 71)
 * *.u.safelinkview.com
 * 94lauin.com
 * ani-share.com
 * ani-short.info
 * anjay.info
 * apasih.pw
+* autolinkach.com
 * awsubsco.ga
 * bagilagi.com
 * bagisoft.net
@@ -18,6 +19,7 @@
 * dilanjut.in
 * dl.animeindoku.net
 * dl-protect1.com
+* eigamou.win
 * filmku21.website
 * fmlawkers.club
 * getinfos.net
@@ -38,6 +40,7 @@
 * link.shirogaze.tk
 * linkpoi.in
 * linkshrink.net
+* linx.cloud
 * losstor.com
 * malaysurance.com
 * menujulink.online
@@ -54,6 +57,7 @@
 * siherp.com
 * siotong.com
 * skinnycat.net
+* soralink.sinetronku.tv
 * spacetica.com
 * st.tontonanime.win
 * sweetlantern.com
