@@ -13,3 +13,5 @@
 13. http://www.eigamou.win/p/generate.html?url=aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj05eFRFMUFwV2kwMA==
 14. https://linx.cloud/supergirl-s03e02-triggers-720p-webrip-2ch-x265-hevc-psa-85425/
 15. http://soralink.sinetronku.tv/hosting-your-own-web-server-things-to-consider/?d=aHR0cHM6Ly9hY2VmaWxlLmNvL2YvMTQwNzAxNg==#landing
+16. http://sehatlega.com/manfaat-ikan-tuna-bagi-kesehatan/?lanjut=aHR0cDovL3d3dzEzLnppcHB5c2hhcmUuY29tL3YvSGpmU0hRd0cvZmlsZS5odG1s#
+17. http://seputargratis.com/acid-and-alkaline-foods-in-the-ph-miracle-diet/?aHR0cHM6Ly9hY2VmaWxlLmNvL2YvNzU0NzYxL3J5dXVrb2ktYmxlbmRzLTcyMHAtcmFy#downloadHehe
