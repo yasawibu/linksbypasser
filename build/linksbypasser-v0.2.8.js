@@ -94,7 +94,8 @@
         /^(?:\w+\.)?(linx\.cloud)/,
         /^(?:\w+\.)?(soralink\.sinetronku\.tv)/,
         /^(?:\w+\.)?(sehatlega\.com)/,
-        /^(?:\w+\.)?(seputargratis\.com)/
+        /^(?:\w+\.)?(seputargratis\.com)/,
+        /^(?:\w+\.)?(animeindo\.me)/
     ];
 
     // check the link.
@@ -515,6 +516,7 @@
                 return;
 
             case 'ani-short.info':
+            case 'animeindo.me':
             case 'bagisoft.net':
             case 'bkshort.info':
             case 'fmlawkers.club':
