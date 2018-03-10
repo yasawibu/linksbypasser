@@ -1,5 +1,5 @@
 # Supported Links
-(total: 71)
+(total: 73)
 * *.u.safelinkview.com
 * 94lauin.com
 * ani-share.com
@@ -51,6 +51,8 @@
 * plantaheim.web.id
 * safelinkreviewz.com
 * safelinku.net
+* sehatlega.com
+* seputargratis.com
 * short.anidesu.net
 * short.awsubs.co
 * shtme.co
