@@ -1,3 +1,9 @@
+## v0.2.8
+(??-Mar-2018)
+* **Added 2 supported links:**
+  * sehatlega.com
+  * seputargratis.com
+
 ## v0.2.7
 (10-Mar-2018)
 * **Added 4 supported links:**
