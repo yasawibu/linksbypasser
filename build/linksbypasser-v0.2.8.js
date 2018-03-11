@@ -97,7 +97,8 @@
         /^(?:\w+\.)?(seputargratis\.com)/,
         /^(?:\w+\.)?(animeindo\.me)/,
         /^(?:\w+\.)?(autokit\.co)/,
-        /^(?:\w+\.)?(mylink\.zone)/
+        /^(?:\w+\.)?(mylink\.zone)/,
+        /^(?:\w+\.)?(catcut\.net)/
     ];
 
     // check the link.
@@ -245,6 +246,17 @@
     function bypassLink(host) {
         window.document.title = 'LinksBypasser - Wait a moment...';
         switch (host) {
+            case 'catcut.net':
+                window.document.addEventListener('DOMContentLoaded', function() {
+                    window.stop();
+                    let url = getScriptValue(/var go_url = decodeURIComponent\('([^']+)/);
+                    url = decodeURIComponent(url);
+                    url = url.match(/a=([^&]+)/);
+                    url = b64(url[1]);
+                    openLink(url);
+                });
+                return;
+
             case 'mylink.zone':
                 window.document.addEventListener('DOMContentLoaded', function() {
                     window.stop();
