@@ -1,8 +1,9 @@
 ## v0.2.8
 (??-Mar-2018)
-* **Added 4 supported links:**
+* **Added 5 supported links:**
   * animeindo.me
   * autokit.co
+  * mylink.zone
   * sehatlega.com
   * seputargratis.com
 
