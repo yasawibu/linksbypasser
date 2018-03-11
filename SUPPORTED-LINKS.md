@@ -1,5 +1,5 @@
 # Supported Links
-(total: 75)
+(total: 76)
 * *.u.safelinkview.com
 * 94lauin.com
 * ani-share.com
@@ -46,6 +46,7 @@
 * losstor.com
 * malaysurance.com
 * menujulink.online
+* mylink.zone
 * nasanimelink.blogspot.co.id
 * newterusin.ga
 * nimekaze.me
