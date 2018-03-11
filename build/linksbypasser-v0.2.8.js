@@ -97,6 +97,7 @@
         /^(?:\w+\.)?(seputargratis\.com)/,
         /^(?:\w+\.)?(animeindo\.me)/,
         /^(?:\w+\.)?(autokit\.co)/,
+        /^(?:\w+\.)?(mylink\.zone)/
     ];
 
     // check the link.
@@ -244,6 +245,16 @@
     function bypassLink(host) {
         window.document.title = 'LinksBypasser - Wait a moment...';
         switch (host) {
+            case 'mylink.zone':
+                window.document.addEventListener('DOMContentLoaded', function() {
+                    window.stop();
+                    let url = getScriptValue(/txt = '<b><a href="([^"]+)/);
+                    url = decodeURIComponent(url);
+                    url = url.match(/url=([^&]+)/);
+                    openLink(url[1]);
+                });
+                return;
+
             case 'autokit.co':
                 window.document.addEventListener('DOMContentLoaded', function() {
                     window.stop();
