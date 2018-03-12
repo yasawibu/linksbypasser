@@ -1,9 +1,10 @@
 # Supported Links
-(total: 78)
+(total: 79)
 * *.u.safelinkview.com
 * 94lauin.com
 * ani-share.com
 * ani-short.info
+* animeforce.stream
 * animeindo.me
 * anjay.info
 * apasih.pw
