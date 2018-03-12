@@ -1,9 +1,10 @@
 ## v0.2.8
 (??-Mar-2018)
-* **Added 6 supported links:**
+* **Added 7 supported links:**
   * animeindo.me
   * autokit.co
   * catcut.net
+  * gocoo.co
   * mylink.zone
   * sehatlega.com
   * seputargratis.com
