@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LinksBypasser
 // @namespace    https://github.com/yasawibu/linksbypasser
-// @version      0.2.7
+// @version      0.2.8
 // @description  Decrease your wasting time on short links
 // @author       Putu Ardi Dharmayasa
 // @supportURL   https://github.com/yasawibu/linksbypasser/issues
@@ -92,7 +92,18 @@
         /^(?:\w+\.)?(autolinkach\.com)/,
         /^(?:\w+\.)?(eigamou\.win)/,
         /^(?:\w+\.)?(linx\.cloud)/,
-        /^(?:\w+\.)?(soralink\.sinetronku\.tv)/
+        /^(?:\w+\.)?(soralink\.sinetronku\.tv)/,
+        /^(?:\w+\.)?(sehatlega\.com)/,
+        /^(?:\w+\.)?(seputargratis\.com)/,
+        /^(?:\w+\.)?(animeindo\.me)/,
+        /^(?:\w+\.)?(autokit\.co)/,
+        /^(?:\w+\.)?(mylink\.zone)/,
+        /^(?:\w+\.)?(catcut\.net)/,
+        /^(?:\w+\.)?(gocoo\.co)/,
+        /^(?:\w+\.)?(animeforce\.stream)/,
+        /^(?:\w+\.)?(aw-games\.net)/,
+        /^(?:\w+\.)?(links\.fiuxy\.bz)/,
+        /^(?:\w+\.)?(iiv\.pl)/,
     ];
 
     // check the link.
@@ -240,6 +251,110 @@
     function bypassLink(host) {
         window.document.title = 'LinksBypasser - Wait a moment...';
         switch (host) {
+            case 'iiv.pl':
+                {
+                    let customPOST = function(url, data) {
+                        return new Promise((resolve, reject) => {
+                            const xhr = new XMLHttpRequest();
+                            xhr.open('POST', url, true);
+                            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                            xhr.setRequestHeader('X-OCTOBER-REQUEST-HANDLER', 'onAfterShortcutView');
+                            xhr.setRequestHeader('X-OCTOBER-REQUEST-PARTIALS', 'shortcut/link_show');
+                            xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+                            xhr.onload = function () {
+                                resolve(this.responseText);
+                            };
+                            xhr.send(data);
+                        });
+                    };
+
+                    window.document.addEventListener('DOMContentLoaded', function() {
+                        window.stop();
+                        const url = window.location.pathname;
+                        const salt = selectElement('#counting').getAttribute('data-salt');
+                        const data = '&salt=' + salt + '&blocker=0';
+                        console.log(data);
+                        customPOST(url, data).then((respone) => {
+                            respone = JSON.stringify(respone);
+                            let url = respone.replace(/\\/g, '');
+                            url = url.match(/<a href="([^"]+)/);
+                            openLink(url[1]);
+                        });
+                    });
+                    return;
+                }
+
+            case 'links.fiuxy.bz':
+                {
+                    let url = getUrl(/\?([^#]+)/);
+                    openLink(url);
+                    return;
+                }
+
+            case 'animeforce.stream':
+                {
+                    let url = getUrl(/l=([^#]+)/);
+                    if (url) {
+                        url = b64(url);
+                        openLink(url);
+                    } else {
+                        window.document.addEventListener('DOMContentLoaded', function() {
+                            window.stop();
+                            url = getScriptValue(/\("skip"\).innerHTML = '<a href="([^"]+)/);
+                            openLink(url);
+                        });
+                    }
+                    return;
+                }
+
+
+            case 'gocoo.co':
+                window.document.addEventListener('DOMContentLoaded', function() {
+                    window.stop();
+                    let cookie = decodeURIComponent(window.document.cookie);
+                    let url = cookie.match(/"route":"([^"]+)/);
+                    url = url[1].replace(/\\/g, '');
+                    openLink(url);
+                });
+                return;
+
+            case 'catcut.net':
+                window.document.addEventListener('DOMContentLoaded', function() {
+                    window.stop();
+                    let url = getScriptValue(/var go_url = decodeURIComponent\('([^']+)/);
+                    url = decodeURIComponent(url);
+                    url = url.match(/a=([^&]+)/);
+                    url = b64(url[1]);
+                    openLink(url);
+                });
+                return;
+
+            case 'mylink.zone':
+                window.document.addEventListener('DOMContentLoaded', function() {
+                    window.stop();
+                    let url = getScriptValue(/txt = '<b><a href="([^"]+)/);
+                    url = decodeURIComponent(url);
+                    url = url.match(/url=([^&]+)/);
+                    openLink(url[1]);
+                });
+                return;
+
+            case 'autokit.co':
+                window.document.addEventListener('DOMContentLoaded', function() {
+                    window.stop();
+                    let url = getUrl('a#linko.golink');
+                    openLink(url);
+                });
+                return;
+
+            case 'sehatlega.com':
+                {
+                    let url = getUrl(/\lanjut=([^#]+)/);
+                    url = b64(url);
+                    openLink(url);
+                    return;
+                }
+
             case 'linx.cloud':
                 window.document.addEventListener('DOMContentLoaded', function() {
                     window.stop();
@@ -432,6 +547,7 @@
                 return;
 
             case '94lauin.com':
+            case 'aw-games.net':
                 window.document.addEventListener('DOMContentLoaded', function() {
                     window.stop();
                     let url = getScriptValue(/;window\.location="([^"]+)"/);
@@ -443,6 +559,7 @@
             case 'kuhaku.cf':
             case 'lewatilink.us':
             case 'malaysurance.com':
+            case 'seputargratis.com':
             case 'wptech.ga':
                 {
                     let url = getUrl(/\?([^#]+)/);
@@ -504,6 +621,7 @@
                 return;
 
             case 'ani-short.info':
+            case 'animeindo.me':
             case 'bagisoft.net':
             case 'bkshort.info':
             case 'fmlawkers.club':
