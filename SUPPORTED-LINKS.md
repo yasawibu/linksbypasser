@@ -1,5 +1,5 @@
 # Supported Links
-(total: 81)
+(total: 82)
 * *.u.safelinkview.com
 * 94lauin.com
 * ani-share.com
@@ -32,6 +32,7 @@
 * gomentod.com
 * healthtod.com
 * hunstulovers.net
+* iiv.pl
 * indexmovie.biz
 * inlink.co
 * intercelestial.com
