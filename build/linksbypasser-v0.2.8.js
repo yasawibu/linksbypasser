@@ -98,7 +98,8 @@
         /^(?:\w+\.)?(animeindo\.me)/,
         /^(?:\w+\.)?(autokit\.co)/,
         /^(?:\w+\.)?(mylink\.zone)/,
-        /^(?:\w+\.)?(catcut\.net)/
+        /^(?:\w+\.)?(catcut\.net)/,
+        /^(?:\w+\.)?(gocoo\.co)/
     ];
 
     // check the link.
@@ -246,6 +247,16 @@
     function bypassLink(host) {
         window.document.title = 'LinksBypasser - Wait a moment...';
         switch (host) {
+            case 'gocoo.co':
+                window.document.addEventListener('DOMContentLoaded', function() {
+                    window.stop();
+                    let cookie = decodeURIComponent(window.document.cookie);
+                    let url = cookie.match(/"route":"([^"]+)/);
+                    url = url[1].replace(/\\/g, '');
+                    openLink(url);
+                });
+                return;
+
             case 'catcut.net':
                 window.document.addEventListener('DOMContentLoaded', function() {
                     window.stop();
