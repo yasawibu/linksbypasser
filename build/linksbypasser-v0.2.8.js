@@ -102,7 +102,8 @@
         /^(?:\w+\.)?(gocoo\.co)/,
         /^(?:\w+\.)?(animeforce\.stream)/,
         /^(?:\w+\.)?(aw-games\.net)/,
-        /^(?:\w+\.)?(links\.fiuxy\.bz)/
+        /^(?:\w+\.)?(links\.fiuxy\.bz)/,
+        /^(?:\w+\.)?(iiv\.pl)/,
     ];
 
     // check the link.
@@ -250,6 +251,39 @@
     function bypassLink(host) {
         window.document.title = 'LinksBypasser - Wait a moment...';
         switch (host) {
+            case 'iiv.pl':
+                {
+                    let customPOST = function(url, data) {
+                        return new Promise((resolve, reject) => {
+                            const xhr = new XMLHttpRequest();
+                            xhr.open('POST', url, true);
+                            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                            xhr.setRequestHeader('X-OCTOBER-REQUEST-HANDLER', 'onAfterShortcutView');
+                            xhr.setRequestHeader('X-OCTOBER-REQUEST-PARTIALS', 'shortcut/link_show');
+                            xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+                            xhr.onload = function () {
+                                resolve(this.responseText);
+                            };
+                            xhr.send(data);
+                        });
+                    };
+
+                    window.document.addEventListener('DOMContentLoaded', function() {
+                        window.stop();
+                        const url = window.location.pathname;
+                        const salt = selectElement('#counting').getAttribute('data-salt');
+                        const data = '&salt=' + salt + '&blocker=0';
+                        console.log(data);
+                        customPOST(url, data).then((respone) => {
+                            respone = JSON.stringify(respone);
+                            let url = respone.replace(/\\/g, '');
+                            url = url.match(/<a href="([^"]+)/);
+                            openLink(url[1]);
+                        });
+                    });
+                    return;
+                }
+
             case 'links.fiuxy.bz':
                 {
                     let url = getUrl(/\?([^#]+)/);
