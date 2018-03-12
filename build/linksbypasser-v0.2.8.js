@@ -100,7 +100,9 @@
         /^(?:\w+\.)?(mylink\.zone)/,
         /^(?:\w+\.)?(catcut\.net)/,
         /^(?:\w+\.)?(gocoo\.co)/,
-        /^(?:\w+\.)?(animeforce\.stream)/
+        /^(?:\w+\.)?(animeforce\.stream)/,
+        /^(?:\w+\.)?(aw-games\.net)/,
+        /^(?:\w+\.)?(links\.fiuxy\.bz)/
     ];
 
     // check the link.
@@ -248,6 +250,13 @@
     function bypassLink(host) {
         window.document.title = 'LinksBypasser - Wait a moment...';
         switch (host) {
+            case 'links.fiuxy.bz':
+                {
+                    let url = getUrl(/\?([^#]+)/);
+                    openLink(url);
+                    return;
+                }
+
             case 'animeforce.stream':
                 {
                     let url = getUrl(/l=([^#]+)/);
@@ -504,6 +513,7 @@
                 return;
 
             case '94lauin.com':
+            case 'aw-games.net':
                 window.document.addEventListener('DOMContentLoaded', function() {
                     window.stop();
                     let url = getScriptValue(/;window\.location="([^"]+)"/);
