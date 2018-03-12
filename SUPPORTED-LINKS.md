@@ -1,5 +1,5 @@
 # Supported Links
-(total: 79)
+(total: 80)
 * *.u.safelinkview.com
 * 94lauin.com
 * ani-share.com
@@ -10,6 +10,7 @@
 * apasih.pw
 * autokit.co
 * autolinkach.com
+* aw-games.net
 * awsubsco.ga
 * bagilagi.com
 * bagisoft.net
