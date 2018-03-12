@@ -99,7 +99,8 @@
         /^(?:\w+\.)?(autokit\.co)/,
         /^(?:\w+\.)?(mylink\.zone)/,
         /^(?:\w+\.)?(catcut\.net)/,
-        /^(?:\w+\.)?(gocoo\.co)/
+        /^(?:\w+\.)?(gocoo\.co)/,
+        /^(?:\w+\.)?(animeforce\.stream)/
     ];
 
     // check the link.
@@ -247,6 +248,23 @@
     function bypassLink(host) {
         window.document.title = 'LinksBypasser - Wait a moment...';
         switch (host) {
+            case 'animeforce.stream':
+                {
+                    let url = getUrl(/l=([^#]+)/);
+                    if (url) {
+                        url = b64(url);
+                        openLink(url);
+                    } else {
+                        window.document.addEventListener('DOMContentLoaded', function() {
+                            window.stop();
+                            url = getScriptValue(/\("skip"\).innerHTML = '<a href="([^"]+)/);
+                            openLink(url);
+                        });
+                    }
+                    return;
+                }
+
+
             case 'gocoo.co':
                 window.document.addEventListener('DOMContentLoaded', function() {
                     window.stop();
