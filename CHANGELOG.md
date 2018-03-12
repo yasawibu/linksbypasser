@@ -1,6 +1,7 @@
 ## v0.2.8
 (??-Mar-2018)
-* **Added 7 supported links:**
+* **Added 8 supported links:**
+  * animeforce.stream
   * animeindo.me
   * autokit.co
   * catcut.net
