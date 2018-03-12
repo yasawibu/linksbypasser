@@ -1,3 +1,18 @@
+## v0.2.8
+(12-Mar-2018)
+* **Added 11 supported links:**
+  * animeforce.stream
+  * animeindo.me
+  * autokit.co
+  * aw-games.net
+  * catcut.net
+  * gocoo.co
+  * iiv.pl
+  * links.fiuxy.bz
+  * mylink.zone
+  * sehatlega.com
+  * seputargratis.com
+
 ## v0.2.7
 (10-Mar-2018)
 * **Added 4 supported links:**

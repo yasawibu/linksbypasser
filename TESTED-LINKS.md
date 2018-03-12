@@ -13,3 +13,14 @@
 13. http://www.eigamou.win/p/generate.html?url=aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj05eFRFMUFwV2kwMA==
 14. https://linx.cloud/supergirl-s03e02-triggers-720p-webrip-2ch-x265-hevc-psa-85425/
 15. http://soralink.sinetronku.tv/hosting-your-own-web-server-things-to-consider/?d=aHR0cHM6Ly9hY2VmaWxlLmNvL2YvMTQwNzAxNg==#landing
+16. http://sehatlega.com/manfaat-ikan-tuna-bagi-kesehatan/?lanjut=aHR0cDovL3d3dzEzLnppcHB5c2hhcmUuY29tL3YvSGpmU0hRd0cvZmlsZS5odG1s#
+17. http://seputargratis.com/acid-and-alkaline-foods-in-the-ph-miracle-diet/?aHR0cHM6Ly9hY2VmaWxlLmNvL2YvNzU0NzYxL3J5dXVrb2ktYmxlbmRzLTcyMHAtcmFy#downloadHehe
+18. http://animeindo.me/?site=aHR0cDovL2Rpc2tva29zbWlrby5teC9EQkFUQ0gwMi9hYmNkLTkxODAyL2RiYXRjaC1rdXJvLXNoaXQtc3VqaS1ib2MtYmQtNzIwcCwxNjIwMTU4LGxpc3QsMSwyLnJhcg==&c=0&user=
+19. http://autokit.co/volkswagen-passat-gt-concept-applies-gti-look-to-vws-mid-size-sedan/?page=MWdDUUpsS1NQdmcxQ0RNMzVyc2tRV3ZJeHZadTcyd3N2NUZ6YnJPYTdNa2MvVyt6MGdYSW1TY2dLNWtld24vWUluOUtldFJPZnUwakJHL0lOdDJsd1E9PQ==
+20. http://mylink.zone/4U9K
+21. http://catcut.net/NkCc#
+22. http://gocoo.co/5a01b7b1c19a1
+23. http://animeforce.stream/?l=aHR0cDovL3d3dy51bmx1Y2t5cGVvcGxlLm9yZy9EREwvQU5JTUUvSGltb3V0b1VtYXJ1LWNoYW5SL0hpbW91dG9VbWFydS1jaGFuUl9FcF8wMV9TVUJfSVRBLm1wNA==
+24. http://aw-games.net/MiJoa
+25. https://links.fiuxy.bz/?https://www.file-upload.cc/c7xvpnmvqer9
+26. http://iiv.pl/sUfQs
