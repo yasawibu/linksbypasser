@@ -1,5 +1,5 @@
 # Supported Links
-(total: 77)
+(total: 78)
 * *.u.safelinkview.com
 * 94lauin.com
 * ani-share.com
@@ -26,6 +26,7 @@
 * filmku21.website
 * fmlawkers.club
 * getinfos.net
+* gocoo.co
 * gomentod.com
 * healthtod.com
 * hunstulovers.net
