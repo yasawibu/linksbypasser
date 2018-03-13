@@ -105,7 +105,8 @@
         /^(?:\w+\.)?(links\.fiuxy\.bz)/,
         /^(?:\w+\.)?(iiv\.pl)/,
         /^(?:\w+\.)?(shortad\.cf)/,
-        /^(?:\w+\.)?(goandroid\.cf)/
+        /^(?:\w+\.)?(goandroid\.cf)/,
+        /^(?:\w+\.)?(gigapurbalinggaa\.ga)/
     ];
 
     // check the link.
@@ -500,6 +501,7 @@
                 return;
 
             case 'awsubsco.ga':
+            case 'gigapurbalinggaa.ga':
             case 'safelinkreviewz.com':
                 window.document.addEventListener('DOMContentLoaded', function() {
                     window.stop();
