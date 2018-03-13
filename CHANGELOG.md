@@ -1,6 +1,7 @@
 ## v0.2.9
 (??-Mar-2018)
-* **Added 2 supported links:**
+* **Added 3 supported links:**
+  * gigapurbalinggaa.ga
   * goandroid.cf
   * shortad.cf
 
