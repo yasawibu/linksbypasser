@@ -25,3 +25,4 @@
 25. https://links.fiuxy.bz/?https://www.file-upload.cc/c7xvpnmvqer9
 26. http://iiv.pl/sUfQs
 27. http://shortad.cf/1qXf
+28. http://goandroid.cf/reasons-to-buy-your-own-health-insurance-cover-right-now/?aHR0cHM6Ly93d3cuc2loZXJwLmNvbS9BeXl1dg==
