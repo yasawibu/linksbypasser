@@ -5,15 +5,21 @@
 1. Install [Tampermonkey] on Google Chrome or Install [Greasemonkey] on Firefox
 2. Install [LinksBypasser]
 
+See [how-to-install-video] for the details (Google Chrome only).
+
 [Tampermonkey]: https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo
 [Greasemonkey]: https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/
 [LinksBypasser]: https://yasawibu.github.io/linksbypasser/release/linksbypasser.user.js
+[how-to-install-video]: https://youtu.be/MN9RxTCaOj4
 
 ## Testing
 1. Open link in [TESTED-LINKS.md]
 2. Wait until redirected to the real url
 
+See [how-to-use-video] for the details.
+
 [TESTED-LINKS.md]: https://github.com/yasawibu/linksbypasser/blob/master/TESTED-LINKS.md
+[how-to-use-video]: https://youtu.be/q2MwXX9SUWY
 
 ## Features
 This userscript **CAN** bypass many short links that require:
