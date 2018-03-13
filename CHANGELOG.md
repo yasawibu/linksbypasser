@@ -1,6 +1,9 @@
 ## v0.2.9
 (??-Mar-2018)
-* **Added 4 supported links:**
+* **Improved 1 supported links:**
+  * *.u.safelinkview.com
+* **Added 5 supported links:**
+  * decrypt2.safelinkconverter.com
   * gigapurbalinggaa.ga
   * goandroid.cf
   * jili.in
