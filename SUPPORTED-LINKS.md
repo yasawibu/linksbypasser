@@ -1,5 +1,5 @@
 # Supported Links
-(total: 86)
+(total: 87)
 * *.u.safelinkview.com
 * 94lauin.com
 * ani-share.com
@@ -19,6 +19,7 @@
 * catcut.net
 * coeg.in
 * dcindo.com
+* decrypt2.safelinkconverter.com
 * delekke.com
 * designmyhomee.com
 * dilanjut.in
