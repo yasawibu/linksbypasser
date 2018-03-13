@@ -108,7 +108,8 @@
         /^(?:\w+\.)?(goandroid\.cf)/,
         /^(?:\w+\.)?(gigapurbalinggaa\.ga)/,
         /^(?:\w+\.)?(jili\.in)/,
-        /^(?:\w+\.)?(decrypt2\.safelinkconverter\.com)/
+        /^(?:\w+\.)?(decrypt2\.safelinkconverter\.com)/,
+        /^(?:\w+\.)?(sukamovie\.lompat\.in)/
     ];
 
     // check the link.
@@ -463,6 +464,7 @@
                 }
 
             case 'st.tontonanime.win':
+            case 'sukamovie.lompat.in':
             case 'zonawibu.bid':
                 {
                     let url = getUrl(/go=([^#]+)/);
