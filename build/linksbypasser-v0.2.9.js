@@ -106,7 +106,8 @@
         /^(?:\w+\.)?(iiv\.pl)/,
         /^(?:\w+\.)?(shortad\.cf)/,
         /^(?:\w+\.)?(goandroid\.cf)/,
-        /^(?:\w+\.)?(gigapurbalinggaa\.ga)/
+        /^(?:\w+\.)?(gigapurbalinggaa\.ga)/,
+        /^(?:\w+\.)?(jili\.in)/
     ];
 
     // check the link.
@@ -254,6 +255,14 @@
     function bypassLink(host) {
         window.document.title = 'LinksBypasser - Wait a moment...';
         switch (host) {
+            case 'jili.in':
+                window.document.addEventListener('DOMContentLoaded', function() {
+                    window.stop();
+                    let url = getUrl('a.btn-primary');
+                    openLink(url);
+                });
+                return;
+
             case 'iiv.pl':
                 {
                     let customPOST = function(url, data) {
