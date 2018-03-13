@@ -1,5 +1,5 @@
 # Supported Links
-(total: 85)
+(total: 86)
 * *.u.safelinkview.com
 * 94lauin.com
 * ani-share.com
@@ -38,6 +38,7 @@
 * indexmovie.biz
 * inlink.co
 * intercelestial.com
+* jili.in
 * karung.in
 * kuhaku.cf
 * kurosafe.club
