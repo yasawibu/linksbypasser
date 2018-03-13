@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LinksBypasser
 // @namespace    https://github.com/yasawibu/linksbypasser
-// @version      0.2.8
+// @version      0.2.9
 // @description  Decrease your wasting time on short links
 // @author       Putu Ardi Dharmayasa
 // @supportURL   https://github.com/yasawibu/linksbypasser/issues
@@ -104,7 +104,8 @@
         /^(?:\w+\.)?(aw-games\.net)/,
         /^(?:\w+\.)?(links\.fiuxy\.bz)/,
         /^(?:\w+\.)?(iiv\.pl)/,
-        /^(?:\w+\.)?(shortad\.cf)/
+        /^(?:\w+\.)?(shortad\.cf)/,
+        /^(?:\w+\.)?(goandroid\.cf)/
     ];
 
     // check the link.
@@ -558,6 +559,7 @@
                 return;
 
             case 'delekke.com':
+            case 'goandroid.cf':
             case 'kuhaku.cf':
             case 'lewatilink.us':
             case 'malaysurance.com':
