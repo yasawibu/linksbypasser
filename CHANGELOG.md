@@ -1,6 +1,7 @@
 ## v0.2.9
 (??-Mar-2018)
-* **Added 1 supported links:**
+* **Added 2 supported links:**
+  * goandroid.cf
   * shortad.cf
 
 ## v0.2.8
