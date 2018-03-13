@@ -9,7 +9,7 @@ Check [this-video] for the demo.
 1. Install [Tampermonkey] on Google Chrome or Install [Greasemonkey] on Firefox
 2. Install [LinksBypasser]
 
-See [how-to-install-video] for the details (Google Chrome only).
+Check [how-to-install-video] for the details (Google Chrome only).
 
 [Tampermonkey]: https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo
 [Greasemonkey]: https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/
