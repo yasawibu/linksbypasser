@@ -107,7 +107,8 @@
         /^(?:\w+\.)?(shortad\.cf)/,
         /^(?:\w+\.)?(goandroid\.cf)/,
         /^(?:\w+\.)?(gigapurbalinggaa\.ga)/,
-        /^(?:\w+\.)?(jili\.in)/
+        /^(?:\w+\.)?(jili\.in)/,
+        /^(?:\w+\.)?(decrypt2\.safelinkconverter\.com)/
     ];
 
     // check the link.
@@ -255,6 +256,22 @@
     function bypassLink(host) {
         window.document.title = 'LinksBypasser - Wait a moment...';
         switch (host) {
+            case 'decrypt2.safelinkconverter.com':
+                window.document.addEventListener('DOMContentLoaded', function() {
+                    window.stop();
+                    let url = selectElement('.redirect_url div').getAttribute('onclick').match(/window.open\('([^']+)/)[1];
+                    openLink(url);
+                });
+                return;
+
+
+            case 'u.safelinkview.com':
+                {
+                    let url = 'https://decrypt2.safelinkconverter.com/index.php?id=' + getUrl(/id=(.+)/);
+                    openLink(url);
+                    return;
+                }
+
             case 'jili.in':
                 window.document.addEventListener('DOMContentLoaded', function() {
                     window.stop();
@@ -601,7 +618,6 @@
 
             case 'dcindo.com':
             case 'newterusin.ga':
-            case 'u.safelinkview.com':
             case 'yametesenpai.xyz':
                 {
                     let url = getUrl(/id=([^&]+)/);
