@@ -1,5 +1,5 @@
 # Supported Links
-(total: 82)
+(total: 83)
 * *.u.safelinkview.com
 * 94lauin.com
 * ani-share.com
@@ -64,6 +64,7 @@
 * seputargratis.com
 * short.anidesu.net
 * short.awsubs.co
+* shortad.cf
 * shtme.co
 * siherp.com
 * siotong.com
