@@ -1,3 +1,8 @@
+## v0.2.9
+(??-Mar-2018)
+* **Added 1 supported links:**
+  * shortad.cf
+
 ## v0.2.8
 (12-Mar-2018)
 * **Added 11 supported links:**
