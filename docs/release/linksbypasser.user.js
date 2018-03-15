@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LinksBypasser
 // @namespace    https://github.com/yasawibu/linksbypasser
-// @version      0.2.8
+// @version      0.2.9
 // @description  Decrease your wasting time on short links
 // @author       Putu Ardi Dharmayasa
 // @supportURL   https://github.com/yasawibu/linksbypasser/issues
@@ -104,6 +104,12 @@
         /^(?:\w+\.)?(aw-games\.net)/,
         /^(?:\w+\.)?(links\.fiuxy\.bz)/,
         /^(?:\w+\.)?(iiv\.pl)/,
+        /^(?:\w+\.)?(shortad\.cf)/,
+        /^(?:\w+\.)?(goandroid\.cf)/,
+        /^(?:\w+\.)?(gigapurbalinggaa\.ga)/,
+        /^(?:\w+\.)?(jili\.in)/,
+        /^(?:\w+\.)?(decrypt2\.safelinkconverter\.com)/,
+        /^(?:\w+\.)?(sukamovie\.lompat\.in)/
     ];
 
     // check the link.
@@ -251,6 +257,30 @@
     function bypassLink(host) {
         window.document.title = 'LinksBypasser - Wait a moment...';
         switch (host) {
+            case 'decrypt2.safelinkconverter.com':
+                window.document.addEventListener('DOMContentLoaded', function() {
+                    window.stop();
+                    let url = selectElement('.redirect_url div').getAttribute('onclick').match(/window.open\('([^']+)/)[1];
+                    openLink(url);
+                });
+                return;
+
+
+            case 'u.safelinkview.com':
+                {
+                    let url = 'https://decrypt2.safelinkconverter.com/index.php?id=' + getUrl(/id=(.+)/);
+                    openLink(url);
+                    return;
+                }
+
+            case 'jili.in':
+                window.document.addEventListener('DOMContentLoaded', function() {
+                    window.stop();
+                    let url = getUrl('a.btn-primary');
+                    openLink(url);
+                });
+                return;
+
             case 'iiv.pl':
                 {
                     let customPOST = function(url, data) {
@@ -434,6 +464,7 @@
                 }
 
             case 'st.tontonanime.win':
+            case 'sukamovie.lompat.in':
             case 'zonawibu.bid':
                 {
                     let url = getUrl(/go=([^#]+)/);
@@ -472,6 +503,7 @@
                 }
 
             case 'inlink.co':
+            case 'shortad.cf':
                 window.document.addEventListener('DOMContentLoaded', function() {
                     window.stop();
                     let form = selectElement('#go-link');
@@ -497,6 +529,7 @@
                 return;
 
             case 'awsubsco.ga':
+            case 'gigapurbalinggaa.ga':
             case 'safelinkreviewz.com':
                 window.document.addEventListener('DOMContentLoaded', function() {
                     window.stop();
@@ -556,6 +589,7 @@
                 return;
 
             case 'delekke.com':
+            case 'goandroid.cf':
             case 'kuhaku.cf':
             case 'lewatilink.us':
             case 'malaysurance.com':
@@ -586,7 +620,6 @@
 
             case 'dcindo.com':
             case 'newterusin.ga':
-            case 'u.safelinkview.com':
             case 'yametesenpai.xyz':
                 {
                     let url = getUrl(/id=([^&]+)/);
