@@ -1,5 +1,5 @@
 # Supported Links
-(total: 82)
+(total: 88)
 * *.u.safelinkview.com
 * 94lauin.com
 * ani-share.com
@@ -19,6 +19,7 @@
 * catcut.net
 * coeg.in
 * dcindo.com
+* decrypt2.safelinkconverter.com
 * delekke.com
 * designmyhomee.com
 * dilanjut.in
@@ -28,6 +29,8 @@
 * filmku21.website
 * fmlawkers.club
 * getinfos.net
+* gigapurbalinggaa.ga
+* goandroid.cf
 * gocoo.co
 * gomentod.com
 * healthtod.com
@@ -36,6 +39,7 @@
 * indexmovie.biz
 * inlink.co
 * intercelestial.com
+* jili.in
 * karung.in
 * kuhaku.cf
 * kurosafe.club
@@ -64,6 +68,7 @@
 * seputargratis.com
 * short.anidesu.net
 * short.awsubs.co
+* shortad.cf
 * shtme.co
 * siherp.com
 * siotong.com
@@ -71,6 +76,7 @@
 * soralink.sinetronku.tv
 * spacetica.com
 * st.tontonanime.win
+* sukamovie.lompat.in
 * sweetlantern.com
 * t4ank.top
 * telondasmu.com

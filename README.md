@@ -1,13 +1,20 @@
 # LinksBypasser
-"Decrease your wasting time on short links."
+&nbsp;&nbsp;&nbsp;"Decrease your wasting time on short links."
+
+Check [this-video] for the demo.
+
+[this-video]: https://youtu.be/3Wtp0XrxfNY
 
 ## Installation
 1. Install [Tampermonkey] on Google Chrome or Install [Greasemonkey] on Firefox
 2. Install [LinksBypasser]
 
+Check [how-to-install-video] for the details (Google Chrome only).
+
 [Tampermonkey]: https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo
 [Greasemonkey]: https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/
 [LinksBypasser]: https://yasawibu.github.io/linksbypasser/release/linksbypasser.user.js
+[how-to-install-video]: https://youtu.be/kyQBsT8WrPU
 
 ## Testing
 1. Open link in [TESTED-LINKS.md]
@@ -24,16 +31,17 @@ This userscript **CANNOT** bypass short links that require:
 * solving recaptcha to continue
 
 ## Supported Links
-Total: 82 links. See [SUPPORTED-LINKS.md] for the details.
+Total: 88 links. See [SUPPORTED-LINKS.md] for the details.
 
 [SUPPORTED-LINKS.md]: https://github.com/yasawibu/linksbypasser/blob/master/SUPPORTED-LINKS.md
 
 ## Change Log
+**v0.2.9** (15-Mar-2018)
+* Improved 1 supported links
+* Added 6 supported links
+
 **v0.2.8** (12-Mar-2018)
 * Added 11 supported links
-
-**v0.2.7** (10-Mar-2018)
-* Added 4 supported links
 
 See [CHANGELOG.md] for the details.
 

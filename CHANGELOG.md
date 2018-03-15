@@ -1,3 +1,15 @@
+## v0.2.9
+(15-Mar-2018)
+* **Improved 1 supported links:**
+  * *.u.safelinkview.com
+* **Added 6 supported links:**
+  * decrypt2.safelinkconverter.com
+  * gigapurbalinggaa.ga
+  * goandroid.cf
+  * jili.in
+  * shortad.cf
+  * sukamovie.lompat.in
+
 ## v0.2.8
 (12-Mar-2018)
 * **Added 11 supported links:**
