@@ -36,7 +36,7 @@ Total: 88 links. See [SUPPORTED-LINKS.md] for the details.
 [SUPPORTED-LINKS.md]: https://github.com/yasawibu/linksbypasser/blob/master/SUPPORTED-LINKS.md
 
 ## Change Log
-**v0.2.9** (??-Mar-2018)
+**v0.2.9** (15-Mar-2018)
 * Improved 1 supported links
 * Added 6 supported links
 
