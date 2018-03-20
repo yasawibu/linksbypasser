@@ -49,6 +49,7 @@
 * lifesurance.com
 * lindung.in
 * link.shirogaze.tk
+* linkk.bid
 * linkpoi.in
 * links.fiuxy.bz
 * linkshrink.net
