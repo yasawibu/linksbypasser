@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LinksBypasser
 // @namespace    https://github.com/yasawibu/linksbypasser
-// @version      0.2.9
+// @version      0.3.0
 // @description  Decrease your wasting time on short links
 // @author       Putu Ardi Dharmayasa
 // @supportURL   https://github.com/yasawibu/linksbypasser/issues
@@ -109,7 +109,10 @@
         /^(?:\w+\.)?(gigapurbalinggaa\.ga)/,
         /^(?:\w+\.)?(jili\.in)/,
         /^(?:\w+\.)?(decrypt2\.safelinkconverter\.com)/,
-        /^(?:\w+\.)?(sukamovie\.lompat\.in)/
+        /^(?:\w+\.)?(sukamovie\.lompat\.in)/,
+        /^(?:\w+\.)?(linkk\.bid)/,
+        /^(?:\w+\.)?(ngelanjutkeun\.blogspot\.(com|co\.id))/,
+        /^(?:\w+\.)?(telolet\.in)/
     ];
 
     // check the link.
@@ -257,6 +260,16 @@
     function bypassLink(host) {
         window.document.title = 'LinksBypasser - Wait a moment...';
         switch (host) {
+            case 'ngelanjutkeun.blogspot.co.id':
+            case 'ngelanjutkeun.blogspot.com':
+                {
+                    let url = getUrl(/url=([^&]+)/);
+                    url = url.slice(0, -1);
+                    url = b64(url);
+                    openLink(url);
+                    return;
+                }
+
             case 'decrypt2.safelinkconverter.com':
                 window.document.addEventListener('DOMContentLoaded', function() {
                     window.stop();
@@ -393,6 +406,7 @@
                 });
                 return;
 
+            case 'linkk.bid':
             case 'safelinku.net':
                 window.document.addEventListener('DOMContentLoaded', function() {
                     window.stop();
@@ -465,6 +479,7 @@
 
             case 'st.tontonanime.win':
             case 'sukamovie.lompat.in':
+            case 'telolet.in':
             case 'zonawibu.bid':
                 {
                     let url = getUrl(/go=([^#]+)/);
