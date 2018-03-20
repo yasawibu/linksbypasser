@@ -1,5 +1,5 @@
 # Supported Links
-(total: 88)
+(total: 91)
 * *.u.safelinkview.com
 * 94lauin.com
 * ani-share.com
@@ -49,6 +49,7 @@
 * lifesurance.com
 * lindung.in
 * link.shirogaze.tk
+* linkk.bid
 * linkpoi.in
 * links.fiuxy.bz
 * linkshrink.net
@@ -59,6 +60,7 @@
 * mylink.zone
 * nasanimelink.blogspot.co.id
 * newterusin.ga
+* ngelanjutkeun.blogspot.com
 * nimekaze.me
 * otololet.com
 * plantaheim.web.id
@@ -79,6 +81,7 @@
 * sukamovie.lompat.in
 * sweetlantern.com
 * t4ank.top
+* telolet.in
 * telondasmu.com
 * tojros.tk
 * verydelicius.com

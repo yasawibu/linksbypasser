@@ -1,3 +1,10 @@
+## v0.3.0
+(20-Mar-2018)
+* **Added 3 supported links:**
+  * linkk.bid
+  * ngelanjutkeun.blogspot.com
+  * telolet.in
+
 ## v0.2.9
 (15-Mar-2018)
 * **Improved 1 supported links:**
