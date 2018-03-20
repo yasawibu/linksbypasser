@@ -32,3 +32,4 @@
 32. https://decrypt2.safelinkconverter.com/index.php?id=aHR0cDovL2tiIWdfLmMobS95IWsoYnMvcyEpbiFfLWgpcihfbiktbigtcyhkIXQpayF0IS1mbCF0LTYyNDkzMw==&c=1&user=42415
 33. http://sukamovie.lompat.in/?go=aHR0cHM6Ly9vbG9hZC5zdHJlYW0vZi91enpHYzZObjl2QS9Qb3Nlc2lmX1dFQi1ETF80ODBwX2Ztb3ZpZXoub3JnLm1rdg==
 34. http://linkk.bid/zyCJp7
+35. https://ngelanjutkeun.blogspot.com/p/golink.html?url=aHR0cHM6Ly9ocmVmLmxpLz9odHRwOi8vZGwua2FtdXNpY3MuY29tL2FkYmUvRHJlYW13ZWF2ZXIyMDE4eDY0LjE4LjEuMC4xMDE1NS5rdXloQWEuTWUuN3o==
