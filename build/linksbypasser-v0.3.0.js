@@ -110,7 +110,8 @@
         /^(?:\w+\.)?(jili\.in)/,
         /^(?:\w+\.)?(decrypt2\.safelinkconverter\.com)/,
         /^(?:\w+\.)?(sukamovie\.lompat\.in)/,
-        /^(?:\w+\.)?(linkk\.bid)/
+        /^(?:\w+\.)?(linkk\.bid)/,
+        /^(?:\w+\.)?(ngelanjutkeun\.blogspot\.(com|co\.id))/
     ];
 
     // check the link.
@@ -258,6 +259,16 @@
     function bypassLink(host) {
         window.document.title = 'LinksBypasser - Wait a moment...';
         switch (host) {
+            case 'ngelanjutkeun.blogspot.co.id':
+            case 'ngelanjutkeun.blogspot.com':
+                {
+                    let url = getUrl(/url=([^&]+)/);
+                    url = url.slice(0, -1);
+                    url = b64(url);
+                    openLink(url);
+                    return;
+                }
+
             case 'decrypt2.safelinkconverter.com':
                 window.document.addEventListener('DOMContentLoaded', function() {
                     window.stop();
