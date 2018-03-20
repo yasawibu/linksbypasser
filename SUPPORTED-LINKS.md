@@ -60,6 +60,7 @@
 * mylink.zone
 * nasanimelink.blogspot.co.id
 * newterusin.ga
+* ngelanjutkeun.blogspot.com
 * nimekaze.me
 * otololet.com
 * plantaheim.web.id
