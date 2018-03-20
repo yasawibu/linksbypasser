@@ -111,7 +111,8 @@
         /^(?:\w+\.)?(decrypt2\.safelinkconverter\.com)/,
         /^(?:\w+\.)?(sukamovie\.lompat\.in)/,
         /^(?:\w+\.)?(linkk\.bid)/,
-        /^(?:\w+\.)?(ngelanjutkeun\.blogspot\.(com|co\.id))/
+        /^(?:\w+\.)?(ngelanjutkeun\.blogspot\.(com|co\.id))/,
+        /^(?:\w+\.)?(telolet\.in)/
     ];
 
     // check the link.
@@ -478,6 +479,7 @@
 
             case 'st.tontonanime.win':
             case 'sukamovie.lompat.in':
+            case 'telolet.in':
             case 'zonawibu.bid':
                 {
                     let url = getUrl(/go=([^#]+)/);
