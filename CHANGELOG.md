@@ -1,5 +1,5 @@
 ## v0.3.0
-(??-Mar-2018)
+(20-Mar-2018)
 * **Added 3 supported links:**
   * linkk.bid
   * ngelanjutkeun.blogspot.com
