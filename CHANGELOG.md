@@ -1,4 +1,4 @@
-## v0.2.8
+## v0.3.0
 (??-Mar-2018)
 * **Added 1 supported links:**
   * linkk.bid
