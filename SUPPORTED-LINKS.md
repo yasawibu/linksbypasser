@@ -1,5 +1,5 @@
 # Supported Links
-(total: 90)
+(total: 91)
 * *.u.safelinkview.com
 * 94lauin.com
 * ani-share.com
@@ -81,6 +81,7 @@
 * sukamovie.lompat.in
 * sweetlantern.com
 * t4ank.top
+* telolet.in
 * telondasmu.com
 * tojros.tk
 * verydelicius.com
