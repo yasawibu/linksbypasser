@@ -1,3 +1,8 @@
+## v0.3.1
+(??-Mar-2018)
+* **Improved 1 supported links:**
+  * safelinku.net
+
 ## v0.3.0
 (20-Mar-2018)
 * **Added 3 supported links:**
