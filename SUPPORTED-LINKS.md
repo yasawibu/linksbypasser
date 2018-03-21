@@ -65,7 +65,7 @@
 * otololet.com
 * plantaheim.web.id
 * safelinkreviewz.com
-* safelinku.net (bypass countdown only, still input recaptcha)
+* safelinku.net *(bypass countdown only, still input recaptcha)*
 * sehatlega.com
 * seputargratis.com
 * short.anidesu.net
