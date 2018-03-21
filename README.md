@@ -13,7 +13,7 @@ Check [how-to-install-video] for the details (Google Chrome only).
 
 [Tampermonkey]: https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo
 [Greasemonkey]: https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/
-[LinksBypasser]: https://yasawibu.github.io/linksbypasser/release/linksbypasser.user.js
+[LinksBypasser]: https://goo.gl/GbiMHP
 [how-to-install-video]: https://youtu.be/kyQBsT8WrPU
 
 ## Testing
