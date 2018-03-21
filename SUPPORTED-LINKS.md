@@ -1,5 +1,5 @@
 # Supported Links
-(total: 91)
+(total: 92)
 * *.u.safelinkview.com
 * 94lauin.com
 * ani-share.com
@@ -84,6 +84,7 @@
 * telolet.in
 * telondasmu.com
 * tojros.tk
+* ur.ly
 * verydelicius.com
 * wibu-san.com
 * wptech.ga
