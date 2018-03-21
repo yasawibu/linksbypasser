@@ -1,7 +1,9 @@
 ## v0.3.1
 (??-Mar-2018)
 * **Improved 1 supported links:**
-  * safelinku.net
+  * safelinku.net *(bypass countdown only, still input recaptcha)*
+* **Added 1 supported links:**
+  * ur.ly
 
 ## v0.3.0
 (20-Mar-2018)
