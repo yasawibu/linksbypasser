@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         LinksBypasser-Testing
+// @name         LinksBypasser
 // @namespace    https://github.com/yasawibu/linksbypasser
 // @version      0.3.1
 // @description  Decrease your wasting time on short links
@@ -112,7 +112,8 @@
         /^(?:\w+\.)?(sukamovie\.lompat\.in)/,
         /^(?:\w+\.)?(linkk\.bid)/,
         /^(?:\w+\.)?(ngelanjutkeun\.blogspot\.(com|co\.id))/,
-        /^(?:\w+\.)?(telolet\.in)/
+        /^(?:\w+\.)?(telolet\.in)/,
+        /^(?:\w+\.)?(ur\.ly)/
     ];
 
     // check the link.
@@ -260,6 +261,15 @@
     function bypassLink(host) {
         window.document.title = 'LinksBypasser - Wait a moment...';
         switch (host) {
+            case 'ur.ly':
+                {
+                    let path = window.location.pathname;
+                    path = path.substring(2);
+                    let url = '/goii/' + path;
+                    openLink(url);
+                    return;
+                }
+
             case 'ngelanjutkeun.blogspot.co.id':
             case 'ngelanjutkeun.blogspot.com':
                 {
@@ -316,7 +326,6 @@
                         const url = window.location.pathname;
                         const salt = selectElement('#counting').getAttribute('data-salt');
                         const data = '&salt=' + salt + '&blocker=0';
-                        console.log(data);
                         customPOST(url, data).then((respone) => {
                             respone = JSON.stringify(respone);
                             let url = respone.replace(/\\/g, '');
