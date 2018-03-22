@@ -1,5 +1,5 @@
 # Supported Links
-(total: 93)
+(total: 94)
 * *.u.safelinkview.com
 * 94lauin.com
 * ani-share.com
