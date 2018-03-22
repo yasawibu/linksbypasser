@@ -114,7 +114,8 @@
         /^(?:\w+\.)?(ngelanjutkeun\.blogspot\.(com|co\.id))/,
         /^(?:\w+\.)?(telolet\.in)/,
         /^(?:\w+\.)?(ur\.ly)/,
-        /^(?:\w+\.)?(sehatsegar\.net)/
+        /^(?:\w+\.)?(sehatsegar\.net)/,
+        /^(?:\w+\.)?(threadsphere\.bid)/
     ];
 
     // check the link.
@@ -262,6 +263,56 @@
     function bypassLink(host) {
         window.document.title = 'LinksBypasser - Wait a moment...';
         switch (host) {
+            case 'threadsphere.bid':
+                {
+                    // Make token accessible
+                    var code = `Object.defineProperty(window, 'ysmm', {configurable: true,set: function(value) {Object.defineProperty(window, 'ysmm', {value: value});}});`;
+                    var script = document.createElement('script');
+                    script.textContent = code;
+                    document.documentElement.appendChild(script);
+
+                    window.document.addEventListener('DOMContentLoaded', function() {
+                        window.stop();
+                        let token = window.ysmm;
+                        let url = decodeToken(token);
+                        openLink(url);
+
+                        function decodeToken(token) {
+                            let a = '';
+                            let b = '';
+                            for (let i = 0; i < token.length; ++i) {
+                                if (i % 2 == 0) {
+                                    a += token.charAt(i);
+                                } else {
+                                    b = token.charAt(i) + b;
+                                }
+                            }
+                            token = a + b;
+                            a = token.split('');
+                            for (let i = 0; i < a.length; ++i) {
+                                if (!isNaN(a[i])) {
+                                    for (let j = i + 1; j < a.length; ++j) {
+                                        if (!isNaN(a[j])) {
+                                            b = a[i] ^ a[j];
+                                            if (b < 10) {
+                                                a[i] = b;
+                                            }
+                                            i = j;
+                                            j = a.length;
+                                        }
+                                    }
+                                }
+                            }
+                            token = a.join('');
+                            token = b64(token);
+                            token = token.substring(16);
+                            token = token.substring(0, token.length - 16);
+                            return token;
+                        }
+                    });
+                    return;
+                }
+
             case 'ur.ly':
                 {
                     let path = window.location.pathname;
