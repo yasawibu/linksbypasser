@@ -1,5 +1,5 @@
 # Supported Links
-(total: 92)
+(total: 93)
 * *.u.safelinkview.com
 * 94lauin.com
 * ani-share.com
@@ -67,6 +67,7 @@
 * safelinkreviewz.com
 * safelinku.net *(bypass countdown only, still input recaptcha)*
 * sehatlega.com
+* sehatsegar.net
 * seputargratis.com
 * short.anidesu.net
 * short.awsubs.co
