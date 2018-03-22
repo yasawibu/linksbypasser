@@ -2,7 +2,8 @@
 (??-Mar-2018)
 * **Improved 1 supported links:**
   * safelinku.net *(bypass countdown only, still input recaptcha)*
-* **Added 1 supported links:**
+* **Added 2 supported links:**
+  * sehatsegar.net
   * ur.ly
 
 ## v0.3.0
