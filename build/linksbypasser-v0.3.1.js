@@ -113,7 +113,8 @@
         /^(?:\w+\.)?(linkk\.bid)/,
         /^(?:\w+\.)?(ngelanjutkeun\.blogspot\.(com|co\.id))/,
         /^(?:\w+\.)?(telolet\.in)/,
-        /^(?:\w+\.)?(ur\.ly)/
+        /^(?:\w+\.)?(ur\.ly)/,
+        /^(?:\w+\.)?(sehatsegar\.net)/
     ];
 
     // check the link.
@@ -674,6 +675,7 @@
             case 'intercelestial.com':
             case 'landscapenature.pw':
             case 'lifesurance.info':
+            case 'sehatsegar.net':
             case 'sweetlantern.com':
                 window.document.addEventListener('DOMContentLoaded', function() {
                     window.stop();
