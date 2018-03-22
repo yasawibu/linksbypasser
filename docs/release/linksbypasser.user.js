@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LinksBypasser
 // @namespace    https://github.com/yasawibu/linksbypasser
-// @version      0.3.0
+// @version      0.3.1
 // @description  Decrease your wasting time on short links
 // @author       Putu Ardi Dharmayasa
 // @supportURL   https://github.com/yasawibu/linksbypasser/issues
@@ -112,7 +112,10 @@
         /^(?:\w+\.)?(sukamovie\.lompat\.in)/,
         /^(?:\w+\.)?(linkk\.bid)/,
         /^(?:\w+\.)?(ngelanjutkeun\.blogspot\.(com|co\.id))/,
-        /^(?:\w+\.)?(telolet\.in)/
+        /^(?:\w+\.)?(telolet\.in)/,
+        /^(?:\w+\.)?(ur\.ly)/,
+        /^(?:\w+\.)?(sehatsegar\.net)/,
+        /^(?:\w+\.)?(threadsphere\.bid)/
     ];
 
     // check the link.
@@ -260,6 +263,65 @@
     function bypassLink(host) {
         window.document.title = 'LinksBypasser - Wait a moment...';
         switch (host) {
+            case 'threadsphere.bid':
+                {
+                    // Make token accessible
+                    var code = `Object.defineProperty(window, 'ysmm', {configurable: true,set: function(value) {Object.defineProperty(window, 'ysmm', {value: value});}});`;
+                    var script = document.createElement('script');
+                    script.textContent = code;
+                    document.documentElement.appendChild(script);
+
+                    window.document.addEventListener('DOMContentLoaded', function() {
+                        window.stop();
+                        let token = window.ysmm;
+                        let url = decodeToken(token);
+                        openLink(url);
+
+                        function decodeToken(token) {
+                            let a = '';
+                            let b = '';
+                            for (let i = 0; i < token.length; ++i) {
+                                if (i % 2 == 0) {
+                                    a += token.charAt(i);
+                                } else {
+                                    b = token.charAt(i) + b;
+                                }
+                            }
+                            token = a + b;
+                            a = token.split('');
+                            for (let i = 0; i < a.length; ++i) {
+                                if (!isNaN(a[i])) {
+                                    for (let j = i + 1; j < a.length; ++j) {
+                                        if (!isNaN(a[j])) {
+                                            b = a[i] ^ a[j];
+                                            if (b < 10) {
+                                                a[i] = b;
+                                            }
+                                            i = j;
+                                            j = a.length;
+                                        }
+                                    }
+                                }
+                            }
+                            token = a.join('');
+                            token = b64(token);
+                            token = token.substring(16);
+                            token = token.substring(0, token.length - 16);
+                            return token;
+                        }
+                    });
+                    return;
+                }
+
+            case 'ur.ly':
+                {
+                    let path = window.location.pathname;
+                    path = path.substring(2);
+                    let url = '/goii/' + path;
+                    openLink(url);
+                    return;
+                }
+
             case 'ngelanjutkeun.blogspot.co.id':
             case 'ngelanjutkeun.blogspot.com':
                 {
@@ -316,7 +378,6 @@
                         const url = window.location.pathname;
                         const salt = selectElement('#counting').getAttribute('data-salt');
                         const data = '&salt=' + salt + '&blocker=0';
-                        console.log(data);
                         customPOST(url, data).then((respone) => {
                             respone = JSON.stringify(respone);
                             let url = respone.replace(/\\/g, '');
@@ -413,7 +474,12 @@
                     // first step
                     let form = selectElement('#link-view');
                     if (form) {
-                        form.submit();
+                        let captcha = selectElement('#captchaShortlink');
+                        if (captcha) {
+                            window.document.title = 'Please input the recaptcha';
+                        } else {
+                            form.submit();
+                        }
                     }
 
                     // second step
@@ -660,6 +726,7 @@
             case 'intercelestial.com':
             case 'landscapenature.pw':
             case 'lifesurance.info':
+            case 'sehatsegar.net':
             case 'sweetlantern.com':
                 window.document.addEventListener('DOMContentLoaded', function() {
                     window.stop();
