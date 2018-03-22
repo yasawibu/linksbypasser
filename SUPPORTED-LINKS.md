@@ -1,5 +1,5 @@
 # Supported Links
-(total: 91)
+(total: 94)
 * *.u.safelinkview.com
 * 94lauin.com
 * ani-share.com
@@ -65,8 +65,9 @@
 * otololet.com
 * plantaheim.web.id
 * safelinkreviewz.com
-* safelinku.net
+* safelinku.net *(bypass countdown only, still input recaptcha)*
 * sehatlega.com
+* sehatsegar.net
 * seputargratis.com
 * short.anidesu.net
 * short.awsubs.co
@@ -83,7 +84,9 @@
 * t4ank.top
 * telolet.in
 * telondasmu.com
+* threadsphere.bid
 * tojros.tk
+* ur.ly
 * verydelicius.com
 * wibu-san.com
 * wptech.ga

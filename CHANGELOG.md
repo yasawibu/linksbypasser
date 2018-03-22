@@ -1,3 +1,12 @@
+## v0.3.1
+(??-Mar-2018)
+* **Improved 1 supported links:**
+  * safelinku.net *(bypass countdown only, still input recaptcha)*
+* **Added 3 supported links:**
+  * sehatsegar.net
+  * threadsphere.bid
+  * ur.ly
+
 ## v0.3.0
 (20-Mar-2018)
 * **Added 3 supported links:**
