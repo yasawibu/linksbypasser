@@ -1,5 +1,5 @@
 # Supported Links
-(total: 94)
+(total: 95)
 * *.u.safelinkview.com
 * 94lauin.com
 * ani-share.com
@@ -33,6 +33,7 @@
 * goandroid.cf
 * gocoo.co
 * gomentod.com
+* greget.space
 * healthtod.com
 * hunstulovers.net
 * iiv.pl
