@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LinksBypasser
 // @namespace    https://github.com/yasawibu/linksbypasser
-// @version      0.3.1
+// @version      0.3.2
 // @description  Decrease your wasting time on short links
 // @author       Putu Ardi Dharmayasa
 // @supportURL   https://github.com/yasawibu/linksbypasser/issues
@@ -115,7 +115,8 @@
         /^(?:\w+\.)?(telolet\.in)/,
         /^(?:\w+\.)?(ur\.ly)/,
         /^(?:\w+\.)?(sehatsegar\.net)/,
-        /^(?:\w+\.)?(threadsphere\.bid)/
+        /^(?:\w+\.)?(threadsphere\.bid)/,
+        /^(?:\w+\.)?(greget\.space)/
     ];
 
     // check the link.
@@ -775,6 +776,7 @@
                 return;
 
             case 'coeg.in':
+            case 'greget.space':
             case 'siherp.com':
             case 'siotong.com':
             case 'telondasmu.com':
