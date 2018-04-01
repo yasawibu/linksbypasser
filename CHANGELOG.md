@@ -1,3 +1,8 @@
+## v0.3.3
+(1-Apr-2018)
+* **Added 1 supported links:**
+  * davinsurance.com
+  
 ## v0.3.2
 (24-Mar-2018)
 * **Added 1 supported links:**

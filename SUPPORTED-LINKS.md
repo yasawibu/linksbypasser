@@ -1,5 +1,5 @@
 # Supported Links
-(total: 95)
+(total: 96)
 * *.u.safelinkview.com
 * 94lauin.com
 * ani-share.com
@@ -18,6 +18,7 @@
 * businessforyouand.me
 * catcut.net
 * coeg.in
+* davinsurance.com
 * dcindo.com
 * decrypt2.safelinkconverter.com
 * delekke.com
