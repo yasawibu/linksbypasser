@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LinksBypasser
 // @namespace    https://github.com/yasawibu/linksbypasser
-// @version      0.3.2
+// @version      0.3.3
 // @description  Decrease your wasting time on short links
 // @author       Putu Ardi Dharmayasa
 // @supportURL   https://github.com/yasawibu/linksbypasser/issues
@@ -116,7 +116,8 @@
         /^(?:\w+\.)?(ur\.ly)/,
         /^(?:\w+\.)?(sehatsegar\.net)/,
         /^(?:\w+\.)?(threadsphere\.bid)/,
-        /^(?:\w+\.)?(greget\.space)/
+        /^(?:\w+\.)?(greget\.space)/,
+        /^(?:\w+\.)?(davinsurance\.com)/
     ];
 
     // check the link.
@@ -670,6 +671,7 @@
                 });
                 return;
 
+            case 'davinsurance.com':
             case 'delekke.com':
             case 'goandroid.cf':
             case 'kuhaku.cf':
