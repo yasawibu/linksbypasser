@@ -59,6 +59,7 @@
 * losstor.com
 * malaysurance.com
 * menujulink.online
+* mirrorace.com
 * mylink.zone
 * nasanimelink.blogspot.co.id
 * newterusin.ga
@@ -74,7 +75,6 @@
 * short.anidesu.net
 * short.awsubs.co
 * shortad.cf
-* shtme.co
 * siherp.com
 * siotong.com
 * skinnycat.net

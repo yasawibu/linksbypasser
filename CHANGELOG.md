@@ -1,3 +1,13 @@
+## v0.3.4
+(7-Apr-2018)
+* **Fixed 2 supported links:**
+  * filmku21.website
+  * indexmovie.biz
+* **Added 1 supported links:**
+  * mirrorace.com
+* **Removed 1 supported links:**
+  * shtme.co
+
 ## v0.3.3
 (1-Apr-2018)
 * **Added 1 supported links:**
