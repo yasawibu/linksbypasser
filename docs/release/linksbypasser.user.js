@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LinksBypasser
 // @namespace    https://github.com/yasawibu/linksbypasser
-// @version      0.3.3
+// @version      0.3.4
 // @description  Decrease your wasting time on short links
 // @author       Putu Ardi Dharmayasa
 // @supportURL   https://github.com/yasawibu/linksbypasser/issues
@@ -36,7 +36,6 @@
         /^(?:\w+\.)?(u\.safelinkview\.com)/,
         /^(?:\w+\.)?(safelinkreviewz\.com)/,
         /^(?:\w+\.)?(getinfos\.net)/,
-        /^(?:\w+\.)?(shtme\.co\/(?!get))/,
         /^(?:\w+\.)?(intercelestial\.com)/,
         /^(?:\w+\.)?(spacetica\.com)/,
         /^(?:\w+\.)?(malaysurance\.com)/,
@@ -52,10 +51,10 @@
         /^(?:\w+\.)?(yametesenpai\.xyz)/,
         /^(?:\w+\.)?(wptech\.ga)/,
         /^(?:\w+\.)?(short\.anidesu\.net)/,
-        /^(?:\w+\.)?(indexmovie\.biz\/(?!get))/,
+        /^(?:\w+\.)?(indexmovie\.biz(?!\/get))/,
         /^(?:\w+\.)?(ytfire\.host)/,
         /^(?:\w+\.)?(delekke\.com)/,
-        /^(?:\w+\.)?(filmku21\.website\/(?=links))/,
+        /^(?:\w+\.)?(filmku21\.website(?=\/links))/,
         /^(?:\w+\.)?(plantaheim\.web\.id)/,
         /^(?:\w+\.)?(short\.awsubs\.co)/,
         /^(?:\w+\.)?(xydeyou\.com)/,
@@ -117,7 +116,8 @@
         /^(?:\w+\.)?(sehatsegar\.net)/,
         /^(?:\w+\.)?(threadsphere\.bid)/,
         /^(?:\w+\.)?(greget\.space)/,
-        /^(?:\w+\.)?(davinsurance\.com)/
+        /^(?:\w+\.)?(davinsurance\.com)/,
+        /^(?:\w+\.)?(mirrorace\.com(?=\/m\/\w+\/\w+))/
     ];
 
     // check the link.
@@ -265,6 +265,21 @@
     function bypassLink(host) {
         window.document.title = 'LinksBypasser - Wait a moment...';
         switch (host) {
+            case 'indexmovie.biz':
+                {
+                    let url = '/get' + window.location.pathname;
+                    openLink(url);
+                    return;
+                }
+
+            case 'mirrorace.com':
+                window.document.addEventListener('DOMContentLoaded', function() {
+                    window.stop();
+                    let url = getUrl('a.uk-button');
+                    openLink(url);
+                });
+                return;
+
             case 'threadsphere.bid':
                 {
                     // Make token accessible
@@ -690,14 +705,6 @@
                 window.document.addEventListener('DOMContentLoaded', function() {
                     window.stop();
                     let url = getUrl('div p b a');
-                    openLink(url);
-                });
-                return;
-
-            case 'shtme.co':
-                window.document.addEventListener('DOMContentLoaded', function() {
-                    window.stop();
-                    let url = getUrl('div.content div a');
                     openLink(url);
                 });
                 return;
