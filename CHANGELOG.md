@@ -1,8 +1,9 @@
 ## v0.3.6
 (?-Apr-2018)
-* **Added 2 supported links:**
+* **Added 3 supported links:**
   * link4.me
   * swzz.xyz
+  * urly.mobi
 
 ## v0.3.5
 (9-Apr-2018)
