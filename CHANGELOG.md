@@ -1,6 +1,7 @@
 ## v0.3.6
 (?-Apr-2018)
-* **Added 1 supported links:**
+* **Added 2 supported links:**
+  * link4.me
   * swzz.xyz
 
 ## v0.3.5
