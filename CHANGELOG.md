@@ -1,3 +1,8 @@
+## v0.3.5
+(9-Apr-2018)
+* **Added 1 supported links:**
+  * bluemediafiles.com
+
 ## v0.3.4
 (7-Apr-2018)
 * **Fixed 2 supported links:**

@@ -1,5 +1,5 @@
 # Supported Links
-(total: 96)
+(total: 97)
 * *.u.safelinkview.com
 * 94lauin.com
 * ani-share.com
@@ -15,6 +15,7 @@
 * bagilagi.com
 * bagisoft.net
 * bkshort.info
+* bluemediafiles.com
 * businessforyouand.me
 * catcut.net
 * coeg.in
