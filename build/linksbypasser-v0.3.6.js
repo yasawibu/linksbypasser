@@ -120,7 +120,8 @@
         /^(?:\w+\.)?(mirrorace\.com(?=\/m\/\w+\/\w+))/,
         /^(?:\w+\.)?(bluemediafiles\.com)/,
         /^(?:\w+\.)?(swzz\.xyz)/,
-        /^(?:\w+\.)?(link4\.me)/
+        /^(?:\w+\.)?(link4\.me)/,
+        /^(?:\w+\.)?(urly\.mobi)/
     ];
 
     // check the link.
@@ -350,6 +351,7 @@
                 }
 
             case 'ur.ly':
+            case 'urly.mobi':
                 {
                     let path = window.location.pathname;
                     path = path.substring(2);
