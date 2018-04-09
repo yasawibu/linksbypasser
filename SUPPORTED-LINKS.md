@@ -1,5 +1,5 @@
 # Supported Links
-(total: 98)
+(total: 99)
 * *.u.safelinkview.com
 * 94lauin.com
 * ani-share.com
@@ -52,6 +52,7 @@
 * lifesurance.com
 * lindung.in
 * link.shirogaze.tk
+* link4.me
 * linkk.bid
 * linkpoi.in
 * links.fiuxy.bz
