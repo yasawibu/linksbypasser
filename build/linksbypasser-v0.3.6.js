@@ -119,7 +119,8 @@
         /^(?:\w+\.)?(davinsurance\.com)/,
         /^(?:\w+\.)?(mirrorace\.com(?=\/m\/\w+\/\w+))/,
         /^(?:\w+\.)?(bluemediafiles\.com)/,
-        /^(?:\w+\.)?(swzz\.xyz)/
+        /^(?:\w+\.)?(swzz\.xyz)/,
+        /^(?:\w+\.)?(link4\.me)/
     ];
 
     // check the link.
@@ -619,6 +620,7 @@
                 }
 
             case 'inlink.co':
+            case 'link4.me':
             case 'shortad.cf':
                 window.document.addEventListener('DOMContentLoaded', function() {
                     window.stop();
