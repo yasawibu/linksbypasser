@@ -1,5 +1,5 @@
 # Supported Links
-(total: 99)
+(total: 100)
 * *.u.safelinkview.com
 * 94lauin.com
 * ani-share.com
@@ -92,6 +92,7 @@
 * threadsphere.bid
 * tojros.tk
 * ur.ly
+* urly.mobi
 * verydelicius.com
 * wibu-san.com
 * wptech.ga
