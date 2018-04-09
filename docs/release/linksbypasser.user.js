@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LinksBypasser
 // @namespace    https://github.com/yasawibu/linksbypasser
-// @version      0.3.4
+// @version      0.3.5
 // @description  Decrease your wasting time on short links
 // @author       Putu Ardi Dharmayasa
 // @supportURL   https://github.com/yasawibu/linksbypasser/issues
@@ -117,7 +117,8 @@
         /^(?:\w+\.)?(threadsphere\.bid)/,
         /^(?:\w+\.)?(greget\.space)/,
         /^(?:\w+\.)?(davinsurance\.com)/,
-        /^(?:\w+\.)?(mirrorace\.com(?=\/m\/\w+\/\w+))/
+        /^(?:\w+\.)?(mirrorace\.com(?=\/m\/\w+\/\w+))/,
+        /^(?:\w+\.)?(bluemediafiles\.com)/
     ];
 
     // check the link.
@@ -265,6 +266,14 @@
     function bypassLink(host) {
         window.document.title = 'LinksBypasser - Wait a moment...';
         switch (host) {
+            case 'bluemediafiles.com':
+                {
+                    let url = getUrl(/xurl=([^&]+)/);
+                    url = 'http' + decodeURIComponent(url);
+                    openLink(url);
+                    return;
+                }
+
             case 'indexmovie.biz':
                 {
                     let url = '/get' + window.location.pathname;
