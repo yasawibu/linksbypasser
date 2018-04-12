@@ -121,7 +121,8 @@
         /^(?:\w+\.)?(bluemediafiles\.com)/,
         /^(?:\w+\.)?(swzz\.xyz)/,
         /^(?:\w+\.)?(link4\.me)/,
-        /^(?:\w+\.)?(urly\.mobi)/
+        /^(?:\w+\.)?(urly\.mobi)/,
+        /^(?:\w+\.)?(sukahayu\.xyz)/
     ];
 
     // check the link.
@@ -826,6 +827,7 @@
             case 'menujulink.online':
             case 'nasanimelink.blogspot.co.id':
             case 'short.anidesu.net':
+            case 'sukahayu.xyz':
             case 'tojros.tk':
                 {
                     let url = getUrl(/url=([^&]+)/);
