@@ -1,7 +1,8 @@
 ## v0.3.6
 (?-Apr-2018)
-* **Added 4 supported links:**
+* **Added 5 supported links:**
   * link4.me
+  * masmellow.com
   * sukahayu.xyz
   * swzz.xyz
   * urly.mobi
