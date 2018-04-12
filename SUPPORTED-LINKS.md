@@ -1,5 +1,5 @@
 # Supported Links
-(total: 100)
+(total: 101)
 * *.u.safelinkview.com
 * 94lauin.com
 * ani-share.com
@@ -83,6 +83,7 @@
 * soralink.sinetronku.tv
 * spacetica.com
 * st.tontonanime.win
+* sukahayu.xyz
 * sukamovie.lompat.in
 * sweetlantern.com
 * swzz.xyz
