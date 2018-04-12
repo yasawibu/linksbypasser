@@ -122,7 +122,8 @@
         /^(?:\w+\.)?(swzz\.xyz)/,
         /^(?:\w+\.)?(link4\.me)/,
         /^(?:\w+\.)?(urly\.mobi)/,
-        /^(?:\w+\.)?(sukahayu\.xyz)/
+        /^(?:\w+\.)?(sukahayu\.xyz)/,
+        /^(?:\w+\.)?(masmellow\.com)/
     ];
 
     // check the link.
@@ -824,6 +825,7 @@
             case 'designmyhomee.com':
             case 'eigamou.win':
             case 'link.shirogaze.tk':
+            case 'masmellow.com':
             case 'menujulink.online':
             case 'nasanimelink.blogspot.co.id':
             case 'short.anidesu.net':
