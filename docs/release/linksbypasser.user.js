@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LinksBypasser
 // @namespace    https://github.com/yasawibu/linksbypasser
-// @version      0.3.5
+// @version      0.3.6
 // @description  Decrease your wasting time on short links
 // @author       Putu Ardi Dharmayasa
 // @supportURL   https://github.com/yasawibu/linksbypasser/issues
@@ -118,7 +118,12 @@
         /^(?:\w+\.)?(greget\.space)/,
         /^(?:\w+\.)?(davinsurance\.com)/,
         /^(?:\w+\.)?(mirrorace\.com(?=\/m\/\w+\/\w+))/,
-        /^(?:\w+\.)?(bluemediafiles\.com)/
+        /^(?:\w+\.)?(bluemediafiles\.com)/,
+        /^(?:\w+\.)?(swzz\.xyz)/,
+        /^(?:\w+\.)?(link4\.me)/,
+        /^(?:\w+\.)?(urly\.mobi)/,
+        /^(?:\w+\.)?(sukahayu\.xyz)/,
+        /^(?:\w+\.)?(masmellow\.com)/
     ];
 
     // check the link.
@@ -266,6 +271,14 @@
     function bypassLink(host) {
         window.document.title = 'LinksBypasser - Wait a moment...';
         switch (host) {
+            case 'swzz.xyz':
+                window.document.addEventListener('DOMContentLoaded', function() {
+                    window.stop();
+                    let url = getUrl('a.link');
+                    openLink(url);
+                });
+                return;
+
             case 'bluemediafiles.com':
                 {
                     let url = getUrl(/xurl=([^&]+)/);
@@ -340,6 +353,7 @@
                 }
 
             case 'ur.ly':
+            case 'urly.mobi':
                 {
                     let path = window.location.pathname;
                     path = path.substring(2);
@@ -610,6 +624,7 @@
                 }
 
             case 'inlink.co':
+            case 'link4.me':
             case 'shortad.cf':
                 window.document.addEventListener('DOMContentLoaded', function() {
                     window.stop();
@@ -810,9 +825,11 @@
             case 'designmyhomee.com':
             case 'eigamou.win':
             case 'link.shirogaze.tk':
+            case 'masmellow.com':
             case 'menujulink.online':
             case 'nasanimelink.blogspot.co.id':
             case 'short.anidesu.net':
+            case 'sukahayu.xyz':
             case 'tojros.tk':
                 {
                     let url = getUrl(/url=([^&]+)/);
