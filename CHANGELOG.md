@@ -1,3 +1,8 @@
+## v0.3.8
+(?-Apr-2018)
+* **Added 1 supported links:**
+  * restorecosm.bid
+
 ## v0.3.7
 (27-Apr-2018)
 * **Added 2 supported links:**
