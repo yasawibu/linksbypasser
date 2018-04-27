@@ -124,7 +124,8 @@
         /^(?:\w+\.)?(urly\.mobi)/,
         /^(?:\w+\.)?(sukahayu\.xyz)/,
         /^(?:\w+\.)?(masmellow\.com)/,
-        /^(?:\w+\.)?(6reeqaa\.ga)/
+        /^(?:\w+\.)?(6reeqaa\.ga)/,
+        /^(?:\w+\.)?(gameinfo\.pw)/
     ];
 
     // check the link.
@@ -758,6 +759,7 @@
             case 'autolinkach.com':
             case 'bagilagi.com':
             case 'dilanjut.in':
+            case 'gameinfo.pw':
             case 'getinfos.net':
             case 'intercelestial.com':
             case 'landscapenature.pw':
