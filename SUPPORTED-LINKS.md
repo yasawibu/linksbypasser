@@ -1,6 +1,7 @@
 # Supported Links
-(total: 102)
+(total: 104)
 * *.u.safelinkview.com
+* 6reeqaa.ga
 * 94lauin.com
 * ani-share.com
 * ani-short.info
@@ -30,6 +31,7 @@
 * eigamou.win
 * filmku21.website
 * fmlawkers.club
+* gameinfo.pw
 * getinfos.net
 * gigapurbalinggaa.ga
 * goandroid.cf

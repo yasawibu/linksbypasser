@@ -1,3 +1,9 @@
+## v0.3.7
+(27-Apr-2018)
+* **Added 2 supported links:**
+  * 6reeqaa.ga
+  * gameinfo.pw
+
 ## v0.3.6
 (12-Apr-2018)
 * **Added 5 supported links:**
