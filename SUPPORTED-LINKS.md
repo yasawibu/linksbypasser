@@ -1,5 +1,5 @@
 # Supported Links
-(total: 104)
+(total: 105)
 * *.u.safelinkview.com
 * 6reeqaa.ga
 * 94lauin.com
@@ -72,6 +72,7 @@
 * nimekaze.me
 * otololet.com
 * plantaheim.web.id
+* restorecosm.bid
 * safelinkreviewz.com
 * safelinku.net *(bypass countdown only, still input recaptcha)*
 * sehatlega.com
