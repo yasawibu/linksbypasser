@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LinksBypasser
 // @namespace    https://github.com/yasawibu/linksbypasser
-// @version      0.3.6
+// @version      0.3.7
 // @description  Decrease your wasting time on short links
 // @author       Putu Ardi Dharmayasa
 // @supportURL   https://github.com/yasawibu/linksbypasser/issues
@@ -123,7 +123,9 @@
         /^(?:\w+\.)?(link4\.me)/,
         /^(?:\w+\.)?(urly\.mobi)/,
         /^(?:\w+\.)?(sukahayu\.xyz)/,
-        /^(?:\w+\.)?(masmellow\.com)/
+        /^(?:\w+\.)?(masmellow\.com)/,
+        /^(?:\w+\.)?(6reeqaa\.ga)/,
+        /^(?:\w+\.)?(gameinfo\.pw)/
     ];
 
     // check the link.
@@ -650,6 +652,7 @@
                 });
                 return;
 
+            case '6reeqaa.ga':
             case 'awsubsco.ga':
             case 'gigapurbalinggaa.ga':
             case 'safelinkreviewz.com':
@@ -756,6 +759,7 @@
             case 'autolinkach.com':
             case 'bagilagi.com':
             case 'dilanjut.in':
+            case 'gameinfo.pw':
             case 'getinfos.net':
             case 'intercelestial.com':
             case 'landscapenature.pw':
