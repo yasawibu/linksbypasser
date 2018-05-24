@@ -1,5 +1,5 @@
 # Supported Links
-(total: 104)
+(total: 106)
 * *.u.safelinkview.com
 * 6reeqaa.ga
 * 94lauin.com
@@ -31,6 +31,7 @@
 * eigamou.win
 * filmku21.website
 * fmlawkers.club
+* forexbrokers.download
 * gameinfo.pw
 * getinfos.net
 * gigapurbalinggaa.ga
@@ -72,6 +73,7 @@
 * nimekaze.me
 * otololet.com
 * plantaheim.web.id
+* restorecosm.bid
 * safelinkreviewz.com
 * safelinku.net *(bypass countdown only, still input recaptcha)*
 * sehatlega.com

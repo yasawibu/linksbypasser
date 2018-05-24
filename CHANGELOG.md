@@ -1,3 +1,11 @@
+## v0.3.8
+(24-May-2018)
+* **Fixed 1 supported links:**
+  * gameinfo.pw
+* **Added 2 supported links:**
+  * forexbrokers.download
+  * restorecosm.bid
+
 ## v0.3.7
 (27-Apr-2018)
 * **Added 2 supported links:**
