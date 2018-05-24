@@ -126,7 +126,8 @@
         /^(?:\w+\.)?(masmellow\.com)/,
         /^(?:\w+\.)?(6reeqaa\.ga)/,
         /^(?:\w+\.)?(gameinfo\.pw)/,
-        /^(?:\w+\.)?(restorecosm\.bid)/
+        /^(?:\w+\.)?(restorecosm\.bid)/,
+        /^(?:\w+\.)?(forexbrokers\.download)/
     ];
 
     // check the link.
@@ -816,6 +817,7 @@
                 }
 
             case 'businessforyouand.me':
+            case 'forexbrokers.download':
             case 'gomentod.com':
             case 'lindung.in':
             case 'otololet.com':
