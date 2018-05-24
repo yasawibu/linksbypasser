@@ -1,5 +1,5 @@
 # Supported Links
-(total: 105)
+(total: 106)
 * *.u.safelinkview.com
 * 6reeqaa.ga
 * 94lauin.com
@@ -31,6 +31,7 @@
 * eigamou.win
 * filmku21.website
 * fmlawkers.club
+* forexbrokers.download
 * gameinfo.pw
 * getinfos.net
 * gigapurbalinggaa.ga
