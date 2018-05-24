@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LinksBypasser
 // @namespace    https://github.com/yasawibu/linksbypasser
-// @version      0.3.7
+// @version      0.3.8
 // @description  Decrease your wasting time on short links
 // @author       Putu Ardi Dharmayasa
 // @supportURL   https://github.com/yasawibu/linksbypasser/issues
@@ -125,7 +125,9 @@
         /^(?:\w+\.)?(sukahayu\.xyz)/,
         /^(?:\w+\.)?(masmellow\.com)/,
         /^(?:\w+\.)?(6reeqaa\.ga)/,
-        /^(?:\w+\.)?(gameinfo\.pw)/
+        /^(?:\w+\.)?(gameinfo\.pw)/,
+        /^(?:\w+\.)?(restorecosm\.bid)/,
+        /^(?:\w+\.)?(forexbrokers\.download)/
     ];
 
     // check the link.
@@ -208,8 +210,9 @@
             const xhr = new XMLHttpRequest();
             xhr.open('POST', url, true);
             xhr.setRequestHeader('Content-Type', contentType);
-            if (arguments.length === 4 && withXHR === true)
+            if (arguments.length === 4 && withXHR === true) {
                 xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+            }
             xhr.onload = function () {
                 resolve(this.responseText);
             };
@@ -246,15 +249,17 @@
                 pattern = location;
                 const a = window.location.href;
                 const u = a.match(pattern);
-                if (u)
+                if (u) {
                     return u[1];
+                }
             }
         } else if (arguments.length === 2) {
             location = selectElement(location);
             const a = location.href;
             const u = a.match(pattern);
-            if (u)
+            if (u) {
                 return u[1];
+            }
         } else {
             return;
         }
@@ -264,15 +269,35 @@
         string = string || 0;
 
         url = atob(url);
-        if (string === 0)
+        if (string === 0) {
             return url;
-        else
+        } else {
             return (string + url);
+        }
     }
 
     function bypassLink(host) {
         window.document.title = 'LinksBypasser - Wait a moment...';
         switch (host) {
+            case 'gameinfo.pw':
+                {
+                    window.document.addEventListener('DOMContentLoaded', function() {
+                        window.stop();
+                        // First step
+                        let humanCheck = selectElement('#srl.humancheck form');
+                        if (humanCheck) {
+                            humanCheck.submit();
+                        }
+
+                        // Second step
+                        let url = getScriptValue(/var a='([^']+)'/);
+                        if (url) {
+                            openLink(url);
+                        }
+                    });
+                    return;
+                }
+
             case 'swzz.xyz':
                 window.document.addEventListener('DOMContentLoaded', function() {
                     window.stop();
@@ -304,6 +329,7 @@
                 });
                 return;
 
+            case 'restorecosm.bid':
             case 'threadsphere.bid':
                 {
                     // Make token accessible
@@ -548,18 +574,20 @@
                 return;
 
             case 'skinnycat.net':
-                let url = getUrl(/d=([^#]+)/);
-                if (url) {
-                    url = b64(url);
-                    openLink(url);
-                } else {
-                    window.document.addEventListener('DOMContentLoaded', function() {
-                        window.stop();
-                        let url = getScriptValue(/;window\.location="([^"]+)"/);
+                {
+                    let url = getUrl(/d=([^#]+)/);
+                    if (url) {
+                        url = b64(url);
                         openLink(url);
-                    });
+                    } else {
+                        window.document.addEventListener('DOMContentLoaded', function() {
+                            window.stop();
+                            let url = getScriptValue(/;window\.location="([^"]+)"/);
+                            openLink(url);
+                        });
+                    }
+                    return;
                 }
-                return;
 
             case 'v1.94lauin.com':
                 window.document.addEventListener('DOMContentLoaded', function() {
@@ -759,7 +787,6 @@
             case 'autolinkach.com':
             case 'bagilagi.com':
             case 'dilanjut.in':
-            case 'gameinfo.pw':
             case 'getinfos.net':
             case 'intercelestial.com':
             case 'landscapenature.pw':
@@ -790,6 +817,7 @@
                 }
 
             case 'businessforyouand.me':
+            case 'forexbrokers.download':
             case 'gomentod.com':
             case 'lindung.in':
             case 'otololet.com':
