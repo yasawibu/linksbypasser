@@ -209,8 +209,9 @@
             const xhr = new XMLHttpRequest();
             xhr.open('POST', url, true);
             xhr.setRequestHeader('Content-Type', contentType);
-            if (arguments.length === 4 && withXHR === true)
+            if (arguments.length === 4 && withXHR === true) {
                 xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+            }
             xhr.onload = function () {
                 resolve(this.responseText);
             };
@@ -247,15 +248,17 @@
                 pattern = location;
                 const a = window.location.href;
                 const u = a.match(pattern);
-                if (u)
+                if (u) {
                     return u[1];
+                }
             }
         } else if (arguments.length === 2) {
             location = selectElement(location);
             const a = location.href;
             const u = a.match(pattern);
-            if (u)
+            if (u) {
                 return u[1];
+            }
         } else {
             return;
         }
@@ -265,15 +268,35 @@
         string = string || 0;
 
         url = atob(url);
-        if (string === 0)
+        if (string === 0) {
             return url;
-        else
+        } else {
             return (string + url);
+        }
     }
 
     function bypassLink(host) {
         window.document.title = 'LinksBypasser - Wait a moment...';
         switch (host) {
+            case 'gameinfo.pw':
+                {
+                    window.document.addEventListener('DOMContentLoaded', function() {
+                        window.stop();
+                        // First step
+                        let humanCheck = selectElement('#srl.humancheck form');
+                        if (humanCheck) {
+                            humanCheck.submit();
+                        }
+
+                        // Second step
+                        let url = getScriptValue(/var a='([^']+)'/);
+                        if (url) {
+                            openLink(url);
+                        }
+                    });
+                    return;
+                }
+
             case 'swzz.xyz':
                 window.document.addEventListener('DOMContentLoaded', function() {
                     window.stop();
@@ -550,18 +573,20 @@
                 return;
 
             case 'skinnycat.net':
-                let url = getUrl(/d=([^#]+)/);
-                if (url) {
-                    url = b64(url);
-                    openLink(url);
-                } else {
-                    window.document.addEventListener('DOMContentLoaded', function() {
-                        window.stop();
-                        let url = getScriptValue(/;window\.location="([^"]+)"/);
+                {
+                    let url = getUrl(/d=([^#]+)/);
+                    if (url) {
+                        url = b64(url);
                         openLink(url);
-                    });
+                    } else {
+                        window.document.addEventListener('DOMContentLoaded', function() {
+                            window.stop();
+                            let url = getScriptValue(/;window\.location="([^"]+)"/);
+                            openLink(url);
+                        });
+                    }
+                    return;
                 }
-                return;
 
             case 'v1.94lauin.com':
                 window.document.addEventListener('DOMContentLoaded', function() {
@@ -761,7 +786,6 @@
             case 'autolinkach.com':
             case 'bagilagi.com':
             case 'dilanjut.in':
-            case 'gameinfo.pw':
             case 'getinfos.net':
             case 'intercelestial.com':
             case 'landscapenature.pw':
