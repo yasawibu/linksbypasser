@@ -290,7 +290,9 @@
 
             case 'bagilagi.com':
             case 'gameinfo.pw':
+            case 'intercelestial.com':
             case 'lifesurance.info':
+            case 'sweetlantern.com':
                 {
                     window.document.addEventListener('DOMContentLoaded', function() {
                         window.stop();
@@ -798,10 +800,8 @@
             case 'autolinkach.com':
             case 'dilanjut.in':
             case 'getinfos.net':
-            case 'intercelestial.com':
             case 'landscapenature.pw':
             case 'sehatsegar.net':
-            case 'sweetlantern.com':
                 window.document.addEventListener('DOMContentLoaded', function() {
                     window.stop();
                     let url = getScriptValue(/var a='([^']+)'/);
