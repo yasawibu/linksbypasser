@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LinksBypasser
 // @namespace    https://github.com/yasawibu/linksbypasser
-// @version      0.3.8
+// @version      0.3.9
 // @description  Decrease your wasting time on short links
 // @author       Putu Ardi Dharmayasa
 // @supportURL   https://github.com/yasawibu/linksbypasser/issues
@@ -127,7 +127,8 @@
         /^(?:\w+\.)?(6reeqaa\.ga)/,
         /^(?:\w+\.)?(gameinfo\.pw)/,
         /^(?:\w+\.)?(restorecosm\.bid)/,
-        /^(?:\w+\.)?(forexbrokers\.download)/
+        /^(?:\w+\.)?(forexbrokers\.download)/,
+        /^(?:\w+\.)?(kurosafe\.website)/
     ];
 
     // check the link.
@@ -279,7 +280,17 @@
     function bypassLink(host) {
         window.document.title = 'LinksBypasser - Wait a moment...';
         switch (host) {
+            case 'businessforyouand.me':
+                {
+                    let url = getUrl(/(?:d|r)=([^#]+)/);
+                    url = b64(url);
+                    openLink(url);
+                    return;
+                }
+
+            case 'bagilagi.com':
             case 'gameinfo.pw':
+            case 'lifesurance.info':
                 {
                     window.document.addEventListener('DOMContentLoaded', function() {
                         window.stop();
@@ -521,7 +532,7 @@
 
             case 'sehatlega.com':
                 {
-                    let url = getUrl(/\lanjut=([^#]+)/);
+                    let url = getUrl(/(?:lanjut|r)=([^#]+)/);
                     url = b64(url);
                     openLink(url);
                     return;
@@ -785,12 +796,10 @@
             case 'ani-share.com':
             case 'apasih.pw':
             case 'autolinkach.com':
-            case 'bagilagi.com':
             case 'dilanjut.in':
             case 'getinfos.net':
             case 'intercelestial.com':
             case 'landscapenature.pw':
-            case 'lifesurance.info':
             case 'sehatsegar.net':
             case 'sweetlantern.com':
                 window.document.addEventListener('DOMContentLoaded', function() {
@@ -807,6 +816,7 @@
             case 'fmlawkers.club':
             case 'kurosafe.club':
             case 'kurosafe.web.id':
+            case 'kurosafe.website':
             case 'losstor.com':
             case 'xydeyou.com':
                 {
@@ -816,7 +826,6 @@
                     return;
                 }
 
-            case 'businessforyouand.me':
             case 'forexbrokers.download':
             case 'gomentod.com':
             case 'lindung.in':
