@@ -1,5 +1,5 @@
 # Supported Links
-(total: 106)
+(total: 107)
 * *.u.safelinkview.com
 * 6reeqaa.ga
 * 94lauin.com
@@ -50,6 +50,7 @@
 * kuhaku.cf
 * kurosafe.club
 * kurosafe.web.id
+* kurosafe.website
 * landscapenature.pw
 * lewatilink.us
 * lifesurance.com
