@@ -1,3 +1,13 @@
+## v0.3.9
+(30-May-2018)
+* **Fixed 4 supported links:**
+  * bagilagi.com
+  * businessforyouand.me
+  * lifesurance.info
+  * sehatlega.com
+* **Added 1 supported links:**
+  * kurosafe.website
+
 ## v0.3.8
 (24-May-2018)
 * **Fixed 1 supported links:**
