@@ -1,10 +1,12 @@
 ## v0.3.9
 (30-May-2018)
-* **Fixed 4 supported links:**
+* **Fixed 6 supported links:**
   * bagilagi.com
   * businessforyouand.me
+  * intercelestial.com
   * lifesurance.info
   * sehatlega.com
+  * sweetlantern.com
 * **Added 1 supported links:**
   * kurosafe.website
 
