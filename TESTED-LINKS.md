@@ -57,3 +57,5 @@
 57. http://businessforyouand.me/?r=aHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL3VjP2V4cG9ydD1kb3dubG9hZCZpZD0xZlJ5blp6R1dlN3B0LWFFQW1SOEJUZHVHQUdmYUEzM3A=
 58. http://sehatlega.com/?r=aHR0cDovL2RyaXZlLm5la29uaW1lLmNvbS9maWxlL0hXMURWY0RPM1o=
 59. https://bagilagi.com/?id=U3ZCaGl2d0lOTmNvbkNGczdtUmMyWkhod0NxWDQ3K3R1VTdPZmhmcUtoSGcxMy9tYjBkMDFvRmUrdC8wdWNVK1JtQWNrdUI3WnRPNys3NHMrcWJBelRlL0xSZmplRnVFZ1BYMDBvTVNxWFU9
+60. http://sweetlantern.com/?id=NGVQNW9PQ29iOEdCanhYdWFyMTZDUzRFamtDQ0g3bEM1U2gwT0hubTA5RT0=
+61. http://intercelestial.com/?id=NGVQNW9PQ29iOEdCanhYdWFyMTZDZVB4RlFDVmdlZVRNSlJBdE1CWmNpcz0=

@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LinksBypasser
 // @namespace    https://github.com/yasawibu/linksbypasser
-// @version      0.3.9 
+// @version      0.3.9
 // @description  Decrease your wasting time on short links
 // @author       Putu Ardi Dharmayasa
 // @supportURL   https://github.com/yasawibu/linksbypasser/issues
@@ -290,7 +290,9 @@
 
             case 'bagilagi.com':
             case 'gameinfo.pw':
+            case 'intercelestial.com':
             case 'lifesurance.info':
+            case 'sweetlantern.com':
                 {
                     window.document.addEventListener('DOMContentLoaded', function() {
                         window.stop();
@@ -798,10 +800,8 @@
             case 'autolinkach.com':
             case 'dilanjut.in':
             case 'getinfos.net':
-            case 'intercelestial.com':
             case 'landscapenature.pw':
             case 'sehatsegar.net':
-            case 'sweetlantern.com':
                 window.document.addEventListener('DOMContentLoaded', function() {
                     window.stop();
                     let url = getScriptValue(/var a='([^']+)'/);
