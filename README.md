@@ -37,7 +37,7 @@ Total: 107 links. See [SUPPORTED-LINKS.md] for the details.
 
 ## Change Log
 **v0.3.9** (30-May-2018)
-* Fixed 4 supported links
+* Fixed 6 supported links
 * Added 1 supported links
 
 **v0.3.8** (24-May-2018)
