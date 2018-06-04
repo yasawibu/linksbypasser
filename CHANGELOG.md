@@ -1,3 +1,8 @@
+## v0.4.0
+(??-Jun-2018)
+* **Added 1 supported links:**
+  * 1ink.cc
+
 ## v0.3.9
 (30-May-2018)
 * **Fixed 6 supported links:**
