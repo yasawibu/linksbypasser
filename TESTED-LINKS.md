@@ -59,3 +59,4 @@
 59. https://bagilagi.com/?id=U3ZCaGl2d0lOTmNvbkNGczdtUmMyWkhod0NxWDQ3K3R1VTdPZmhmcUtoSGcxMy9tYjBkMDFvRmUrdC8wdWNVK1JtQWNrdUI3WnRPNys3NHMrcWJBelRlL0xSZmplRnVFZ1BYMDBvTVNxWFU9
 60. http://sweetlantern.com/?id=NGVQNW9PQ29iOEdCanhYdWFyMTZDUzRFamtDQ0g3bEM1U2gwT0hubTA5RT0=
 61. http://intercelestial.com/?id=NGVQNW9PQ29iOEdCanhYdWFyMTZDZVB4RlFDVmdlZVRNSlJBdE1CWmNpcz0=
+62. http://1ink.cc/o0DTB
