@@ -1,6 +1,7 @@
 # Supported Links
 (total: 107)
 * *.u.safelinkview.com
+* 1ink.cc
 * 6reeqaa.ga
 * 94lauin.com
 * ani-share.com
