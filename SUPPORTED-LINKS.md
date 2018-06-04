@@ -1,5 +1,5 @@
 # Supported Links
-(total: 107)
+(total: 108)
 * *.u.safelinkview.com
 * 1ink.cc
 * 6reeqaa.ga
