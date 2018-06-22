@@ -7,7 +7,7 @@
 7. http://www.siotong.com/zy4xN
 8. http://www.losstor.com/ini/?site=aHR0cDovL2thcnVuZy5pbi9HeXVjYw==&c=0&user=1
 9. http://karung.in/Gyucc
-10. https://www.anjay.info/131/support-and-reinforcement-in-the-mining-cycle/?url=aHR0cDovL3d3dzcwLnppcHB5c2hhcmUuY29tL3Yvd0hkNnA3TnovZmlsZS5odG1s
+10. https://www.anjay.info/short/FKZdG
 11. http://safelinku.net/iCVL
 12. http://autolinkach.com/?id=MkVEV3pXdmgrbzVWTkhxdzRDbDNPZnJBSkJobUpmclNXTmdpTEkwOU1wbFBQUnRGOWhmS21BWkJDUFBrUVMvTg==
 13. http://www.eigamou.win/p/generate.html?url=aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj05eFRFMUFwV2kwMA==
@@ -38,7 +38,7 @@
 38. http://sehatsegar.net/yuk-mengenal-ketofastosis/?get=dENPRE1YZEV2bUJ6YThhRE5VUXRaSjZTZjljdGpwWWpQd3REU3JuVXYrTEx4dElFN25Nc1NXVmlNNTJ0cGhCWTNnTE9YdURTSkV3VTRqamZzMGRQT3FxTVJFM0JOK2ZkbERLcE5SWVRWc0Q2K09kMlQ2VjI5UmZka3ZwN1NiNFVtckY5bFQ3VkJhcStVdDc3YkFrY1lBPT0=#landing
 39. http://threadsphere.bid/-20/7hkij
 40. http://www.greget.space/1vc3Z
-41. http://davinsurance.com/personal-accident-insurance-policy/?aHR0cDovL21lb3dmaWxlcy5jb20vYTdo#downloadHehe
+41. http://davinsurance.com/?r=aHR0cDovL3d3dzU1LnppcHB5c2hhcmUuY29tL3YvZmxEOEQ3cW0vZmlsZS5odG1s
 42. https://mirrorace.com/m/Kei3
 43. http://indexmovie.biz/lego-dc-comics-super-heroes-flash-2018/
 44. https://filmku21.website/links/movptzeuz419680-5/
@@ -60,3 +60,7 @@
 60. http://sweetlantern.com/?id=NGVQNW9PQ29iOEdCanhYdWFyMTZDUzRFamtDQ0g3bEM1U2gwT0hubTA5RT0=
 61. http://intercelestial.com/?id=NGVQNW9PQ29iOEdCanhYdWFyMTZDZVB4RlFDVmdlZVRNSlJBdE1CWmNpcz0=
 62. http://1ink.cc/o0DTB
+63. https://www.tetew.info/njir/8O2RA
+64. https://hexafile.net/rBKcS
+65. https://binerfile.info/?site=aHR0cHM6Ly9kcml2ZS5rdXJvZ2F6ZS5wdy9maWxlL3ZiU2FQbGo5dHREVlQxdWFyNGp3&c=0&user=
+66. https://pafpaf.info/?site=aHR0cHM6Ly9kcml2ZS5rdXJvZ2F6ZS5wdy9maWxlL3ZiU2FQbGo5dHREVlQxdWFyNGp3
