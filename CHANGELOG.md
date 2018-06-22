@@ -1,7 +1,14 @@
 ## v0.4.0
-(??-Jun-2018)
-* **Added 1 supported links:**
+(23-Jun-2018)
+* **Fixed 6 supported links:**
+  * anjay.info
+  * davinsurance.com
+* **Added 5 supported links:**
   * 1ink.cc
+  * binerfile.info
+  * hexafile.net
+  * pafpaf.info
+  * tetew.info
 
 ## v0.3.9
 (30-May-2018)
