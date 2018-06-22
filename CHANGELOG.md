@@ -1,6 +1,6 @@
 ## v0.4.0
 (23-Jun-2018)
-* **Fixed 6 supported links:**
+* **Fixed 2 supported links:**
   * anjay.info
   * davinsurance.com
 * **Added 5 supported links:**
