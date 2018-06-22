@@ -129,7 +129,11 @@
         /^(?:\w+\.)?(restorecosm\.bid)/,
         /^(?:\w+\.)?(forexbrokers\.download)/,
         /^(?:\w+\.)?(kurosafe\.website)/,
-        /^(?:\w+\.)?(1ink\.cc)/
+        /^(?:\w+\.)?(1ink\.cc)/,
+        /^(?:\w+\.)?(tetew\.info)/,
+        /^(?:\w+\.)?(hexafile\.net)/,
+        /^(?:\w+\.)?(binerfile\.info)/,
+        /^(?:\w+\.)?(pafpaf\.info)/
     ];
 
     // check the link.
@@ -293,6 +297,7 @@
                 }
 
             case 'businessforyouand.me':
+            case 'davinsurance.com':
                 {
                     let url = getUrl(/(?:d|r)=([^#]+)/);
                     url = b64(url);
@@ -759,6 +764,7 @@
 
             case '94lauin.com':
             case 'aw-games.net':
+            case 'hexafile.net':
                 window.document.addEventListener('DOMContentLoaded', function() {
                     window.stop();
                     let url = getScriptValue(/;window\.location="([^"]+)"/);
@@ -766,7 +772,6 @@
                 });
                 return;
 
-            case 'davinsurance.com':
             case 'delekke.com':
             case 'goandroid.cf':
             case 'kuhaku.cf':
@@ -824,12 +829,14 @@
             case 'ani-short.info':
             case 'animeindo.me':
             case 'bagisoft.net':
+            case 'binerfile.info':
             case 'bkshort.info':
             case 'fmlawkers.club':
             case 'kurosafe.club':
             case 'kurosafe.web.id':
             case 'kurosafe.website':
             case 'losstor.com':
+            case 'pafpaf.info':
             case 'xydeyou.com':
                 {
                     let url = getUrl(/site=([^&]+)/);
@@ -861,11 +868,13 @@
                 });
                 return;
 
+            case 'anjay.info':
             case 'coeg.in':
             case 'greget.space':
             case 'siherp.com':
             case 'siotong.com':
             case 'telondasmu.com':
+            case 'tetew.info':
                 window.document.addEventListener('DOMContentLoaded', function() {
                     window.stop();
                     let url = getUrl('.download-link a', /r=([^]+)/);
@@ -874,7 +883,6 @@
                 });
                 return;
 
-            case 'anjay.info':
             case 'designmyhomee.com':
             case 'eigamou.win':
             case 'link.shirogaze.tk':
