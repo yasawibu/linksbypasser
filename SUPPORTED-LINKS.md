@@ -1,5 +1,5 @@
 # Supported Links
-(total: 108)
+(total: 112)
 * *.u.safelinkview.com
 * 1ink.cc
 * 6reeqaa.ga
@@ -16,6 +16,7 @@
 * awsubsco.ga
 * bagilagi.com
 * bagisoft.net
+* binerfile.info
 * bkshort.info
 * bluemediafiles.com
 * businessforyouand.me
@@ -41,6 +42,7 @@
 * gomentod.com
 * greget.space
 * healthtod.com
+* hexafile.net
 * hunstulovers.net
 * iiv.pl
 * indexmovie.biz
@@ -74,6 +76,7 @@
 * ngelanjutkeun.blogspot.com
 * nimekaze.me
 * otololet.com
+* pafpaf.info
 * plantaheim.web.id
 * restorecosm.bid
 * safelinkreviewz.com
@@ -97,6 +100,7 @@
 * t4ank.top
 * telolet.in
 * telondasmu.com
+* tetew.info
 * threadsphere.bid
 * tojros.tk
 * ur.ly
