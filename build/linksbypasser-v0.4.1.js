@@ -134,7 +134,9 @@
         /^(?:\w+\.)?(hexafile\.net)/,
         /^(?:\w+\.)?(binerfile\.info)/,
         /^(?:\w+\.)?(pafpaf\.info)/,
-        /^(?:\w+\.)?(insurance-info\.us)/
+        /^(?:\w+\.)?(insurance-info\.us)/,
+        /^(?:\w+\.)?(gosavelink\.com)/,
+        /^(?:\w+\.)?(onepiece-ex.com.br(?=\/download\/))/
     ];
 
     // check the link.
@@ -228,6 +230,7 @@
     }
 
     function openLink(url) {
+        window.document.title = 'LinksBypasser - ' + url;
         window.location.href = url;
     }
 
@@ -286,6 +289,14 @@
     function bypassLink(host) {
         window.document.title = 'LinksBypasser - Wait a moment...';
         switch (host) {
+            case 'onepiece-ex.com.br':
+                window.document.addEventListener('DOMContentLoaded', function() {
+                    window.stop();
+                    let url = selectElement('noscript').textContent;
+                    openLink(url);
+                });
+                return;
+
             case '1ink.cc':
                 {
                     let url = window.document.head.querySelector('[name=keywords]').content;
@@ -834,6 +845,7 @@
             case 'binerfile.info':
             case 'bkshort.info':
             case 'fmlawkers.club':
+            case 'gosavelink.com':
             case 'kurosafe.club':
             case 'kurosafe.web.id':
             case 'kurosafe.website':
@@ -841,7 +853,7 @@
             case 'pafpaf.info':
             case 'xydeyou.com':
                 {
-                    let url = getUrl(/site=([^&]+)/);
+                    let url = getUrl(/site=([^&#]+)/);
                     url = b64(url);
                     openLink(url);
                     return;
