@@ -65,3 +65,5 @@
 65. https://binerfile.info/?site=aHR0cHM6Ly9kcml2ZS5rdXJvZ2F6ZS5wdy9maWxlL3ZiU2FQbGo5dHREVlQxdWFyNGp3&c=0&user=
 66. https://pafpaf.info/?site=aHR0cHM6Ly9kcml2ZS5rdXJvZ2F6ZS5wdy9maWxlL3ZiU2FQbGo5dHREVlQxdWFyNGp3
 67. http://insurance-info.us/?r=aHR0cDovL2RyaXZlZmlsZS5jby9maWxlLzExMzA4
+68. https://onepiece-ex.com.br/download/?23515
+69. http://gosavelink.com/haggle-free-isnt-a-myth-when-new-or-used-car-shopping/?site=aHR0cHM6Ly93d3cuZmVtYmVkLmNvbS9mLzhndmR5bnFscHZ5
