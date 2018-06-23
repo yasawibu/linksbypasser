@@ -64,3 +64,4 @@
 64. https://hexafile.net/rBKcS
 65. https://binerfile.info/?site=aHR0cHM6Ly9kcml2ZS5rdXJvZ2F6ZS5wdy9maWxlL3ZiU2FQbGo5dHREVlQxdWFyNGp3&c=0&user=
 66. https://pafpaf.info/?site=aHR0cHM6Ly9kcml2ZS5rdXJvZ2F6ZS5wdy9maWxlL3ZiU2FQbGo5dHREVlQxdWFyNGp3
+67. http://insurance-info.us/?r=aHR0cDovL2RyaXZlZmlsZS5jby9maWxlLzExMzA4
