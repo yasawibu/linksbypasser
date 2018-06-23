@@ -1,3 +1,8 @@
+## v0.4.1
+(??-??-2018)
+* **Added 1 supported links:**
+  * insurance-info.us
+
 ## v0.4.0
 (23-Jun-2018)
 * **Fixed 2 supported links:**
