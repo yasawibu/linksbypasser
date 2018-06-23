@@ -1,5 +1,5 @@
 # Supported Links
-(total: 113)
+(total: 115)
 * *.u.safelinkview.com
 * 1ink.cc
 * 6reeqaa.ga
@@ -40,6 +40,7 @@
 * goandroid.cf
 * gocoo.co
 * gomentod.com
+* gosavelink.com
 * greget.space
 * healthtod.com
 * hexafile.net
@@ -76,6 +77,7 @@
 * newterusin.ga
 * ngelanjutkeun.blogspot.com
 * nimekaze.me
+* onepiece-ex.com.br
 * otololet.com
 * pafpaf.info
 * plantaheim.web.id
