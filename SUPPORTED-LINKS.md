@@ -1,5 +1,5 @@
 # Supported Links
-(total: 112)
+(total: 113)
 * *.u.safelinkview.com
 * 1ink.cc
 * 6reeqaa.ga
@@ -47,6 +47,7 @@
 * iiv.pl
 * indexmovie.biz
 * inlink.co
+* insurance-info.us
 * intercelestial.com
 * jili.in
 * karung.in
