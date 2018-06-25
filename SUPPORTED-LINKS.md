@@ -1,5 +1,5 @@
 # Supported Links
-(total: 112)
+(total: 117)
 * *.u.safelinkview.com
 * 1ink.cc
 * 6reeqaa.ga
@@ -40,13 +40,16 @@
 * goandroid.cf
 * gocoo.co
 * gomentod.com
+* gosavelink.com
 * greget.space
 * healthtod.com
 * hexafile.net
+* hightech.web.id
 * hunstulovers.net
 * iiv.pl
 * indexmovie.biz
 * inlink.co
+* insurance-info.us
 * intercelestial.com
 * jili.in
 * karung.in
@@ -68,6 +71,7 @@
 * losstor.com
 * malaysurance.com
 * masmellow.com
+* menantisenja.com
 * menujulink.online
 * mirrorace.com
 * mylink.zone
@@ -75,6 +79,7 @@
 * newterusin.ga
 * ngelanjutkeun.blogspot.com
 * nimekaze.me
+* onepiece-ex.com.br
 * otololet.com
 * pafpaf.info
 * plantaheim.web.id
