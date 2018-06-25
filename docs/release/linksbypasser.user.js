@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LinksBypasser
 // @namespace    https://github.com/yasawibu/linksbypasser
-// @version      0.4.0
+// @version      0.4.1
 // @description  Decrease your wasting time on short links
 // @author       Putu Ardi Dharmayasa
 // @supportURL   https://github.com/yasawibu/linksbypasser/issues
@@ -133,7 +133,12 @@
         /^(?:\w+\.)?(tetew\.info)/,
         /^(?:\w+\.)?(hexafile\.net)/,
         /^(?:\w+\.)?(binerfile\.info)/,
-        /^(?:\w+\.)?(pafpaf\.info)/
+        /^(?:\w+\.)?(pafpaf\.info)/,
+        /^(?:\w+\.)?(insurance-info\.us)/,
+        /^(?:\w+\.)?(gosavelink\.com)/,
+        /^(?:\w+\.)?(onepiece-ex\.com\.br(?=\/download\/))/,
+        /^(?:\w+\.)?(hightech\.web\.id)/,
+        /^(?:\w+\.)?(menantisenja\.com)/
     ];
 
     // check the link.
@@ -227,6 +232,7 @@
     }
 
     function openLink(url) {
+        window.document.title = 'LinksBypasser - ' + url;
         window.location.href = url;
     }
 
@@ -285,6 +291,14 @@
     function bypassLink(host) {
         window.document.title = 'LinksBypasser - Wait a moment...';
         switch (host) {
+            case 'onepiece-ex.com.br':
+                window.document.addEventListener('DOMContentLoaded', function() {
+                    window.stop();
+                    let url = selectElement('noscript').textContent;
+                    openLink(url);
+                });
+                return;
+
             case '1ink.cc':
                 {
                     let url = window.document.head.querySelector('[name=keywords]').content;
@@ -298,6 +312,8 @@
 
             case 'businessforyouand.me':
             case 'davinsurance.com':
+            case 'insurance-info.us':
+            case 'menantisenja.com':
                 {
                     let url = getUrl(/(?:d|r)=([^#]+)/);
                     url = b64(url);
@@ -832,6 +848,8 @@
             case 'binerfile.info':
             case 'bkshort.info':
             case 'fmlawkers.club':
+            case 'gosavelink.com':
+            case 'hightech.web.id':
             case 'kurosafe.club':
             case 'kurosafe.web.id':
             case 'kurosafe.website':
@@ -839,7 +857,7 @@
             case 'pafpaf.info':
             case 'xydeyou.com':
                 {
-                    let url = getUrl(/site=([^&]+)/);
+                    let url = getUrl(/site=([^&#]+)/);
                     url = b64(url);
                     openLink(url);
                     return;
