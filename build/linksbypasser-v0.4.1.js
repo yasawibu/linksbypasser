@@ -136,7 +136,9 @@
         /^(?:\w+\.)?(pafpaf\.info)/,
         /^(?:\w+\.)?(insurance-info\.us)/,
         /^(?:\w+\.)?(gosavelink\.com)/,
-        /^(?:\w+\.)?(onepiece-ex.com.br(?=\/download\/))/
+        /^(?:\w+\.)?(onepiece-ex\.com\.br(?=\/download\/))/,
+        /^(?:\w+\.)?(hightech\.web\.id)/,
+        /^(?:\w+\.)?(menantisenja\.com)/
     ];
 
     // check the link.
@@ -311,6 +313,7 @@
             case 'businessforyouand.me':
             case 'davinsurance.com':
             case 'insurance-info.us':
+            case 'menantisenja.com':
                 {
                     let url = getUrl(/(?:d|r)=([^#]+)/);
                     url = b64(url);
@@ -846,6 +849,7 @@
             case 'bkshort.info':
             case 'fmlawkers.club':
             case 'gosavelink.com':
+            case 'hightech.web.id':
             case 'kurosafe.club':
             case 'kurosafe.web.id':
             case 'kurosafe.website':
