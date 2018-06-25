@@ -67,3 +67,5 @@
 67. http://insurance-info.us/?r=aHR0cDovL2RyaXZlZmlsZS5jby9maWxlLzExMzA4
 68. https://onepiece-ex.com.br/download/?23515
 69. http://gosavelink.com/haggle-free-isnt-a-myth-when-new-or-used-car-shopping/?site=aHR0cHM6Ly93d3cuZmVtYmVkLmNvbS9mLzhndmR5bnFscHZ5
+70. https://hightech.web.id/ko82jkl9/index.php?site=aHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL29wZW4/aWQ9MWxCVTlCY2ZvUDJSZVdmdmJDUG9RUWc2N0lVT2ltcUJS#landing
+71. https://www.menantisenja.com/?r=aHR0cHM6Ly93d3cxMi56aXBweXNoYXJlLmNvbS92L1dGb3o1ODY3L2ZpbGUuaHRtbA==
