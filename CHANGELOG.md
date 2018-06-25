@@ -1,8 +1,10 @@
 ## v0.4.1
-(??-??-2018)
-* **Added 3 supported links:**
+(25-Jun-2018)
+* **Added 5 supported links:**
   * gosavelink.com
+  * hightech.web.id
   * insurance-info.us
+  * menantisenja.com
   * onepiece-ex.com.br
 
 ## v0.4.0
