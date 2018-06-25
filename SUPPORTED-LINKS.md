@@ -1,5 +1,5 @@
 # Supported Links
-(total: 115)
+(total: 117)
 * *.u.safelinkview.com
 * 1ink.cc
 * 6reeqaa.ga
@@ -44,6 +44,7 @@
 * greget.space
 * healthtod.com
 * hexafile.net
+* hightech.web.id
 * hunstulovers.net
 * iiv.pl
 * indexmovie.biz
@@ -70,6 +71,7 @@
 * losstor.com
 * malaysurance.com
 * masmellow.com
+* menantisenja.com
 * menujulink.online
 * mirrorace.com
 * mylink.zone
