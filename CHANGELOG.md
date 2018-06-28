@@ -1,4 +1,4 @@
-## v0.4.1
+## v0.4.2
 (??-Jun-2018)
 * **Added 2 supported links:**
   * daunshorte.teknologilink.com
