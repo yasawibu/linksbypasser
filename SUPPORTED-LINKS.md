@@ -1,5 +1,5 @@
 # Supported Links
-(total: 117)
+(total: 119)
 * *.u.safelinkview.com
 * 1ink.cc
 * 6reeqaa.ga
@@ -22,6 +22,7 @@
 * businessforyouand.me
 * catcut.net
 * coeg.in
+* daunshorte.teknologilink.com
 * davinsurance.com
 * dcindo.com
 * decrypt2.safelinkconverter.com
@@ -103,6 +104,7 @@
 * sweetlantern.com
 * swzz.xyz
 * t4ank.top
+* teknosafe.teknologilink.com
 * telolet.in
 * telondasmu.com
 * tetew.info
