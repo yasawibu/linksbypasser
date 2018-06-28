@@ -72,3 +72,4 @@
 72. http://daunshorte.teknologilink.com/linkshortelink/safelink.php?sfG4cT78Mk1LtRe67=44149
 73. http://teknosafe.teknologilink.com/linkteknolink/safelinkscript.php?lnD7tE92Yw4QuXh74=31548
 74. https://idsly.bid/4Nxl
+75. http://plantaheim.web.id/?r=aHR0cHM6Ly93d3cxMS56aXBweXNoYXJlLmNvbS92LzhxbG9PaVhYL2ZpbGUuaHRtbA==
