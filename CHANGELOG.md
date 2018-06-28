@@ -1,3 +1,12 @@
+## v0.4.2
+(28-Jun-2018)
+* **Fixed 1 supported links:**
+  * plantaheim.web.id
+* **Added 3 supported links:**
+  * daunshorte.teknologilink.com
+  * idsly.bid *(bypass countdown only, still input recaptcha)*
+  * teknosafe.teknologilink.com
+
 ## v0.4.1
 (25-Jun-2018)
 * **Added 5 supported links:**
