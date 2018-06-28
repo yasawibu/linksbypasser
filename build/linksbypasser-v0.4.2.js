@@ -333,6 +333,7 @@
             case 'davinsurance.com':
             case 'insurance-info.us':
             case 'menantisenja.com':
+            case 'plantaheim.web.id':
                 {
                     let url = getUrl(/(?:d|r)=([^#]+)/);
                     url = b64(url);
@@ -887,7 +888,6 @@
             case 'gomentod.com':
             case 'lindung.in':
             case 'otololet.com':
-            case 'plantaheim.web.id':
             case 'soralink.sinetronku.tv':
             case 't4ank.top':
                 {
