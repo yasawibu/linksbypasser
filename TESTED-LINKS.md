@@ -71,3 +71,4 @@
 71. https://www.menantisenja.com/?r=aHR0cHM6Ly93d3cxMi56aXBweXNoYXJlLmNvbS92L1dGb3o1ODY3L2ZpbGUuaHRtbA==
 72. http://daunshorte.teknologilink.com/linkshortelink/safelink.php?sfG4cT78Mk1LtRe67=44149
 73. http://teknosafe.teknologilink.com/linkteknolink/safelinkscript.php?lnD7tE92Yw4QuXh74=31548
+74. https://idsly.bid/4Nxl
