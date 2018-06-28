@@ -1,7 +1,8 @@
 ## v0.4.2
 (??-Jun-2018)
-* **Added 2 supported links:**
+* **Added 3 supported links:**
   * daunshorte.teknologilink.com
+  * idsly.bid *(bypass countdown only, still input recaptcha)*
   * teknosafe.teknologilink.com
 
 ## v0.4.1
