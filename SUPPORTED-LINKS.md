@@ -1,5 +1,5 @@
 # Supported Links
-(total: 119)
+(total: 120)
 * *.u.safelinkview.com
 * 1ink.cc
 * 6reeqaa.ga
@@ -47,6 +47,7 @@
 * hexafile.net
 * hightech.web.id
 * hunstulovers.net
+* idsly.bid *(bypass countdown only, still input recaptcha)*
 * iiv.pl
 * indexmovie.biz
 * inlink.co
