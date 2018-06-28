@@ -140,7 +140,8 @@
         /^(?:\w+\.)?(hightech\.web\.id)/,
         /^(?:\w+\.)?(menantisenja\.com)/,
         /^(?:\w+\.)?(daunshorte\.teknologilink\.com)/,
-        /^(?:\w+\.)?(teknosafe\.teknologilink\.com)/
+        /^(?:\w+\.)?(teknosafe\.teknologilink\.com)/,
+        /^(?:\w+\.)?(idsly\.bid)/
     ];
 
     // check the link.
@@ -599,6 +600,7 @@
                 });
                 return;
 
+            case 'idsly.bid':
             case 'linkk.bid':
             case 'safelinku.net':
                 window.document.addEventListener('DOMContentLoaded', function() {
