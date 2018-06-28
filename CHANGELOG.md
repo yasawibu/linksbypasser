@@ -1,4 +1,10 @@
 ## v0.4.1
+(??-Jun-2018)
+* **Added 2 supported links:**
+  * daunshorte.teknologilink.com
+  * teknosafe.teknologilink.com
+
+## v0.4.1
 (25-Jun-2018)
 * **Added 5 supported links:**
   * gosavelink.com
