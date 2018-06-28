@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LinksBypasser
 // @namespace    https://github.com/yasawibu/linksbypasser
-// @version      0.4.1
+// @version      0.4.2
 // @description  Decrease your wasting time on short links
 // @author       Putu Ardi Dharmayasa
 // @supportURL   https://github.com/yasawibu/linksbypasser/issues
@@ -138,7 +138,10 @@
         /^(?:\w+\.)?(gosavelink\.com)/,
         /^(?:\w+\.)?(onepiece-ex\.com\.br(?=\/download\/))/,
         /^(?:\w+\.)?(hightech\.web\.id)/,
-        /^(?:\w+\.)?(menantisenja\.com)/
+        /^(?:\w+\.)?(menantisenja\.com)/,
+        /^(?:\w+\.)?(daunshorte\.teknologilink\.com)/,
+        /^(?:\w+\.)?(teknosafe\.teknologilink\.com)/,
+        /^(?:\w+\.)?(idsly\.bid)/
     ];
 
     // check the link.
@@ -291,6 +294,22 @@
     function bypassLink(host) {
         window.document.title = 'LinksBypasser - Wait a moment...';
         switch (host) {
+            case 'teknosafe.teknologilink.com':
+                window.document.addEventListener('DOMContentLoaded', function() {
+                    window.stop();
+                    let url = getUrl('#templatemo_content div a');
+                    openLink(url);
+                });
+                return;
+
+            case 'daunshorte.teknologilink.com':
+                window.document.addEventListener('DOMContentLoaded', function() {
+                    window.stop();
+                    let url = getUrl('.article div center a');
+                    openLink(url);
+                });
+                return;
+
             case 'onepiece-ex.com.br':
                 window.document.addEventListener('DOMContentLoaded', function() {
                     window.stop();
@@ -314,6 +333,7 @@
             case 'davinsurance.com':
             case 'insurance-info.us':
             case 'menantisenja.com':
+            case 'plantaheim.web.id':
                 {
                     let url = getUrl(/(?:d|r)=([^#]+)/);
                     url = b64(url);
@@ -581,6 +601,7 @@
                 });
                 return;
 
+            case 'idsly.bid':
             case 'linkk.bid':
             case 'safelinku.net':
                 window.document.addEventListener('DOMContentLoaded', function() {
@@ -867,7 +888,6 @@
             case 'gomentod.com':
             case 'lindung.in':
             case 'otololet.com':
-            case 'plantaheim.web.id':
             case 'soralink.sinetronku.tv':
             case 't4ank.top':
                 {
