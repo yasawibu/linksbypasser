@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LinksBypasser
 // @namespace    https://github.com/yasawibu/linksbypasser
-// @version      0.4.2
+// @version      0.4.3
 // @description  Decrease your wasting time on short links
 // @author       Putu Ardi Dharmayasa
 // @supportURL   https://github.com/yasawibu/linksbypasser/issues
@@ -141,7 +141,8 @@
         /^(?:\w+\.)?(menantisenja\.com)/,
         /^(?:\w+\.)?(daunshorte\.teknologilink\.com)/,
         /^(?:\w+\.)?(teknosafe\.teknologilink\.com)/,
-        /^(?:\w+\.)?(idsly\.bid)/
+        /^(?:\w+\.)?(idsly\.bid)/,
+        /^(?:\w+\.)?(dawnstation\.com)/
     ];
 
     // check the link.
@@ -294,6 +295,14 @@
     function bypassLink(host) {
         window.document.title = 'LinksBypasser - Wait a moment...';
         switch (host) {
+            case 'dawnstation.com':
+                window.document.addEventListener('DOMContentLoaded', function() {
+                    window.stop();
+                    let url = getUrl('#tidakakanselamanya a');
+                    openLink(url);
+                });
+                return;
+
             case 'teknosafe.teknologilink.com':
                 window.document.addEventListener('DOMContentLoaded', function() {
                     window.stop();
@@ -332,6 +341,7 @@
             case 'businessforyouand.me':
             case 'davinsurance.com':
             case 'insurance-info.us':
+            case 'lindung.in':
             case 'menantisenja.com':
             case 'plantaheim.web.id':
                 {
@@ -886,7 +896,6 @@
 
             case 'forexbrokers.download':
             case 'gomentod.com':
-            case 'lindung.in':
             case 'otololet.com':
             case 'soralink.sinetronku.tv':
             case 't4ank.top':
