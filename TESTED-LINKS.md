@@ -1,5 +1,5 @@
 1. http://awsubsco.ga/en/cost/bit.ly?id=aHR0cDovL2JfdC5seS8yRlRNWkNL&c=1&user=61942
-2. http://lindung.in/how-to-increase-penis-size-through-exercising-and-dieting/?d=aHR0cHM6Ly9saW5rLnNhZmVsaW5rY29udmVydGVyLmNvbS9yZXZpZXcucGhwP2lkPWFIUjBjRG92TDJKZmRDNXNlUzh5U1RNeE1VTjQmYz0xJnVzZXI9NjE5NDI=#landing
+2. http://lindung.in/?r=aHR0cDovL3BsYW50YWhlaW0ud2ViLmlkLz9yPWFIUjBjSE02THk5M2QzY3hNVEV1ZW1sd2NIbHphR0Z5WlM1amIyMHZkaTlrTUdOM1IyRlJhaTltYVd4bExtaDBiV3c9
 3. http://short.awsubs.co/jSlb8
 4. http://nimekaze.me/go/aHR0cDovL3NhZmVsaW5rdS5uZXQvVTFheGs=
 5. https://www.siherp.com/duVoV
@@ -73,3 +73,4 @@
 73. http://teknosafe.teknologilink.com/linkteknolink/safelinkscript.php?lnD7tE92Yw4QuXh74=31548
 74. https://idsly.bid/4Nxl
 75. http://plantaheim.web.id/?r=aHR0cHM6Ly93d3cxMS56aXBweXNoYXJlLmNvbS92LzhxbG9PaVhYL2ZpbGUuaHRtbA==
+76. https://dawnstation.com/shortlink/17977/d41d8cd98f00b204e9800998ecf8427e
