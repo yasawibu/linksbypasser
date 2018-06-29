@@ -1,5 +1,5 @@
 # Supported Links
-(total: 120)
+(total: 121)
 * *.u.safelinkview.com
 * 1ink.cc
 * 6reeqaa.ga
@@ -24,6 +24,7 @@
 * coeg.in
 * daunshorte.teknologilink.com
 * davinsurance.com
+* dawnstation.com
 * dcindo.com
 * decrypt2.safelinkconverter.com
 * delekke.com

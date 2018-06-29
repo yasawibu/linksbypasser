@@ -1,3 +1,10 @@
+## v0.4.3
+(29-Jun-2018)
+* **Improved 1 supported links:**
+  * lindung.in
+* **Added 1 supported links:**
+  * dawnstation.com
+
 ## v0.4.2
 (28-Jun-2018)
 * **Fixed 1 supported links:**
