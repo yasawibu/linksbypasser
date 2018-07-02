@@ -1,5 +1,5 @@
 # Supported Links
-(total: 121)
+(total: 122)
 * *.u.safelinkview.com
 * 1ink.cc
 * 6reeqaa.ga
@@ -10,6 +10,7 @@
 * animeindo.me
 * anjay.info
 * apasih.pw
+* autech.xyz
 * autokit.co
 * autolinkach.com
 * aw-games.net
