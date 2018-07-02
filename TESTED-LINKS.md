@@ -74,3 +74,4 @@
 74. https://idsly.bid/4Nxl
 75. http://plantaheim.web.id/?r=aHR0cHM6Ly93d3cxMS56aXBweXNoYXJlLmNvbS92LzhxbG9PaVhYL2ZpbGUuaHRtbA==
 76. https://dawnstation.com/shortlink/17977/d41d8cd98f00b204e9800998ecf8427e
+77. https://autech.xyz/lenovo-a7010/?url=aHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8wQjhnZmZ2VWE2RWdoWTBSRVRsOWlZbXRIVmxrL3ZpZXc/dXNwPXNoYXJpbmc=
