@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LinksBypasser
 // @namespace    https://github.com/yasawibu/linksbypasser
-// @version      0.4.3
+// @version      0.4.4
 // @description  Decrease your wasting time on short links
 // @author       Putu Ardi Dharmayasa
 // @supportURL   https://github.com/yasawibu/linksbypasser/issues
@@ -142,7 +142,8 @@
         /^(?:\w+\.)?(daunshorte\.teknologilink\.com)/,
         /^(?:\w+\.)?(teknosafe\.teknologilink\.com)/,
         /^(?:\w+\.)?(idsly\.bid)/,
-        /^(?:\w+\.)?(dawnstation\.com)/
+        /^(?:\w+\.)?(dawnstation\.com)/,
+        /^(?:\w+\.)?(autech\.xyz)/
     ];
 
     // check the link.
@@ -930,6 +931,7 @@
                 });
                 return;
 
+            case 'autech.xyz':
             case 'designmyhomee.com':
             case 'eigamou.win':
             case 'link.shirogaze.tk':
