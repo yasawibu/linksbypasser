@@ -1,3 +1,8 @@
+## v0.4.4
+(3-Jul-2018)
+* **Added 1 supported links:**
+  * autech.xyz
+  
 ## v0.4.3
 (29-Jun-2018)
 * **Improved 1 supported links:**
