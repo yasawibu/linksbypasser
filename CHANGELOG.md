@@ -1,3 +1,8 @@
+## v0.4.5
+(?-Jul-2018)
+* **Added 1 supported links:**
+  * lanjutkeun.blogspot.com
+
 ## v0.4.4
 (3-Jul-2018)
 * **Added 1 supported links:**
