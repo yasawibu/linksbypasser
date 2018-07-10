@@ -76,3 +76,4 @@
 76. https://dawnstation.com/shortlink/17977/d41d8cd98f00b204e9800998ecf8427e
 77. https://autech.xyz/lenovo-a7010/?url=aHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8wQjhnZmZ2VWE2RWdoWTBSRVRsOWlZbXRIVmxrL3ZpZXc/dXNwPXNoYXJpbmc=
 78. https://lanjutkeun.blogspot.com/p/golink.html?url=aHR0cHM6Ly93d3c4Ny56aXBweXNoYXJlLmNvbS92L1pMTUxSZzczL2ZpbGUuaHRtbA==
+79. http://lanjutinaja.net/5-bahaya-begadang-bagi-kesehatan-tubuh/?wp_safelink_data=NzBlZmRmMmVjOWIwODYwNzk3OTVjNDQyNjM2YjU1ZmIqWXlvcVpUaWxIV3QxZkt2TVhEaDVmNVVXaXNXTU1uQkhUWE9KdWY1b3ZMaExoK0wyN2hLenNlbithUHY5aDBxdEkzYUVmbWdhdjlQL2ZidkRYM0lMdnc9PQ==#landing
