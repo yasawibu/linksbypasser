@@ -144,7 +144,8 @@
         /^(?:\w+\.)?(idsly\.bid)/,
         /^(?:\w+\.)?(dawnstation\.com)/,
         /^(?:\w+\.)?(autech\.xyz)/,
-        /^(?:\w+\.)?(lanjutkeun\.blogspot\.(com|co\.id))/
+        /^(?:\w+\.)?(lanjutkeun\.blogspot\.(com|co\.id))/,
+        /^(?:\w+\.)?(lanjutinaja\.net)/
     ];
 
     // check the link.
@@ -297,6 +298,34 @@
     function bypassLink(host) {
         window.document.title = 'LinksBypasser - Wait a moment...';
         switch (host) {
+            case 'lanjutinaja.net':
+                {
+                    let GET = function(url) {
+                        return new Promise((resolve, reject) => {
+                            const xhr = new XMLHttpRequest();
+                            xhr.onload = function () {
+                                resolve(this.responseText);
+                            };
+
+                            xhr.open('GET', url, true);
+                            xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+                            xhr.send();
+                        });
+                    };
+
+                    window.document.addEventListener('DOMContentLoaded', function() {
+                        window.stop();
+                        const data = getUrl(/wp_safelink_data=([^#]+)/);
+                        const url = 'http://lanjutinaja.net/wp-admin/admin-ajax.php?action=wp_safelink&request=decrypt&data=' + data;
+                        GET(url).then((respone) => {
+                            respone = JSON.parse(respone);
+                            let url = respone.url;
+                            openLink(url);
+                        });
+                    });
+                    return;
+                }
+
             case 'dawnstation.com':
                 window.document.addEventListener('DOMContentLoaded', function() {
                     window.stop();
