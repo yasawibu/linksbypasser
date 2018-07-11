@@ -1,3 +1,11 @@
+## v0.4.5
+(11-Jul-2018)
+* **Added 4 supported links:**
+  * animanganews.com
+  * lanjutinaja.net
+  * lanjutkeun.blogspot.com
+  * urlku.gq
+
 ## v0.4.4
 (3-Jul-2018)
 * **Added 1 supported links:**
