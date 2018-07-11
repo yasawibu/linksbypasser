@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LinksBypasser
 // @namespace    https://github.com/yasawibu/linksbypasser
-// @version      0.4.4
+// @version      0.4.5
 // @description  Decrease your wasting time on short links
 // @author       Putu Ardi Dharmayasa
 // @supportURL   https://github.com/yasawibu/linksbypasser/issues
@@ -143,7 +143,11 @@
         /^(?:\w+\.)?(teknosafe\.teknologilink\.com)/,
         /^(?:\w+\.)?(idsly\.bid)/,
         /^(?:\w+\.)?(dawnstation\.com)/,
-        /^(?:\w+\.)?(autech\.xyz)/
+        /^(?:\w+\.)?(autech\.xyz)/,
+        /^(?:\w+\.)?(lanjutkeun\.blogspot\.(com|co\.id))/,
+        /^(?:\w+\.)?(lanjutinaja\.net)/,
+        /^(?:\w+\.)?(animanganews\.com)/,
+        /^(?:\w+\.)?(urlku\.gq)/
     ];
 
     // check the link.
@@ -296,6 +300,58 @@
     function bypassLink(host) {
         window.document.title = 'LinksBypasser - Wait a moment...';
         switch (host) {
+            case 'animanganews.com':
+            case 'urlku.gq':
+                {
+                    let code = `Object.defineProperty(window, 'safelink', {configurable: true,set: function(value) {Object.defineProperty(window, 'safelink', {value: value});}});`;
+                    let script = document.createElement('script');
+                    script.textContent = code;
+                    document.documentElement.appendChild(script);
+
+                    window.document.addEventListener('DOMContentLoaded', function() {
+                        window.safelink.counter = 0;
+                        window.safelink.click2xratio = 999999;
+
+                        const checkUrl = setInterval(() => {
+                            let url = document.querySelector('.result a').href;
+                            if (url !== 'javascript:;') {
+                                window.stop();
+                                clearInterval(checkUrl);
+                                openLink(url);
+                            }
+                        },100);
+                    });
+                    return;
+                }
+
+            case 'lanjutinaja.net':
+                {
+                    let GET = function(url) {
+                        return new Promise((resolve, reject) => {
+                            const xhr = new XMLHttpRequest();
+                            xhr.onload = function () {
+                                resolve(this.responseText);
+                            };
+
+                            xhr.open('GET', url, true);
+                            xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+                            xhr.send();
+                        });
+                    };
+
+                    window.document.addEventListener('DOMContentLoaded', function() {
+                        window.stop();
+                        const data = getUrl(/wp_safelink_data=([^#]+)/);
+                        const url = 'http://lanjutinaja.net/wp-admin/admin-ajax.php?action=wp_safelink&request=decrypt&data=' + data;
+                        GET(url).then((respone) => {
+                            respone = JSON.parse(respone);
+                            let url = respone.url;
+                            openLink(url);
+                        });
+                    });
+                    return;
+                }
+
             case 'dawnstation.com':
                 window.document.addEventListener('DOMContentLoaded', function() {
                     window.stop();
@@ -410,8 +466,8 @@
             case 'threadsphere.bid':
                 {
                     // Make token accessible
-                    var code = `Object.defineProperty(window, 'ysmm', {configurable: true,set: function(value) {Object.defineProperty(window, 'ysmm', {value: value});}});`;
-                    var script = document.createElement('script');
+                    let code = `Object.defineProperty(window, 'ysmm', {configurable: true,set: function(value) {Object.defineProperty(window, 'ysmm', {value: value});}});`;
+                    let script = document.createElement('script');
                     script.textContent = code;
                     document.documentElement.appendChild(script);
 
@@ -934,6 +990,8 @@
             case 'autech.xyz':
             case 'designmyhomee.com':
             case 'eigamou.win':
+            case 'lanjutkeun.blogspot.com':
+            case 'lanjutkeun.blogspot.co.id':
             case 'link.shirogaze.tk':
             case 'masmellow.com':
             case 'menujulink.online':
