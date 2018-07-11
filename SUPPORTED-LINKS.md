@@ -1,11 +1,12 @@
 # Supported Links
-(total: 124)
+(total: 126)
 * *.u.safelinkview.com
 * 1ink.cc
 * 6reeqaa.ga
 * 94lauin.com
 * ani-share.com
 * ani-short.info
+* animanganews.com
 * animeforce.stream
 * animeindo.me
 * anjay.info
@@ -116,6 +117,7 @@
 * threadsphere.bid
 * tojros.tk
 * ur.ly
+* urlku.gq
 * urly.mobi
 * verydelicius.com
 * wibu-san.com
