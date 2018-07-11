@@ -145,7 +145,9 @@
         /^(?:\w+\.)?(dawnstation\.com)/,
         /^(?:\w+\.)?(autech\.xyz)/,
         /^(?:\w+\.)?(lanjutkeun\.blogspot\.(com|co\.id))/,
-        /^(?:\w+\.)?(lanjutinaja\.net)/
+        /^(?:\w+\.)?(lanjutinaja\.net)/,
+        /^(?:\w+\.)?(animanganews\.com)/,
+        /^(?:\w+\.)?(urlku\.gq)/
     ];
 
     // check the link.
@@ -298,6 +300,30 @@
     function bypassLink(host) {
         window.document.title = 'LinksBypasser - Wait a moment...';
         switch (host) {
+            case 'animanganews.com':
+            case 'urlku.gq':
+                {
+                    let code = `Object.defineProperty(window, 'safelink', {configurable: true,set: function(value) {Object.defineProperty(window, 'safelink', {value: value});}});`;
+                    let script = document.createElement('script');
+                    script.textContent = code;
+                    document.documentElement.appendChild(script);
+
+                    window.document.addEventListener('DOMContentLoaded', function() {
+                        window.safelink.counter = 0;
+                        window.safelink.click2xratio = 999999;
+
+                        const checkUrl = setInterval(() => {
+                            let url = document.querySelector('.result a').href;
+                            if (url !== 'javascript:;') {
+                                window.stop();
+                                clearInterval(checkUrl);
+                                openLink(url);
+                            }
+                        },100);
+                    });
+                    return;
+                }
+
             case 'lanjutinaja.net':
                 {
                     let GET = function(url) {
@@ -440,8 +466,8 @@
             case 'threadsphere.bid':
                 {
                     // Make token accessible
-                    var code = `Object.defineProperty(window, 'ysmm', {configurable: true,set: function(value) {Object.defineProperty(window, 'ysmm', {value: value});}});`;
-                    var script = document.createElement('script');
+                    let code = `Object.defineProperty(window, 'ysmm', {configurable: true,set: function(value) {Object.defineProperty(window, 'ysmm', {value: value});}});`;
+                    let script = document.createElement('script');
                     script.textContent = code;
                     document.documentElement.appendChild(script);
 
