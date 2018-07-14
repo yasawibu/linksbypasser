@@ -18,7 +18,7 @@
 18. http://animeindo.me/?site=aHR0cDovL2Rpc2tva29zbWlrby5teC9EQkFUQ0gwMi9hYmNkLTkxODAyL2RiYXRjaC1rdXJvLXNoaXQtc3VqaS1ib2MtYmQtNzIwcCwxNjIwMTU4LGxpc3QsMSwyLnJhcg==&c=0&user=
 19. http://autokit.co/volkswagen-passat-gt-concept-applies-gti-look-to-vws-mid-size-sedan/?page=MWdDUUpsS1NQdmcxQ0RNMzVyc2tRV3ZJeHZadTcyd3N2NUZ6YnJPYTdNa2MvVyt6MGdYSW1TY2dLNWtld24vWUluOUtldFJPZnUwakJHL0lOdDJsd1E9PQ==
 20. http://mylink.zone/4U9K
-21. http://catcut.net/NkCc#
+21. http://insurance-info.us/?r=aHR0cDovL2RyaXZlZmlsZS5jby9maWxlLzExNzI2
 22. http://gocoo.co/5a01b7b1c19a1
 23. http://animeforce.stream/?l=aHR0cDovL3d3dy51bmx1Y2t5cGVvcGxlLm9yZy9EREwvQU5JTUUvSGltb3V0b1VtYXJ1LWNoYW5SL0hpbW91dG9VbWFydS1jaGFuUl9FcF8wMV9TVUJfSVRBLm1wNA==
 24. http://aw-games.net/MiJoa
@@ -36,7 +36,7 @@
 36. http://telolet.in/?go=aHR0cDovL291by5pby9lSmZUTDk=
 37. http://ur.ly/xD8Amzb
 38. http://sehatsegar.net/yuk-mengenal-ketofastosis/?get=dENPRE1YZEV2bUJ6YThhRE5VUXRaSjZTZjljdGpwWWpQd3REU3JuVXYrTEx4dElFN25Nc1NXVmlNNTJ0cGhCWTNnTE9YdURTSkV3VTRqamZzMGRQT3FxTVJFM0JOK2ZkbERLcE5SWVRWc0Q2K09kMlQ2VjI5UmZka3ZwN1NiNFVtckY5bFQ3VkJhcStVdDc3YkFrY1lBPT0=#landing
-39. http://threadsphere.bid/-20/7hkij
+39. http://verydelicius.com/how-to-make-black-pepper-sauce-beef-steak-simple-and-delicious/?ref=aHR0cDovL3VwZmlsZS5tb2JpL0V3TEp6ZTRXNHVI
 40. http://www.greget.space/1vc3Z
 41. http://davinsurance.com/?r=aHR0cDovL3d3dzU1LnppcHB5c2hhcmUuY29tL3YvZmxEOEQ3cW0vZmlsZS5odG1s
 42. https://mirrorace.com/m/Kei3
@@ -49,7 +49,7 @@
 49. https://sukahayu.xyz/worlds-best-investment-banks.html?url=aHR0cDovL2xpbmtzaHJpbmsubmV0LzdJNVRueQ==
 50. http://www.masmellow.com/p/how-to-have-easy-healthy-diet.html?url=aHR0cHM6Ly9vdW8uaW8vT1V3cjh3
 51. http://6reeqaa.ga/en/cost/store.steampowered.com?id=aHR0cDovL3N0KHIpLnN0KSFtcCh3KXIpZC5jKG0vIXBwLzY0NTIzMC9TVU1PQ1JBVFMv&c=1&user=40552
-52. http://restorecosm.bid/-36721HFNT/5hjB?rndad=608753788-1524811970
+52. http://clearload.bid/-1/1oLjHz
 53. http://gameinfo.pw/?id=cTZxVVkxb2poUEFGSU1DTURCU0svWVhHQ05zWEZjZkpvUVFJdzFlRmdTaE5HWWcwSWZuMDBVWlpwQ2Jwa2s3cGdRNWUrYkg2elV1alhTcExhNDJKZHc9PQ==
 54. https://forexbrokers.download/new-automated-forex-software-key-buying-features-for-forex-traders/?d=aHR0cDovL2ZvcmV4YnJva2Vycy5kb3dubG9hZC8/cj1hSFIwY0hNNkx5OWtjbWwyWlM1bmIyOW5iR1V1WTI5dEwyOXdaVzQvYVdROU1WOVpibkE1YkRCVk4yZHllbE40WWtWTFYxWk1jblJLVFVFeVFWTkRVbk5L#landing
 55. https://kurosafe.website/?site=aHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL29wZW4/aWQ9MThWeDBna2l5Q3pMcTN5M0tuUnczQkQ4N0Zxd05YN1lh&c=0&user=
@@ -79,3 +79,10 @@
 79. http://lanjutinaja.net/5-bahaya-begadang-bagi-kesehatan-tubuh/?wp_safelink_data=NzBlZmRmMmVjOWIwODYwNzk3OTVjNDQyNjM2YjU1ZmIqWXlvcVpUaWxIV3QxZkt2TVhEaDVmNVVXaXNXTU1uQkhUWE9KdWY1b3ZMaExoK0wyN2hLenNlbithUHY5aDBxdEkzYUVmbWdhdjlQL2ZidkRYM0lMdnc9PQ==#landing
 80. http://www.animanganews.com/p/5-things-to-look-for-before-starting.html?url=IyNrRiU1QyU1QyUxQiUwN0UlMDdFR0slMDZNS0laR1paQUUlMDclMDclMTIlNUJYJTVDJTVDJTQwIyM%3D
 81. https://www.urlku.gq/p/life-with-woody-10-inspirational-quotes.html?url=IyNPRkFaSSU0MCU1QiUxNVglNUIlNUQlMTdfTUElNUUlMDdDRH4lNjAlNUNFcUElMTFEJTdDbXolMThxJTQwT20lMUVJJTdEJTVFTk5PJTEwaiUxOCUwN0wlMDdNREFOJTA3RUdLJTA2TURPR0dPJTA2TSU1RUFaTCUwNyUwNyUxMiU1QlglNUMlNUMlNDAjIw%3D%3D
+82. http://linkach.com/?id=Y3puclVLdGRzMTlRV3BuVC9EVE1Ud251Z2ZTMVgzNllTUUErSjBQRXA4dElXWlBiVkRjN2tkaDRUYWVTK09TVlZ5d3dnVTVDcHRmZU9DS2Y1MFhFQ1c1NkNxamNNMU9pNUJOZkUybzF3Sk09
+83. https://skips.link/iyc9zm
+84. http://tr.link/LWP
+85. http://www.hunstulovers.net/go/aHR0cHM6Ly9taXJyb3JhY2UuY29tL20vMjc5eFg=
+86. https://skinnycat.net/ulasan-rincian-bukti-pembayaran-ad-network-adcash/?d=aHR0cHM6Ly91c2Vyc2Nsb3VkLmNvbS90bTNuNjVjdW43Y2g=#breadcrumbs
+87. http://spacetica.com/yRhbh
+88. http://getinfos.ne
