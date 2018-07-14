@@ -85,4 +85,4 @@
 85. http://www.hunstulovers.net/go/aHR0cHM6Ly9taXJyb3JhY2UuY29tL20vMjc5eFg=
 86. https://skinnycat.net/ulasan-rincian-bukti-pembayaran-ad-network-adcash/?d=aHR0cHM6Ly91c2Vyc2Nsb3VkLmNvbS90bTNuNjVjdW43Y2g=#breadcrumbs
 87. http://spacetica.com/yRhbh
-88. http://getinfos.ne
+88. http://getinfos.net/?id=SVl3ZG53RzhmRHVlWjAwYyswdk5QQ0JGOFpOQnJpNVhFcDNJTTA1UVk2RjdteE5sc3pWY1ZkMjdjcWkvZjNsZ25lK29CcjkrNDRLS1RZZlpTUGQ0Tzhtem1QUW5nSjhyMzJrWGEza1Q4Njg9
