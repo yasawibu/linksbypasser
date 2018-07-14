@@ -41,7 +41,7 @@ Total: 123 links. See [SUPPORTED-LINKS.md] for the details.
 * Added code injection method
 * Added error handling
 * Fixed 2 supported links
-* Improved 2 supported links
+* Improved 22 supported links
 * Added 3 supported links
 * Removed 6 supported links
 
