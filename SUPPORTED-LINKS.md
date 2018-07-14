@@ -1,9 +1,8 @@
 # Supported Links
-(total: 126)
+(total: 123)
 * *.u.safelinkview.com
 * 1ink.cc
 * 6reeqaa.ga
-* 94lauin.com
 * ani-share.com
 * ani-short.info
 * animanganews.com
@@ -22,7 +21,6 @@
 * bkshort.info
 * bluemediafiles.com
 * businessforyouand.me
-* catcut.net
 * coeg.in
 * daunshorte.teknologilink.com
 * davinsurance.com
@@ -33,7 +31,6 @@
 * designmyhomee.com
 * dilanjut.in
 * dl.animeindoku.net
-* dl-protect1.com
 * eigamou.win
 * filmku21.website
 * fmlawkers.club
@@ -70,6 +67,7 @@
 * lindung.in
 * link.shirogaze.tk
 * link4.me
+* linkach.com
 * linkk.bid
 * linkpoi.in
 * links.fiuxy.bz
@@ -90,7 +88,6 @@
 * otololet.com
 * pafpaf.info
 * plantaheim.web.id
-* restorecosm.bid
 * safelinkreviewz.com
 * safelinku.net *(bypass countdown only, still input recaptcha)*
 * sehatlega.com
@@ -102,6 +99,7 @@
 * siherp.com
 * siotong.com
 * skinnycat.net
+* skips.link
 * soralink.sinetronku.tv
 * spacetica.com
 * st.tontonanime.win
@@ -114,13 +112,12 @@
 * telolet.in
 * telondasmu.com
 * tetew.info
-* threadsphere.bid
 * tojros.tk
+* tr.link
 * ur.ly
 * urlku.gq
 * urly.mobi
 * verydelicius.com
-* wibu-san.com
 * wptech.ga
 * xydeyou.com
 * yametesenpai.xyz
