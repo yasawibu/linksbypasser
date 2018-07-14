@@ -1,3 +1,46 @@
+## v0.5.0
+(15-Jul-2018)
+* **Improved bypass methods**
+* **Added code injection method**
+* **Added error handling**
+* **Fixed 2 supported links:**
+  * 1ink.cc
+  * autolinkach.com
+* **Improved 22 supported links:**
+  * bagilagi.com
+  * daunshorte.teknologilink.com
+  * dawnstation.com
+  * decrypt2.safelinkconverter.com
+  * gameinfo.pw
+  * getinfos.net
+  * gocoo.co
+  * hexafile.net
+  * iiv.pl
+  * intercelestial.com
+  * jili.in
+  * karung.in
+  * lanjutinaja.net
+  * lifesurance.info
+  * mylink.zone
+  * onepiece-ex.com.br
+  * sehatsegar.net
+  * short.awsubs.co
+  * spacetica.com
+  * swzz.xyz
+  * sweetlantern.com
+  * teknosafe.teknologilink.com
+* **Added 3 supported links:**
+  * linkach.com
+  * skips.link
+  * tr.link
+* **Removed 6 supported links:**
+  * 94lauin.com
+  * catcut.net
+  * dl-protect1.com
+  * restorecosm.bid
+  * threadsphere.bid
+  * wibu-san.com
+  
 ## v0.4.5
 (11-Jul-2018)
 * **Added 4 supported links:**
