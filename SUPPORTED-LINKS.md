@@ -1,7 +1,8 @@
 # Supported Links
-(total: 123)
+(total: 125)
 * *.u.safelinkview.com
 * 1ink.cc
+* 1tiny.net
 * 6reeqaa.ga
 * ani-share.com
 * ani-short.info
@@ -53,6 +54,7 @@
 * inlink.co
 * insurance-info.us
 * intercelestial.com
+* j-safelink.blogspot.com
 * jili.in
 * karung.in
 * kuhaku.cf
