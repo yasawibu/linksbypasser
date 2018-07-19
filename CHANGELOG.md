@@ -1,3 +1,9 @@
+## v0.5.1
+(??-??-2018)
+* **Added 2 supported links:**
+  * 1tiny.net
+  * j-safelink.blogspot.com
+
 ## v0.5.0
 (15-Jul-2018)
 * **Improved bypass methods**
