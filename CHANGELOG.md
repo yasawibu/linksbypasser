@@ -1,7 +1,8 @@
 ## v0.5.1
 (??-??-2018)
-* **Added 2 supported links:**
+* **Added 3 supported links:**
   * 1tiny.net
+  * giga74.com
   * j-safelink.blogspot.com
 
 ## v0.5.0
