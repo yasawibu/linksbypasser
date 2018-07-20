@@ -146,7 +146,8 @@
         /^(?:\w+\.)?(tr\.link)/,
         /^(?:\w+\.)?(linkach\.com)/,
         /^(?:\w+\.)?(1tiny\.net(?=\/[^\?].+))/,
-        /^(?:\w+\.)?(j-safelink\.blogspot\.(?:com|co\.id))/
+        /^(?:\w+\.)?(j-safelink\.blogspot\.(?:com|co\.id))/,
+        /^(?:\w+\.)?(giga74\.com)/
     ];
 
     // check the link.
@@ -1166,15 +1167,21 @@
 
             case '6reeqaa.ga':
             case 'awsubsco.ga': // site can't be reached - last checked 14 july 2018
+            case 'giga74.com':
             case 'gigapurbalinggaa.ga': // site can't be reached - last checked 14 july 2018
             case 'safelinkreviewz.com':
-                window.document.addEventListener('DOMContentLoaded', function() {
+                {
                     window.stop();
-                    let url = getUrlFromScript(/var d_link = '([^]+)'/);
-                    url = decodeURIComponent(url);
-                    openLink(url);
-                });
-                return;
+                    const url = window.location.href;
+                    GET(url).then((respone) => {
+                        let content = respone;
+                        let doc = newDocument(content);
+                        let url = getUrlFromScript(doc, /var d_link = '([^]+)'/);
+                        url = decodeURIComponent(url);
+                        openLink(url);
+                    });
+                    return;
+                }
 
             case 'hunstulovers.net':
             case 'nimekaze.me': // site can't be reached - last checked 14 july 2018
