@@ -1,5 +1,5 @@
 # Supported Links
-(total: 125)
+(total: 126)
 * *.u.safelinkview.com
 * 1ink.cc
 * 1tiny.net
@@ -38,6 +38,7 @@
 * forexbrokers.download
 * gameinfo.pw
 * getinfos.net
+* giga74.com
 * gigapurbalinggaa.ga
 * goandroid.cf
 * gocoo.co
