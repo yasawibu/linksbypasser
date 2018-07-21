@@ -479,6 +479,7 @@
             case 'bagilagi.com':
             case 'gameinfo.pw':
             case 'intercelestial.com':
+            case 'landscapenature.pw':
             case 'lifesurance.info':
             case 'linkach.com':
             case 'sweetlantern.com':
@@ -1121,7 +1122,6 @@
             case 'apasih.pw': // don't have link for testing
             case 'dilanjut.in': // don't have link for testing
             case 'getinfos.net':
-            case 'landscapenature.pw': // don't have link for testing
             case 'sehatsegar.net':
                 {
                     window.stop();
