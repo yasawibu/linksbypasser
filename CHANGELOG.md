@@ -1,5 +1,7 @@
 ## v0.5.1
-(??-??-2018)
+(21-Jul-2018)
+* **Fixed 1 supported links:**
+  * landscapenature.pw
 * **Added 3 supported links:**
   * 1tiny.net
   * giga74.com
