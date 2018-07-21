@@ -31,11 +31,15 @@ This userscript **CANNOT** bypass short links that require:
 * solving recaptcha to continue
 
 ## Supported Links
-Total: 123 links. See [SUPPORTED-LINKS.md] for the details.
+Total: 126 links. See [SUPPORTED-LINKS.md] for the details.
 
 [SUPPORTED-LINKS.md]: https://github.com/yasawibu/linksbypasser/blob/master/SUPPORTED-LINKS.md
 
 ## Change Log
+**v0.5.1** (21-Jul-2018)
+* Fixed 1 supported links
+* Added 3 supported links
+
 **v0.5.0** (15-Jul-2018)
 * Improved bypass methods
 * Added code injection method
@@ -44,9 +48,6 @@ Total: 123 links. See [SUPPORTED-LINKS.md] for the details.
 * Improved 22 supported links
 * Added 3 supported links
 * Removed 6 supported links
-
-**v0.4.5** (11-Jul-2018)
-* Added 4 supported links
 
 See [CHANGELOG.md] for the details.
 

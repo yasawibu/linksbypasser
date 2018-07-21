@@ -1,7 +1,8 @@
 # Supported Links
-(total: 123)
+(total: 126)
 * *.u.safelinkview.com
 * 1ink.cc
+* 1tiny.net
 * 6reeqaa.ga
 * ani-share.com
 * ani-short.info
@@ -37,6 +38,7 @@
 * forexbrokers.download
 * gameinfo.pw
 * getinfos.net
+* giga74.com
 * gigapurbalinggaa.ga
 * goandroid.cf
 * gocoo.co
@@ -53,6 +55,7 @@
 * inlink.co
 * insurance-info.us
 * intercelestial.com
+* j-safelink.blogspot.com
 * jili.in
 * karung.in
 * kuhaku.cf
