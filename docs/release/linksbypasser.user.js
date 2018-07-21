@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LinksBypasser
 // @namespace    https://github.com/yasawibu/linksbypasser
-// @version      0.5.0
+// @version      0.5.1
 // @description  Decrease your wasting time on short links
 // @author       Putu Ardi Dharmayasa
 // @supportURL   https://github.com/yasawibu/linksbypasser/issues
@@ -144,7 +144,10 @@
         /^(?:\w+\.)?(skips\.link)/,
         /^(?:\w+\.)?(clearload\.bid)/,
         /^(?:\w+\.)?(tr\.link)/,
-        /^(?:\w+\.)?(linkach\.com)/
+        /^(?:\w+\.)?(linkach\.com)/,
+        /^(?:\w+\.)?(1tiny\.net(?=\/[^\?].+))/,
+        /^(?:\w+\.)?(j-safelink\.blogspot\.(?:com|co\.id))/,
+        /^(?:\w+\.)?(giga74\.com)/
     ];
 
     // check the link.
@@ -437,10 +440,46 @@
     function bypassLink(host) {
         window.document.title = 'LinksBypasser - Wait a moment...';
         switch (host) {
+            case '1tiny.net':
+                {
+                    window.stop();
+                    const url = window.location.href;
+                    GET(url).then((respone) => {
+                        let content = respone;
+                        let doc = newDocument(content);
+                        let password = selectElement(doc, '.error');
+                        if (password) {
+                            const url = window.location.href;
+                            password = prompt("LinksBypasser - Please input a valid password:", "");
+                            const data = 'pass=' + password;
+                            const header = [
+                                ['Content-Type', 'application/x-www-form-urlencoded']
+                            ];
+                            POST(url, data, header).then((respone) => {
+                                let content = respone;
+                                let doc = newDocument(content);
+                                let password = selectElement(doc, '.error');
+                                if (password) {
+                                    alert('Linksbypasser - Wrong password!');
+                                    window.location.reload();
+                                } else {
+                                    let url = getUrlFromScript(doc, /window.location='([^']+)'/);
+                                    openLink(url);
+                                }
+                            });
+                        } else {
+                            let url = getUrlFromScript(doc, /window.location='([^']+)'/);
+                            openLink(url);
+                        }
+                    });
+                    return;
+                }
+
             case 'autolinkach.com':
             case 'bagilagi.com':
             case 'gameinfo.pw':
             case 'intercelestial.com':
+            case 'landscapenature.pw':
             case 'lifesurance.info':
             case 'linkach.com':
             case 'sweetlantern.com':
@@ -471,6 +510,8 @@
                 }
 
             case 'animanganews.com':
+            case 'j-safelink.blogspot.com':
+            case 'j-safelink.blogspot.co.id':
             case 'urlku.gq':
                 {
                     makeVariableAccessible('safelink');
@@ -1081,7 +1122,6 @@
             case 'apasih.pw': // don't have link for testing
             case 'dilanjut.in': // don't have link for testing
             case 'getinfos.net':
-            case 'landscapenature.pw': // don't have link for testing
             case 'sehatsegar.net':
                 {
                     window.stop();
@@ -1127,15 +1167,21 @@
 
             case '6reeqaa.ga':
             case 'awsubsco.ga': // site can't be reached - last checked 14 july 2018
+            case 'giga74.com':
             case 'gigapurbalinggaa.ga': // site can't be reached - last checked 14 july 2018
             case 'safelinkreviewz.com':
-                window.document.addEventListener('DOMContentLoaded', function() {
+                {
                     window.stop();
-                    let url = getUrlFromScript(/var d_link = '([^]+)'/);
-                    url = decodeURIComponent(url);
-                    openLink(url);
-                });
-                return;
+                    const url = window.location.href;
+                    GET(url).then((respone) => {
+                        let content = respone;
+                        let doc = newDocument(content);
+                        let url = getUrlFromScript(doc, /var d_link = '([^]+)'/);
+                        url = decodeURIComponent(url);
+                        openLink(url);
+                    });
+                    return;
+                }
 
             case 'hunstulovers.net':
             case 'nimekaze.me': // site can't be reached - last checked 14 july 2018
