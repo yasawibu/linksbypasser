@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LinksBypasser
 // @namespace    https://github.com/yasawibu/linksbypasser
-// @version      0.5.1
+// @version      0.5.2
 // @description  Decrease your wasting time on short links
 // @author       Putu Ardi Dharmayasa
 // @supportURL   https://github.com/yasawibu/linksbypasser/issues
@@ -147,7 +147,8 @@
         /^(?:\w+\.)?(linkach\.com)/,
         /^(?:\w+\.)?(1tiny\.net(?=\/[^\?].+))/,
         /^(?:\w+\.)?(j-safelink\.blogspot\.(?:com|co\.id))/,
-        /^(?:\w+\.)?(giga74\.com)/
+        /^(?:\w+\.)?(giga74\.com)/,
+        /^(?:\w+\.)?(awcar\.icu)/
     ];
 
     // check the link.
@@ -476,6 +477,7 @@
                 }
 
             case 'autolinkach.com':
+            case 'awcar.icu':
             case 'bagilagi.com':
             case 'gameinfo.pw':
             case 'intercelestial.com':
