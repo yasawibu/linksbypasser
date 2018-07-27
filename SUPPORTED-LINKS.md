@@ -15,6 +15,7 @@
 * autokit.co
 * autolinkach.com
 * aw-games.net
+* awcar.icu
 * awsubsco.ga
 * bagilagi.com
 * bagisoft.net
