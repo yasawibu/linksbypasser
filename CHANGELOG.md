@@ -1,3 +1,8 @@
+## v0.5.2
+(28-Jul-2018)
+* **Added 1 supported links:**
+  * awcar.icu
+  
 ## v0.5.1
 (21-Jul-2018)
 * **Fixed 1 supported links:**

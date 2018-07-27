@@ -1,5 +1,5 @@
 # Supported Links
-(total: 126)
+(total: 127)
 * *.u.safelinkview.com
 * 1ink.cc
 * 1tiny.net
@@ -15,6 +15,7 @@
 * autokit.co
 * autolinkach.com
 * aw-games.net
+* awcar.icu
 * awsubsco.ga
 * bagilagi.com
 * bagisoft.net
