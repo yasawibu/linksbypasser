@@ -1,3 +1,10 @@
+## v0.5.3
+(2-Aug-2018)
+* **Fixed 1 supported links:**
+  * getinfos.net
+* **Added 1 supported links:**
+  * wikitrade.me
+
 ## v0.5.2
 (28-Jul-2018)
 * **Added 1 supported links:**
