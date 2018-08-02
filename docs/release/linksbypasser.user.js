@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LinksBypasser
 // @namespace    https://github.com/yasawibu/linksbypasser
-// @version      0.5.2
+// @version      0.5.3
 // @description  Decrease your wasting time on short links
 // @author       Putu Ardi Dharmayasa
 // @supportURL   https://github.com/yasawibu/linksbypasser/issues
@@ -148,7 +148,8 @@
         /^(?:\w+\.)?(1tiny\.net(?=\/[^\?].+))/,
         /^(?:\w+\.)?(j-safelink\.blogspot\.(?:com|co\.id))/,
         /^(?:\w+\.)?(giga74\.com)/,
-        /^(?:\w+\.)?(awcar\.icu)/
+        /^(?:\w+\.)?(awcar\.icu)/,
+        /^(?:\w+\.)?(wikitrade\.me)/
     ];
 
     // check the link.
@@ -480,6 +481,7 @@
             case 'awcar.icu':
             case 'bagilagi.com':
             case 'gameinfo.pw':
+            case 'getinfos.net':
             case 'intercelestial.com':
             case 'landscapenature.pw':
             case 'lifesurance.info':
@@ -655,6 +657,7 @@
             case 'short.anidesu.net':
             case 'sukahayu.xyz':
             case 'tojros.tk':
+            case 'wikitrade.me':
                 {
                     window.stop();
                     let url = getUrl(/url=([^&]+)/);
@@ -1123,7 +1126,6 @@
             case 'ani-share.com': // don't have link for testing
             case 'apasih.pw': // don't have link for testing
             case 'dilanjut.in': // don't have link for testing
-            case 'getinfos.net':
             case 'sehatsegar.net':
                 {
                     window.stop();
