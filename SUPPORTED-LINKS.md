@@ -1,5 +1,5 @@
 # Supported Links
-(total: 127)
+(total: 128)
 * *.u.safelinkview.com
 * 1ink.cc
 * 1tiny.net
@@ -122,6 +122,7 @@
 * urlku.gq
 * urly.mobi
 * verydelicius.com
+* wikitrade.me
 * wptech.ga
 * xydeyou.com
 * yametesenpai.xyz
