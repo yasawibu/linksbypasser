@@ -1,5 +1,5 @@
 # Supported Links
-(total: 128)
+(total: 129)
 * *.u.safelinkview.com
 * 1ink.cc
 * 1tiny.net
@@ -22,6 +22,7 @@
 * binerfile.info
 * bkshort.info
 * bluemediafiles.com
+* bolaoke.club
 * businessforyouand.me
 * coeg.in
 * daunshorte.teknologilink.com
