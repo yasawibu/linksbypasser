@@ -1,3 +1,8 @@
+## v0.5.4
+(9-Aug-2018)
+* **Added 1 supported links:**
+  * bolaoke.club
+  
 ## v0.5.3
 (2-Aug-2018)
 * **Fixed 1 supported links:**
