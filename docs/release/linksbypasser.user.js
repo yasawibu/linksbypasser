@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LinksBypasser
 // @namespace    https://github.com/yasawibu/linksbypasser
-// @version      0.5.3
+// @version      0.5.4
 // @description  Decrease your wasting time on short links
 // @author       Putu Ardi Dharmayasa
 // @supportURL   https://github.com/yasawibu/linksbypasser/issues
@@ -149,7 +149,8 @@
         /^(?:\w+\.)?(j-safelink\.blogspot\.(?:com|co\.id))/,
         /^(?:\w+\.)?(giga74\.com)/,
         /^(?:\w+\.)?(awcar\.icu)/,
-        /^(?:\w+\.)?(wikitrade\.me)/
+        /^(?:\w+\.)?(wikitrade\.me)/,
+        /^(?:\w+\.)?(bolaoke\.club)/
     ];
 
     // check the link.
@@ -1125,6 +1126,7 @@
 
             case 'ani-share.com': // don't have link for testing
             case 'apasih.pw': // don't have link for testing
+            case 'bolaoke.club':
             case 'dilanjut.in': // don't have link for testing
             case 'sehatsegar.net':
                 {
