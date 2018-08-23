@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LinksBypasser
 // @namespace    https://github.com/yasawibu/linksbypasser
-// @version      0.5.4
+// @version      0.5.5
 // @description  Decrease your wasting time on short links
 // @author       Putu Ardi Dharmayasa
 // @supportURL   https://github.com/yasawibu/linksbypasser/issues
@@ -150,7 +150,8 @@
         /^(?:\w+\.)?(giga74\.com)/,
         /^(?:\w+\.)?(awcar\.icu)/,
         /^(?:\w+\.)?(wikitrade\.me)/,
-        /^(?:\w+\.)?(bolaoke\.club)/
+        /^(?:\w+\.)?(bolaoke\.club)/,
+        /^(?:\w+\.)?(insurance-waifu\.cf)/
     ];
 
     // check the link.
@@ -443,6 +444,15 @@
     function bypassLink(host) {
         window.document.title = 'LinksBypasser - Wait a moment...';
         switch (host) {
+            case 'insurance-waifu.cf':
+                {
+                    window.stop();
+                    let url = getUrl(/u=.{10}(.+)/);
+                    url = b64(url);
+                    openLink(url);
+                    return;
+                }
+
             case '1tiny.net':
                 {
                     window.stop();
@@ -480,7 +490,9 @@
 
             case 'autolinkach.com':
             case 'awcar.icu':
+            case 'apasih.pw':
             case 'bagilagi.com':
+            case 'bolaoke.club':
             case 'gameinfo.pw':
             case 'getinfos.net':
             case 'intercelestial.com':
@@ -1125,8 +1137,6 @@
                 return;
 
             case 'ani-share.com': // don't have link for testing
-            case 'apasih.pw': // don't have link for testing
-            case 'bolaoke.club':
             case 'dilanjut.in': // don't have link for testing
             case 'sehatsegar.net':
                 {
