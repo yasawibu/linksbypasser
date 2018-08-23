@@ -1,3 +1,11 @@
+## v0.5.5
+(23-Aug-2018)
+* **Fixed 2 supported links:**
+  * apasih.pw
+  * bolaoke.club
+* **Added 1 supported links:**
+  * insurance-waifu.cf
+  
 ## v0.5.4
 (9-Aug-2018)
 * **Added 1 supported links:**
