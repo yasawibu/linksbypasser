@@ -1,5 +1,5 @@
 # Supported Links
-(total: 129)
+(total: 130)
 * *.u.safelinkview.com
 * 1ink.cc
 * 1tiny.net
@@ -56,6 +56,7 @@
 * indexmovie.biz
 * inlink.co
 * insurance-info.us
+* insurance-waifu.cf
 * intercelestial.com
 * j-safelink.blogspot.com
 * jili.in

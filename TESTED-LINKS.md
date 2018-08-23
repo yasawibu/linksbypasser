@@ -92,4 +92,6 @@ https://link.safelinkconverter.com/review.php?id=aHR0cHM6Ly93d3c1MC56X3BweXNoIXI
 92. http://landscapenature.pw/?id=NW84MTVlZnplRGNVeGY0WXNybExFNEVPcW1yM2RVTTVhMTh6ZHNFUzUzMUpPK2FmeTUvTDRpRnpVY0lKbnp4emtrSk4xZU9tOWk2MFJPbjgrSGo1S0E9PQ==
 93. http://awcar.icu/?id=NG5CbW1JbzMwR2hDOTVrdFV3eWNCcytLalQreExxWUFqSnJObkJ3dEtZdz0=
 94. http://wikitrade.me/2018/04/06/the-heffx-blockchain/?url=aHR0cHM6Ly93d3cxNy56aXBweXNoYXJlLmNvbS92L2FCUXBwQzc4L2ZpbGUuaHRtbA==
-95. http://www.bolaoke.club/prediksi-barcelona-vs-real-madrid-laga-adu-gengsi/?get=MSt5ekN5eVFoUXlYaEwvRXppNEd2REVMdVU3aEJqWmJld2lsbXVOMXRhdz0=#landing
+95. http://apasih.pw/?id=N212MG1obUJ1eDlha3JLN3dnWUFweE54QVFTWXNPcWZCaHNxZjFrcTRMSitLdWl4eWZITlJFNEh3N1kwNWZnMQ==
+96. http://www.bolaoke.club/?id=NG5CbW1JbzMwR2hDOTVrdFV3eWNCbUF4ZHhLY3VtWktLUzBMd0pKSG1oQT0=
+97. http://insurance-waifu.cf/?u=nplfXAxsInaHR0cDovL3d3dzcwLnppcHB5c2hhcmUuY29tL3YvT2tHdVdpZjQvZmlsZS5odG1s
