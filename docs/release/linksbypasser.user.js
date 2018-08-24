@@ -174,11 +174,11 @@
             host: /^(?:\w+\.)?(plantaheim\.web\.id)$/,
             path: /^\/.+(?:r|d)=.+/
         }, {
-            host: /^(?:\w+\.)?(safelinku\.net)$/,
-            path: /^\/[^-/]+$/
-        }, {
             host: /^(?:\w+\.)?(safelinkreviewx\.com)$/,
             path: /^\/.+id=.+/
+        }, {
+            host: /^(?:\w+\.)?(safelinku\.net)$/,
+            path: /^\/[^-/]+$/
         }, {
             host: /^(?:\w+\.)?(sehatlega\.com)$/,
             path: /^\/.+(?:r|d)=.+/
@@ -219,11 +219,11 @@
             host: /^(?:\w+\.)?(teknosafe\.teknologilink\.com)$/,
             path: /^\/linkteknolink\/safelinkscript\.php.+/
         }, {
-            host: /^(?:\w+\.)?(telondasmu\.com)$/,
-            path: /^\/[^-/]+$/
-        }, {
             host: /^(?:\w+\.)?(telolet\.in)$/,
             path: /^\/.+go=.+/
+        }, {
+            host: /^(?:\w+\.)?(telondasmu\.com)$/,
+            path: /^\/[^-/]+$/
         }, {
             host: /^(?:\w+\.)?(tetew\.info)$/,
             path: /^\/njir\/[^-/]+$/
@@ -899,8 +899,8 @@
             case 'onepiece-ex.com.br': return onepiece();
             case 'pengaman-link.indonesia-komunitas.com': return wikitrade();
             case 'plantaheim.web.id': return lindungin();
-            case 'safelinku.net': return safelinku();
             case 'safelinkreviewx.com': return safelinkview();
+            case 'safelinku.net': return safelinku();
             case 'sehatlega.com': return lindungin();
             case 'sfl.ink': return safelinku();
             case 'short.awsubs.co': return awsubs();
@@ -914,8 +914,8 @@
             case 'sweetlantern.com': return bagilagi();
             case 'swzz.xyz': return swzz();
             case 'teknosafe.teknologilink.com': return teknosafe();
-            case 'telondasmu.com': return siherp();
             case 'telolet.in': return telolet();
+            case 'telondasmu.com': return siherp();
             case 'tetew.info': return siherp();
             case 'tr.link': return shortad();
             case 'u.safelinkview.com': return safelinkview();
