@@ -1,3 +1,10 @@
+## v0.6.0
+(24-Aug-2018)
+* **Cleaned up code**
+* **Fixed some supported links**
+* **Added some supported links**
+* **Removed some supported links**
+  
 ## v0.5.5
 (23-Aug-2018)
 * **Fixed 2 supported links:**
