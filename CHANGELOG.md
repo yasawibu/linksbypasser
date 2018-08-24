@@ -1,3 +1,12 @@
+## v0.6.0
+(24-Aug-2018)
+* **Cleaned up code**
+* **Removed some supported links**
+* **Fixed 1 supported links:**
+  * davinsurance.com
+* **Added 1 supported links:**
+  * mirrored.to
+  
 ## v0.5.5
 (23-Aug-2018)
 * **Fixed 2 supported links:**
