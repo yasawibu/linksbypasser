@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LinksBypasser
 // @namespace    https://github.com/yasawibu/linksbypasser
-// @version      0.6.0
+// @version      0.6.1
 // @description  Decrease your wasting time on short links
 // @author       Putu Ardi Dharmayasa
 // @supportURL   https://github.com/yasawibu/linksbypasser/issues
@@ -120,6 +120,9 @@
             host: /^(?:\w+\.)?(intercelestial\.com)$/,
             path: /^\/.+id=.+/
         }, {
+            host: /^(?:\w+\.)?(jheberg\.net)$/,
+            path: /^\/(?:captcha|redirect)\/.+/
+        }, {
             host: /^(?:\w+\.)?(jili\.in)$/,
             path: /^\/[^-/]+$/
         }, {
@@ -174,6 +177,9 @@
             host: /^(?:\w+\.)?(plantaheim\.web\.id)$/,
             path: /^\/.+(?:r|d)=.+/
         }, {
+            host: /^(?:\w+\.)?(punchsubs\.net)$/,
+            path: /^\/download-(?!vip).+/
+        }, {
             host: /^(?:\w+\.)?(safelinkreviewx\.com)$/,
             path: /^\/.+id=.+/
         }, {
@@ -191,6 +197,12 @@
         }, {
             host: /^(?:\w+\.)?(shortad\.cf)$/,
             path: /^\/[^-/]+$/
+        }, {
+            host: /^(?:\w+\.)?(shtlink\.co)$/,
+            path: /^\/short-url\/.+/
+        }, {
+            host: /^(?:\w+\.)?(shtme\.co)$/,
+            path: /^\/short-url\/.+/
         }, {
             host: /^(?:\w+\.)?(siherp\.com)$/,
             path: /^\/[^-/]+$/
@@ -615,6 +627,40 @@
         openLink(url);
     }
 
+    function jheberg() {
+        const path = window.location.pathname;
+
+        // Step 1
+        if (path.includes('/captcha/')) {
+            domReady(() => {
+                window.stop();
+                const button = selectElement('a.dl-button');
+                if (button) {
+                    button.click();
+                }
+            });
+        }
+
+        // Step 2
+        if (path.includes('/redirect/')) {
+            window.stop();
+            const slug = getUrlFromAddressBar(/\/redirect\/([^/]+)/);
+            const hoster = getUrlFromAddressBar(/\/redirect\/[^/]+\/([^/]+)/);
+
+            const url = '/get/link/';
+            const data = 'slug=' + slug + '&hoster=' + hoster;
+            const headers = [
+                ['Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8'],
+                ['X-Requested-With', 'XMLHttpRequest']
+            ];
+            POST(url, data, headers).then((response) => {
+                response = JSON.parse(response);
+                let url = response.url;
+                openLink(url);
+            });
+        }
+    }
+
     async function jiliin() {
         window.stop();
         const document = await getDocument(window.location.href);
@@ -697,6 +743,20 @@
         openLink(url);
     }
 
+    async function punchsubs() {
+        window.stop();
+        const path = window.location.pathname;
+        if (path.includes('aniteca')) {
+            const document = await getDocument(window.location.href);
+            let url = getUrlFromScriptDocument(document, /var link = '([^']+)/);
+            openLink(url);
+        } else {
+            const document = await getDocument(window.location.href);
+            let url = getUrlFromScriptDocument(document, /\("#download-botao"\)\.attr\("href", "([^"]+)/);
+            openLink(url);
+        }
+    }
+
     async function safelinkconverter() {
         window.stop();
         const document = await getDocument(window.location.href);
@@ -739,6 +799,13 @@
         });
     }
 
+    function safelinkview() {
+        window.stop();
+        const query = getUrlFromAddressBar(/id=(.+)/);
+        let url = '//decrypt2.safelinkconverter.com/index.php?id=' + query;
+        openLink(url);
+    }
+
     async function shortad() {
         window.stop();
         const document = await getDocument(window.location);
@@ -764,6 +831,16 @@
         }
     }
 
+    async function shtme() {
+        window.stop();
+        const document = await getDocument(window.location.href);
+        let url = getUrlFromElementDocument(document, 'div.content div a', 'href');
+        GET(url).then((response) => {
+            url = matchStringPattern(response, /URL=([^"]+)/);
+            openLink(url);
+        });
+    }
+
     async function siherp() {
         window.stop();
         const document = await getDocument(window.location.href);
@@ -777,13 +854,6 @@
         window.stop();
         const document = await getDocument(window.location.href);
         let url = getUrlFromElementDocument(document, 'div p b a', 'href');
-        openLink(url);
-    }
-
-    function safelinkview() {
-        window.stop();
-        const query = getUrlFromAddressBar(/id=(.+)/);
-        let url = '//decrypt2.safelinkconverter.com/index.php?id=' + query;
         openLink(url);
     }
 
@@ -881,6 +951,7 @@
             case 'insurance-info.us': return lindungin();
             case 'insurance-waifu.cf': return waifu();
             case 'intercelestial.com': return bagilagi();
+            case 'jheberg.net': return jheberg();
             case 'jili.in': return jiliin();
             case 'karung.in': return karungin();
             case 'landscapenature.pw': return bagilagi();
@@ -899,12 +970,15 @@
             case 'onepiece-ex.com.br': return onepiece();
             case 'pengaman-link.indonesia-komunitas.com': return wikitrade();
             case 'plantaheim.web.id': return lindungin();
+            case 'punchsubs.net': return punchsubs();
             case 'safelinkreviewx.com': return safelinkview();
             case 'safelinku.net': return safelinku();
             case 'sehatlega.com': return lindungin();
             case 'sfl.ink': return safelinku();
             case 'short.awsubs.co': return awsubs();
             case 'shortad.cf': return shortad();
+            case 'shtlink.co': return shtme();
+            case 'shtme.co': return shtme();
             case 'siherp.com': return siherp();
             case 'siotong.com': return siherp();
             case 'skinnycat.net': return lindungin();
