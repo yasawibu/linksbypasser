@@ -1,5 +1,5 @@
 # Supported Links
-(total: 74)
+(total: 78)
 * *.u.safelinkview.com
 * 1ink.cc
 * 1tiny.net
@@ -34,6 +34,7 @@
 * insurance-info.us
 * insurance-waifu.cf
 * intercelestial.com
+* jheberg.net
 * jili.in
 * landscapenature.pw
 * lanjutkeun.blogspot.com
@@ -52,12 +53,15 @@
 * onepiece-ex.com.br
 * pengaman-link.indonesia-komunitas.com
 * plantaheim.web.id
+* punchsubs.net
 * safelinkreviewx.com
 * safelinku.net
 * sehatlega.com
 * sfl.ink
 * short.awsubs.co
 * shortad.cf
+* shtlink.co
+* shtme.co
 * siherp.com
 * siotong.com
 * skinnycat.net
