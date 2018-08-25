@@ -1,3 +1,11 @@
+## v0.6.1
+(25-Aug-2018)
+* **Added 4 supported links:**
+  * jheberg.net
+  * punchsubs.net
+  * shtlink.co
+  * shtme.co
+  
 ## v0.6.0
 (24-Aug-2018)
 * **Cleaned up code**
