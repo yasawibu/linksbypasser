@@ -1,3 +1,8 @@
+## v0.6.2
+(27-Aug-2018)
+* **Added 1 supported links:**
+  * fmlawkers.club
+  
 ## v0.6.1
 (25-Aug-2018)
 * **Added 4 supported links:**
