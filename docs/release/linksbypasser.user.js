@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LinksBypasser
 // @namespace    https://github.com/yasawibu/linksbypasser
-// @version      0.6.1
+// @version      0.6.2
 // @description  Decrease your wasting time on short links
 // @author       Putu Ardi Dharmayasa
 // @supportURL   https://github.com/yasawibu/linksbypasser/issues
@@ -77,6 +77,9 @@
         }, {
             host: /^(?:\w+\.)?(decrypt2\.safelinkconverter\.com)$/,
             path: /^\/.+id=.+/
+        }, {
+            host: /^(?:\w+\.)?(fmlawkers\.club)$/,
+            path: /^\/.+site=.+/
         }, {
             host: /^(?:\w+\.)?(forexbrokers\.download)$/,
             path: /^\/.+(?:r|d)=.+/
@@ -937,6 +940,7 @@
             case 'davinsurance.com': return bagilagi();
             case 'dawnstation.com': return dawnstation();
             case 'decrypt2.safelinkconverter.com': return safelinkconverter();
+            case 'fmlawkers.club': return kurosafe();
             case 'forexbrokers.download': return lindungin();
             case 'gameinfo.pw': return bagilagi();
             case 'getinfos.net': return bagilagi();
