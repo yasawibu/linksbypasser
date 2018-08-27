@@ -1,5 +1,5 @@
 # Supported Links
-(total: 78)
+(total: 79)
 * *.u.safelinkview.com
 * 1ink.cc
 * 1tiny.net
@@ -19,6 +19,7 @@
 * davinsurance.com
 * dawnstation.com
 * decrypt2.safelinkconverter.com
+* fmlawkers.club
 * forexbrokers.download
 * gameinfo.pw
 * getinfos.net
