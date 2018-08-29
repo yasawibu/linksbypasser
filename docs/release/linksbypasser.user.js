@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LinksBypasser
 // @namespace    https://github.com/yasawibu/linksbypasser
-// @version      0.6.2
+// @version      0.6.3
 // @description  Decrease your wasting time on short links
 // @author       Putu Ardi Dharmayasa
 // @supportURL   https://github.com/yasawibu/linksbypasser/issues
@@ -51,6 +51,9 @@
             host: /^(?:\w+\.)?(bagilagi\.com)$/,
             path: /^\/.+id=.+/
         }, {
+            host: /^(?:\w+\.)?(bagisoft\.net)$/,
+            path: /^\/.+site=.+/
+        }, {
             host: /^(?:\w+\.)?(blogjepang\.com)$/,
             path: /^\/.+(?:r|d)=.+/
         }, {
@@ -77,6 +80,9 @@
         }, {
             host: /^(?:\w+\.)?(decrypt2\.safelinkconverter\.com)$/,
             path: /^\/.+id=.+/
+        }, {
+            host: /^(?:\w+\.)?(dwindly\.io)$/,
+            path: /^\/[^-/]+$/
         }, {
             host: /^(?:\w+\.)?(fmlawkers\.club)$/,
             path: /^\/.+site=.+/
@@ -180,6 +186,9 @@
             host: /^(?:\w+\.)?(plantaheim\.web\.id)$/,
             path: /^\/.+(?:r|d)=.+/
         }, {
+            host: /^(?:\w+\.)?(psl\.pw)$/,
+            path: /^\/[^-/]+$/
+        }, {
             host: /^(?:\w+\.)?(punchsubs\.net)$/,
             path: /^\/download-(?!vip).+/
         }, {
@@ -248,6 +257,9 @@
         }, {
             host: /^(?:\w+\.)?(u\.safelinkview\.com)$/,
             path: /^\/.+id=.+/
+        }, {
+            host: /^(?:\w+\.)?(ujv\.me)$/,
+            path: /^\/[^-/]+$/
         }, {
             host: /^(?:\w+\.)?(urlku\.gq)$/,
             path: /^\/.+url=.+/
@@ -509,7 +521,6 @@
         return document;
     }
 
-
     /* * * * * * * * * *
      * Bypass Methods *
      * * * * * * * * */
@@ -598,6 +609,18 @@
         window.stop();
         const document = await getDocument(window.location.href);
         let url = getUrlFromElementDocument(document, '#tidakakanselamanya a', 'href');
+        openLink(url);
+    }
+
+    async function dwindly() {
+        window.stop();
+        const document = await getDocument(window.location.href);
+        let url = getUrlFromScriptDocument(document, /window\.open\(encD\("([^"]+)/);
+        if (url) {
+            url = '/' + decodeBase64(url);
+        } else {
+            url = getUrlFromScriptDocument(document, /document\.location\.href = "([^"]+)/)
+        }
         openLink(url);
     }
 
@@ -881,6 +904,44 @@
         openLink(url);
     }
 
+    function ujv() {
+        domReady(() => {
+            // Step 1
+            let form = selectElement('#link-view');
+            if (form) {
+                const captcha = selectElement('#captchaShortlink');
+                if (captcha) {
+                    window.document.title = 'LinksBypasser - Input the recaptcha!';
+                } else {
+                    form.submit();
+                }
+                return;
+            }
+
+            // Step 2
+            form = selectElement('#go-link');
+            if (form) {
+                window.stop();
+                let loop = setInterval(async () => {
+                    const url = form.action;
+                    const data = serialize(form);
+                    const headers = [
+                        ['Content-Type', 'application/x-www-form-urlencoded;'],
+                        ['X-Requested-With', 'XMLHttpRequest']
+                    ];
+                    await POST(url, data, headers).then((response) => {
+                        response = JSON.parse(response);
+                        let url = response.url;
+                        if (url) {
+                            clearInterval(loop);
+                            openLink(url);
+                        }
+                    });
+                }, 1000);
+            }
+        });
+    }
+
     function urlku() {
         domReady(() => {
             window.safelink.counter = 0;
@@ -931,6 +992,7 @@
             case 'autolinkach.com': return bagilagi();
             case 'awcar.icu': return bagilagi();
             case 'bagilagi.com': return bagilagi();
+            case 'bagisoft.net': return kurosafe();
             case 'blogjepang.com': return lindungin();
             case 'bolaoke.club': return bagilagi();
             case 'businessforyouand.me': return lindungin();
@@ -940,6 +1002,7 @@
             case 'davinsurance.com': return bagilagi();
             case 'dawnstation.com': return dawnstation();
             case 'decrypt2.safelinkconverter.com': return safelinkconverter();
+            case 'dwindly.io': return dwindly();
             case 'fmlawkers.club': return kurosafe();
             case 'forexbrokers.download': return lindungin();
             case 'gameinfo.pw': return bagilagi();
@@ -974,6 +1037,7 @@
             case 'onepiece-ex.com.br': return onepiece();
             case 'pengaman-link.indonesia-komunitas.com': return wikitrade();
             case 'plantaheim.web.id': return lindungin();
+            case 'psl.pw': return ujv();
             case 'punchsubs.net': return punchsubs();
             case 'safelinkreviewx.com': return safelinkview();
             case 'safelinku.net': return safelinku();
@@ -997,6 +1061,7 @@
             case 'tetew.info': return siherp();
             case 'tr.link': return shortad();
             case 'u.safelinkview.com': return safelinkview();
+            case 'ujv.me': return ujv();
             case 'urlku.gq': return urlku();
             case 'verydelicius.com': return verydelicius();
             case 'wikitrade.me': return wikitrade();
