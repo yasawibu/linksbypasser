@@ -1,3 +1,11 @@
+## v0.6.3
+(29-Aug-2018)
+* **Added 4 supported links:**
+  * bagisoft.net
+  * dwindly.io
+  * psl.pw
+  * ujv.me
+  
 ## v0.6.2
 (27-Aug-2018)
 * **Added 1 supported links:**

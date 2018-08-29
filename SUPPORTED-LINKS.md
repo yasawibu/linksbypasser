@@ -1,5 +1,5 @@
 # Supported Links
-(total: 79)
+(total: 83)
 * *.u.safelinkview.com
 * 1ink.cc
 * 1tiny.net
@@ -11,6 +11,7 @@
 * autolinkach.com
 * awcar.icu
 * bagilagi.com
+* bagisoft.net
 * blogjepang.com
 * bolaoke.club
 * businessforyouand.me
@@ -19,6 +20,7 @@
 * davinsurance.com
 * dawnstation.com
 * decrypt2.safelinkconverter.com
+* dwindly.io
 * fmlawkers.club
 * forexbrokers.download
 * gameinfo.pw
@@ -54,6 +56,7 @@
 * onepiece-ex.com.br
 * pengaman-link.indonesia-komunitas.com
 * plantaheim.web.id
+* psl.pw
 * punchsubs.net
 * safelinkreviewx.com
 * safelinku.net
@@ -76,6 +79,7 @@
 * telondasmu.com
 * tetew.info
 * tr.link
+* ujv.me
 * urlku.gq
 * verydelicius.com
 * wikitrade.me
