@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LinksBypasser
 // @namespace    https://github.com/yasawibu/linksbypasser
-// @version      0.6.3
+// @version      0.6.4
 // @description  Decrease your wasting time on short links
 // @author       Putu Ardi Dharmayasa
 // @supportURL   https://github.com/yasawibu/linksbypasser/issues
@@ -29,6 +29,9 @@
         }, {
             host: /^(?:\w+\.)?(6reeqaa\.ga)$/,
             path: /^\/.+id=.+/
+        }, {
+            host: /^(?:\w+\.)?(adskipme\.com)$/,
+            path: /^\/[^-/]+$/
         }, {
             host: /^(?:\w+\.)?(anjay\.info)$/,
             path: /^\/short\/[^-/]+$/
@@ -62,6 +65,9 @@
         }, {
             host: /^(?:\w+\.)?(businessforyouand\.me)$/,
             path: /^\/.+(?:r|d)=.+/
+        }, {
+            host: /^(?:\w+\.)?(cll\.press)$/,
+            path: /^\/[^-/]+$/
         }, {
             host: /^(?:\w+\.)?(coeg\.in)$/,
             path: /^\/[^-/]+$/
@@ -120,6 +126,9 @@
             host: /^(?:\w+\.)?(indexmovie\.biz)$/,
             path: /^\/(?!get\/)/
         }, {
+            host: /^(?:\w+\.)?(indexmovie\.club)$/,
+            path: /^\/.+url=.+/
+        }, {
             host: /^(?:\w+\.)?(insurance-info\.us)$/,
             path: /^\/.+(?:r|d)=.+/
         }, {
@@ -143,6 +152,9 @@
         }, {
             host: /^(?:\w+\.)?(lanjutkeun\.blogspot\.com)$/,
             path: /^\/.+url=.+/
+        }, {
+            host: /^(?:\w+\.)?(licklink\.net)$/,
+            path: /^\/[^-/]+$/
         }, {
             host: /^(?:\w+\.)?(lifesurance\.info)$/,
             path: /^\/.+id=.+/
@@ -210,6 +222,9 @@
             host: /^(?:\w+\.)?(shortad\.cf)$/,
             path: /^\/[^-/]+$/
         }, {
+            host: /^(?:\w+\.)?(shrtfly\.net)$/,
+            path: /^\/[^-/]+$/
+        }, {
             host: /^(?:\w+\.)?(shtlink\.co)$/,
             path: /^\/short-url\/.+/
         }, {
@@ -228,11 +243,17 @@
             host: /^(?:\w+\.)?(skips\.link)$/,
             path: /^\/[^-/]+$/
         }, {
+            host: /^(?:\w+\.)?(skyinsurance\.ml)$/,
+            path: /^\/.+id=.+/
+        }, {
             host: /^(?:\w+\.)?(soralink\.sinetronku\.tv)$/,
             path: /^\/.+(?:r|d)=.+/
         }, {
             host: /^(?:\w+\.)?(spacetica\.com)$/,
             path: /^\/[^-/]+$/
+        }, {
+            host: /^(?:\w+\.)?(speedcar\.club)$/,
+            path: /^\/.+id=.+/
         }, {
             host: /^(?:\w+\.)?(sweetlantern\.com)$/,
             path: /^\/.+id=.+/
@@ -985,6 +1006,7 @@
             case '1ink.cc': return oneink();
             case '1tiny.net': return onetiny();
             case '6reeqaa.ga': return safelinkview();
+            case 'adskipme.com': return ujv();
             case 'anjay.info': return siherp();
             case 'animanganews.com': return urlku();
             case 'apasih.pw': return bagilagi();
@@ -996,6 +1018,7 @@
             case 'blogjepang.com': return lindungin();
             case 'bolaoke.club': return bagilagi();
             case 'businessforyouand.me': return lindungin();
+            case 'cll.press': return ujv();
             case 'coeg.in': return siherp();
             case 'converthinks.xyz': return converthinks();
             case 'daunshorte.teknologilink.com': return daunshorte();
@@ -1015,6 +1038,7 @@
             case 'hunstulovers.net': return hunstulovers();
             case 'idsly.bid': return safelinku();
             case 'indexmovie.biz': return indexmovie();
+            case 'indexmovie.club': return wikitrade();
             case 'insurance-info.us': return lindungin();
             case 'insurance-waifu.cf': return waifu();
             case 'intercelestial.com': return bagilagi();
@@ -1023,6 +1047,7 @@
             case 'karung.in': return karungin();
             case 'landscapenature.pw': return bagilagi();
             case 'lanjutkeun.blogspot.com': return wikitrade();
+            case 'licklink.net': return ujv();
             case 'lifesurance.info': return bagilagi();
             case 'lindung.in': return lindungin();
             case 'link4.me': return shortad();
@@ -1045,14 +1070,17 @@
             case 'sfl.ink': return safelinku();
             case 'short.awsubs.co': return awsubs();
             case 'shortad.cf': return shortad();
+            case 'shrtfly.net': return ujv();
             case 'shtlink.co': return shtme();
             case 'shtme.co': return shtme();
             case 'siherp.com': return siherp();
             case 'siotong.com': return siherp();
             case 'skinnycat.net': return lindungin();
             case 'skips.link': return safelinku();
+            case 'skyinsurance.ml': return bagilagi();
             case 'soralink.sinetronku.tv': return lindungin();
             case 'spacetica.com': return spacetica();
+            case 'speedcar.club': return bagilagi();
             case 'sweetlantern.com': return bagilagi();
             case 'swzz.xyz': return swzz();
             case 'teknosafe.teknologilink.com': return teknosafe();
