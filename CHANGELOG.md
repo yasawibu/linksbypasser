@@ -1,3 +1,14 @@
+## v0.6.4
+(2-Sep-2018)
+* **Added 7 supported links:**
+  * adskipme.com
+  * cll.press
+  * indexmovie.club
+  * licklink.net 
+  * shrtfly.net
+  * skyinsurance.ml
+  * speedcar.club
+  
 ## v0.6.3
 (29-Aug-2018)
 * **Added 4 supported links:**
