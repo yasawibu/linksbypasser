@@ -1,9 +1,10 @@
 # Supported Links
-(total: 83)
+(total: 90)
 * *.u.safelinkview.com
 * 1ink.cc
 * 1tiny.net
 * 6reeqaa.ga
+* adskipme.com
 * anjay.info
 * animanganews.com
 * apasih.pw
@@ -15,6 +16,7 @@
 * blogjepang.com
 * bolaoke.club
 * businessforyouand.me
+* cll.press
 * coeg.in
 * daunshorte.teknologilink.com
 * davinsurance.com
@@ -34,6 +36,7 @@
 * hunstulovers.net
 * idsly.bid
 * indexmovie.biz
+* indexmovie.club
 * insurance-info.us
 * insurance-waifu.cf
 * intercelestial.com
@@ -41,6 +44,7 @@
 * jili.in
 * landscapenature.pw
 * lanjutkeun.blogspot.com
+* licklink.net
 * lifesurance.info
 * lindung.in
 * link.shirogaze.tk
@@ -64,14 +68,17 @@
 * sfl.ink
 * short.awsubs.co
 * shortad.cf
+* shrtfly.net
 * shtlink.co
 * shtme.co
 * siherp.com
 * siotong.com
 * skinnycat.net
 * skips.link
+* skyinsurance.ml
 * soralink.sinetronku.tv
 * spacetica.com
+* speedcar.club
 * sweetlantern.com
 * swzz.xyz
 * teknosafe.teknologilink.com
