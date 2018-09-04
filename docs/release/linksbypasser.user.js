@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LinksBypasser
 // @namespace    https://github.com/yasawibu/linksbypasser
-// @version      0.6.4
+// @version      0.6.5
 // @description  Decrease your wasting time on short links
 // @author       Putu Ardi Dharmayasa
 // @supportURL   https://github.com/yasawibu/linksbypasser/issues
@@ -165,8 +165,14 @@
             host: /^(?:\w+\.)?(link4\.me)$/,
             path: /^\/[^-/]+$/
         }, {
+            host: /^(?:\w+\.)?(link4win\.net)$/,
+            path: /^\/[^-/]+$/
+        }, {
             host: /^(?:\w+\.)?(linkach\.com)$/,
             path: /^\/.+id=.+/
+        }, {
+            host: /^(?:\w+\.)?(linkrex\.net)$/,
+            path: /^\/[^-/]+$/
         }, {
             host: /^(?:\w+\.)?(linkshrink\.net)$/,
             path: /^\/[^-/]+$/
@@ -212,6 +218,9 @@
         }, {
             host: /^(?:\w+\.)?(sehatlega\.com)$/,
             path: /^\/.+(?:r|d)=.+/
+        }, {
+            host: /^(?:\w+\.)?(sehatsegar\.net)$/,
+            path: /^\/.+id=.+/
         }, {
             host: /^(?:\w+\.)?(sfl\.ink)$/,
             path: /^\/[^-/]+$/
@@ -1051,7 +1060,9 @@
             case 'lifesurance.info': return bagilagi();
             case 'lindung.in': return lindungin();
             case 'link4.me': return shortad();
+            case 'link4win.net': return ujv();
             case 'linkach.com': return bagilagi();
+            case 'linkrex.net': return ujv();
             case 'linkshrink.net': return linkshrink();
             case 'losstor.com': return kurosafe();
             case 'masmellow.com': return wikitrade();
@@ -1067,6 +1078,7 @@
             case 'safelinkreviewx.com': return safelinkview();
             case 'safelinku.net': return safelinku();
             case 'sehatlega.com': return lindungin();
+            case 'sehatsegar.net': return bagilagi();
             case 'sfl.ink': return safelinku();
             case 'short.awsubs.co': return awsubs();
             case 'shortad.cf': return shortad();
