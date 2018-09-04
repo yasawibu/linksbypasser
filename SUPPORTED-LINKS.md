@@ -1,5 +1,5 @@
 # Supported Links
-(total: 90)
+(total: 93)
 * *.u.safelinkview.com
 * 1ink.cc
 * 1tiny.net
@@ -49,7 +49,9 @@
 * lindung.in
 * link.shirogaze.tk
 * link4.me
+* link4win.net
 * linkach.com
+* linkrex.net
 * linkshrink.net
 * losstor.com
 * masmellow.com
@@ -65,6 +67,7 @@
 * safelinkreviewx.com
 * safelinku.net
 * sehatlega.com
+* sehatsegar.net
 * sfl.ink
 * short.awsubs.co
 * shortad.cf

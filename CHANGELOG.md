@@ -1,3 +1,10 @@
+## v0.6.5
+(4-Sep-2018)
+* **Added 3 supported links:**
+  * link4win.net
+  * linkrex.net
+  * sehatsegar.net
+  
 ## v0.6.4
 (2-Sep-2018)
 * **Added 7 supported links:**
