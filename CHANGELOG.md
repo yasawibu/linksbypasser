@@ -1,3 +1,11 @@
+## v0.6.6
+(6-Sep-2018)
+* **Improved 1 supported links:**
+  * hexafile.net
+* **Added 2 supported links:**
+  * flylink.io
+  * linksad.net
+  
 ## v0.6.5
 (4-Sep-2018)
 * **Added 3 supported links:**
