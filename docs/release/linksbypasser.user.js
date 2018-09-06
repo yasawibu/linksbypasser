@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LinksBypasser
 // @namespace    https://github.com/yasawibu/linksbypasser
-// @version      0.6.5
+// @version      0.6.6
 // @description  Decrease your wasting time on short links
 // @author       Putu Ardi Dharmayasa
 // @supportURL   https://github.com/yasawibu/linksbypasser/issues
@@ -90,6 +90,9 @@
             host: /^(?:\w+\.)?(dwindly\.io)$/,
             path: /^\/[^-/]+$/
         }, {
+            host: /^(?:\w+\.)?(flylink\.io)$/,
+            path: /^\/[^-/]+$/
+        }, {
             host: /^(?:\w+\.)?(fmlawkers\.club)$/,
             path: /^\/.+site=.+/
         }, {
@@ -172,6 +175,9 @@
             path: /^\/.+id=.+/
         }, {
             host: /^(?:\w+\.)?(linkrex\.net)$/,
+            path: /^\/[^-/]+$/
+        }, {
+            host: /^(?:\w+\.)?(linksad\.net)$/,
             path: /^\/[^-/]+$/
         }, {
             host: /^(?:\w+\.)?(linkshrink\.net)$/,
@@ -665,7 +671,12 @@
     async function hexafile() {
         window.stop();
         const document = await getDocument(window.location.href);
-        let url = getUrlFromScriptDocument(document, /;window\.location="([^"]+)"/);
+        let url;
+        if (window.location.hostname.includes('v1.')) {
+            url = getUrlFromScriptDocument(document, /="([^"]+)",e=/);
+        } else {
+            url = getUrlFromScriptDocument(document, /;window\.location="([^"]+)"/);
+        }
         openLink(url);
     }
 
@@ -1035,6 +1046,7 @@
             case 'dawnstation.com': return dawnstation();
             case 'decrypt2.safelinkconverter.com': return safelinkconverter();
             case 'dwindly.io': return dwindly();
+            case 'flylink.io': return ujv();
             case 'fmlawkers.club': return kurosafe();
             case 'forexbrokers.download': return lindungin();
             case 'gameinfo.pw': return bagilagi();
@@ -1063,6 +1075,7 @@
             case 'link4win.net': return ujv();
             case 'linkach.com': return bagilagi();
             case 'linkrex.net': return ujv();
+            case 'linksad.net': return ujv();
             case 'linkshrink.net': return linkshrink();
             case 'losstor.com': return kurosafe();
             case 'masmellow.com': return wikitrade();
