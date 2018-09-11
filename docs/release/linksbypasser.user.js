@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LinksBypasser
 // @namespace    https://github.com/yasawibu/linksbypasser
-// @version      0.6.6
+// @version      0.6.7
 // @description  Decrease your wasting time on short links
 // @author       Putu Ardi Dharmayasa
 // @supportURL   https://github.com/yasawibu/linksbypasser/issues
@@ -66,6 +66,9 @@
             host: /^(?:\w+\.)?(businessforyouand\.me)$/,
             path: /^\/.+(?:r|d)=.+/
         }, {
+            host: /^(?:\w+\.)?(cashat\.net)$/,
+            path: /^\/[^-/]+$/
+        }, {
             host: /^(?:\w+\.)?(cll\.press)$/,
             path: /^\/[^-/]+$/
         }, {
@@ -74,6 +77,9 @@
         }, {
             host: /^(?:\w+\.)?(converthinks\.xyz)$/,
             path: /^\/.+id=.+/
+        }, {
+            host: /^(?:\w+\.)?(cutsouf\.com)$/,
+            path: /^\/[^-/]+$/
         }, {
             host: /^(?:\w+\.)?(daunshorte\.teknologilink\.com)$/,
             path: /^\/linkshortelink\/safelink\.php\?.+/
@@ -86,6 +92,12 @@
         }, {
             host: /^(?:\w+\.)?(decrypt2\.safelinkconverter\.com)$/,
             path: /^\/.+id=.+/
+        }, {
+            host: /^(?:\w+\.)?(drive\.jepitkertas\.com)$/,
+            path: /^\/.+site=.+/
+        }, {
+            host: /^(?:\w+\.)?(drivefiles\.bid)$/,
+            path: /^\/.+site=.+/
         }, {
             host: /^(?:\w+\.)?(dwindly\.io)$/,
             path: /^\/[^-/]+$/
@@ -293,6 +305,9 @@
         }, {
             host: /^(?:\w+\.)?(u\.safelinkview\.com)$/,
             path: /^\/.+id=.+/
+        }, {
+            host: /^(?:\w+\.)?(ujv\.al)$/,
+            path: /^\/[^-/]+$/
         }, {
             host: /^(?:\w+\.)?(ujv\.me)$/,
             path: /^\/[^-/]+$/
@@ -983,6 +998,13 @@
         });
     }
 
+    async function ujval() {
+        window.stop();
+        const document = await getDocument(window.location.href);
+        let url = getUrlFromScriptDocument(document, /;\$\("a\.redirect"\)\.attr\("href","([^"]+)/);
+        openLink(url);
+    }
+
     function urlku() {
         domReady(() => {
             window.safelink.counter = 0;
@@ -1038,13 +1060,17 @@
             case 'blogjepang.com': return lindungin();
             case 'bolaoke.club': return bagilagi();
             case 'businessforyouand.me': return lindungin();
+            case 'cashat.net': return ujv();
             case 'cll.press': return ujv();
             case 'coeg.in': return siherp();
             case 'converthinks.xyz': return converthinks();
+            case 'cutsouf.com': return ujv();
             case 'daunshorte.teknologilink.com': return daunshorte();
             case 'davinsurance.com': return bagilagi();
             case 'dawnstation.com': return dawnstation();
             case 'decrypt2.safelinkconverter.com': return safelinkconverter();
+            case 'drive.jepitkertas.com': return kurosafe();
+            case 'drivefiles.bid': return kurosafe();
             case 'dwindly.io': return dwindly();
             case 'flylink.io': return ujv();
             case 'fmlawkers.club': return kurosafe();
@@ -1114,6 +1140,7 @@
             case 'tetew.info': return siherp();
             case 'tr.link': return shortad();
             case 'u.safelinkview.com': return safelinkview();
+            case 'ujv.al': return ujval();
             case 'ujv.me': return ujv();
             case 'urlku.gq': return urlku();
             case 'verydelicius.com': return verydelicius();
