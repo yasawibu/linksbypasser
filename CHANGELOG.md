@@ -1,3 +1,12 @@
+## v0.6.7
+(11-Sep-2018)
+* **Added 5 supported links:**
+  * cashat.net
+  * cutsouf.com
+  * drive.jepitkertas.com
+  * drivefiles.bid
+  * ujv.al
+  
 ## v0.6.6
 (6-Sep-2018)
 * **Improved 1 supported links:**

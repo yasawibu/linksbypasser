@@ -1,5 +1,5 @@
 # Supported Links
-(total: 95)
+(total: 100)
 * *.u.safelinkview.com
 * 1ink.cc
 * 1tiny.net
@@ -16,12 +16,16 @@
 * blogjepang.com
 * bolaoke.club
 * businessforyouand.me
+* cashat.net
 * cll.press
 * coeg.in
+* cutsouf.com
 * daunshorte.teknologilink.com
 * davinsurance.com
 * dawnstation.com
 * decrypt2.safelinkconverter.com
+* drive.jepitkertas.com
+* drivefiles.bid
 * dwindly.io
 * flylink.io
 * fmlawkers.club
@@ -91,6 +95,7 @@
 * telondasmu.com
 * tetew.info
 * tr.link
+* ujv.al
 * ujv.me
 * urlku.gq
 * verydelicius.com
