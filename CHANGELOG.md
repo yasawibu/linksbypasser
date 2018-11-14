@@ -1,3 +1,13 @@
+## v0.6.8
+(15-Nov-2018)
+* **Added 5 supported links:**
+  * autoride.pw
+  * kurosafety.menantisenja.com
+  * lyon.kim
+  * pafpaf.info
+  * plantaheim.com
+  * vehicle-techno.cf
+
 ## v0.6.7
 (11-Sep-2018)
 * **Added 5 supported links:**
