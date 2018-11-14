@@ -1,15 +1,16 @@
 # Supported Links
-(total: 100)
+(total: 106)
 * *.u.safelinkview.com
 * 1ink.cc
 * 1tiny.net
 * 6reeqaa.ga
 * adskipme.com
-* anjay.info
 * animanganews.com
+* anjay.info
 * apasih.pw
 * autech.xyz
 * autolinkach.com
+* autoride.pw
 * awcar.icu
 * bagilagi.com
 * bagisoft.net
@@ -47,6 +48,7 @@
 * intercelestial.com
 * jheberg.net
 * jili.in
+* kurosafety.menantisenja.com
 * landscapenature.pw
 * lanjutkeun.blogspot.com
 * licklink.net
@@ -60,13 +62,16 @@
 * linksad.net
 * linkshrink.net
 * losstor.com
+* lyon.kim
 * masmellow.com
 * menantisenja.com
 * mirrorace.com
 * mirrored.to
 * mylink.zone
 * onepiece-ex.com.br
+* pafpaf.info
 * pengaman-link.indonesia-komunitas.com
+* plantaheim.com
 * plantaheim.web.id
 * psl.pw
 * punchsubs.net
@@ -98,5 +103,6 @@
 * ujv.al
 * ujv.me
 * urlku.gq
+* vehicle-techno.cf
 * verydelicius.com
 * wikitrade.me
