@@ -1,5 +1,5 @@
 # Supported Links
-(total: 106)
+(total: 112)
 * *.u.safelinkview.com
 * 1ink.cc
 * 1tiny.net
@@ -8,6 +8,7 @@
 * animanganews.com
 * anjay.info
 * apasih.pw
+* arubedo.blogspot.com
 * autech.xyz
 * autolinkach.com
 * autoride.pw
@@ -37,6 +38,7 @@
 * gocoo.co
 * gosavelink.com
 * greget.space
+* healthtod.com
 * hexafile.net
 * hightech.web.id
 * hunstulovers.net
@@ -46,6 +48,7 @@
 * insurance-info.us
 * insurance-waifu.cf
 * intercelestial.com
+* irisvera.com
 * jheberg.net
 * jili.in
 * kurosafety.menantisenja.com
@@ -68,7 +71,9 @@
 * mirrorace.com
 * mirrored.to
 * mylink.zone
+* naturalhealthy.xyz
 * onepiece-ex.com.br
+* onlinefreecourse.net
 * pafpaf.info
 * pengaman-link.indonesia-komunitas.com
 * plantaheim.com
@@ -99,6 +104,7 @@
 * telolet.in
 * telondasmu.com
 * tetew.info
+* tetewlink.me
 * tr.link
 * ujv.al
 * ujv.me

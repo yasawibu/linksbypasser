@@ -1,3 +1,15 @@
+## v0.6.9
+(16-Nov-2018)
+* **Fixed 1 supported links:**
+  * spacetica.com
+* **Added 6 supported links:**
+  * arubedo.blogspot.com
+  * healthtod.com
+  * irisvera.com
+  * naturalhealthy.xyz
+  * onlinefreecourse.net
+  * tetewlink.me
+
 ## v0.6.8
 (15-Nov-2018)
 * **Added 5 supported links:**
