@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LinksBypasser
 // @namespace    https://github.com/yasawibu/linksbypasser
-// @version      0.6.8
+// @version      0.6.9
 // @description  Decrease your wasting time on short links
 // @author       Putu Ardi Dharmayasa
 // @supportURL   https://github.com/yasawibu/linksbypasser/issues
@@ -42,7 +42,7 @@
             host: /^(?:\w+\.)?(apasih\.pw)$/,
             path: /^\/.+id=.+/
         }, {
-            host: /^(?:\w+\.)?(autech\.xyz)$/,
+            host: /^(?:\w+\.)?(arubedo\.blogspot\.com)$/,
             path: /^\/.+url=.+/
         }, {
             host: /^(?:\w+\.)?(autolinkach\.com)$/,
@@ -132,6 +132,9 @@
             host: /^(?:\w+\.)?(greget\.space)$/,
             path: /^\/[^-/]+$/
         }, {
+            host: /^(?:\w+\.)?(healthtod\.com)$/,
+            path: /^\/.+(?:r|d)=.+/
+        }, {
             host: /^(?:\w+\.)?(hexafile\.net)$/,
             path: /^\/[^-/]+$/
         }, {
@@ -155,6 +158,9 @@
         }, {
             host: /^(?:\w+\.)?(intercelestial\.com)$/,
             path: /^\/.+id=.+/
+        }, {
+            host: /^(?:\w+\.)?(irisvera\.com)$/,
+            path: /^\/.+(?:r|d)=.+/
         }, {
             host: /^(?:\w+\.)?(jheberg\.net)$/,
             path: /^\/(?:captcha|redirect)\/.+/
@@ -222,8 +228,14 @@
             host: /^(?:\w+\.)?(mylink\.zone)$/,
             path: /^\/[^-/]+$/
         }, {
+            host: /^(?:\w+\.)?(naturalhealthy\.xyz)$/,
+            path: /^\/.+(?:r|d)=.+/
+        }, {
             host: /^(?:\w+\.)?(onepiece-ex\.com\.br)$/,
             path: /^\/download\/.+/
+        }, {
+            host: /^(?:\w+\.)?(onlinefreecourse\.net)$/,
+            path: /^\/download\/\?file=.+/
         }, {
             host: /^(?:\w+\.)?(pafpaf\.info)$/,
             path: /^\/.+site=.+/
@@ -314,6 +326,9 @@
         }, {
             host: /^(?:\w+\.)?(tetew\.info)$/,
             path: /^\/njir\/[^-/]+$/
+        }, {
+            host: /^(?:\w+\.)?(tetewlink\.me)$/,
+            path: /./
         }, {
             host: /^(?:\w+\.)?(tr\.link)$/,
             path: /^\/[^-/]+$/
@@ -843,6 +858,13 @@
         openLink(url);
     }
 
+    function onlinefreecourse() {
+        window.stop();
+        let url = getUrlFromAddressBar(/\?file=([^#&]+)/);
+        url = decodeBase64(url);
+        openLink(url);
+    }
+
     async function punchsubs() {
         window.stop();
         const path = window.location.pathname;
@@ -953,7 +975,7 @@
     async function spacetica() {
         window.stop();
         const document = await getDocument(window.location.href);
-        let url = getUrlFromElementDocument(document, 'div p b a', 'href');
+        let url = getUrlFromElementDocument(document, 'div p a', 'href');
         openLink(url);
     }
 
@@ -1082,6 +1104,7 @@
             case 'anjay.info': return siherp();
             case 'animanganews.com': return urlku();
             case 'apasih.pw': return bagilagi();
+            case 'arubedo.blogspot.com': return wikitrade();
             case 'autech.xyz': return wikitrade();
             case 'autolinkach.com': return bagilagi();
             case 'autoride.pw': return bagilagi();
@@ -1112,6 +1135,7 @@
             case 'gocoo.co': return gocoo();
             case 'gosavelink.com': return kurosafe();
             case 'greget.space': return siherp();
+            case 'healthtod.com': return lindungin();
             case 'hexafile.net': return hexafile();
             case 'hunstulovers.net': return hunstulovers();
             case 'idsly.bid': return safelinku();
@@ -1120,6 +1144,7 @@
             case 'insurance-info.us': return lindungin();
             case 'insurance-waifu.cf': return waifu();
             case 'intercelestial.com': return bagilagi();
+            case 'irisvera.com': return lindungin();
             case 'jheberg.net': return jheberg();
             case 'jili.in': return jiliin();
             case 'karung.in': return karungin();
@@ -1142,7 +1167,9 @@
             case 'mirrorace.com': return mirrorace();
             case 'mirrored.to': return mirrored();
             case 'mylink.zone': return mylink();
+            case 'naturalhealthy.xyz': return lindungin();
             case 'onepiece-ex.com.br': return onepiece();
+            case 'onlinefreecourse.net': return onlinefreecourse();
             case 'pafpaf.info': return kurosafe();
             case 'pengaman-link.indonesia-komunitas.com': return wikitrade();
             case 'plantaheim.com': return lindungin();
@@ -1173,6 +1200,7 @@
             case 'telolet.in': return telolet();
             case 'telondasmu.com': return siherp();
             case 'tetew.info': return siherp();
+            case 'tetewlink.me': return vehicletechno();
             case 'tr.link': return shortad();
             case 'u.safelinkview.com': return safelinkview();
             case 'ujv.al': return ujval();
