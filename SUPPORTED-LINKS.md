@@ -1,5 +1,5 @@
 # Supported Links
-(total: 106)
+(total: 112)
 * *.u.safelinkview.com
 * 1ink.cc
 * 1tiny.net
