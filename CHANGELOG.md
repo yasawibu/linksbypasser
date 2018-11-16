@@ -1,6 +1,6 @@
 ## v0.6.9
 (16-Nov-2018)
-* **Fix 1 supported links:**
+* **Fixed 1 supported links:**
   * spacetica.com
 * **Added 6 supported links:**
   * arubedo.blogspot.com
