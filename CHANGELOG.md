@@ -1,3 +1,8 @@
+## v0.7.0
+(27-Nov-2018)
+* **Added 1 supported links:**
+  * lonelymoon.net
+  
 ## v0.6.9
 (16-Nov-2018)
 * **Fixed 1 supported links:**
