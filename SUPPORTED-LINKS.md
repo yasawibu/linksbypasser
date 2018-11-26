@@ -1,5 +1,5 @@
 # Supported Links
-(total: 112)
+(total: 113)
 * *.u.safelinkview.com
 * 1ink.cc
 * 1tiny.net
@@ -64,6 +64,7 @@
 * linkrex.net
 * linksad.net
 * linkshrink.net
+* lonelymoon.net
 * losstor.com
 * lyon.kim
 * masmellow.com
