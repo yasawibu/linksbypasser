@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LinksBypasser
 // @namespace    https://github.com/yasawibu/linksbypasser
-// @version      0.6.9
+// @version      0.7.0
 // @description  Decrease your wasting time on short links
 // @author       Putu Ardi Dharmayasa
 // @supportURL   https://github.com/yasawibu/linksbypasser/issues
@@ -206,6 +206,9 @@
         }, {
             host: /^(?:\w+\.)?(linkshrink\.net)$/,
             path: /^\/[^-/]+$/
+        }, {
+            host: /^(?:\w+\.)?(lonelymoon\.net)$/,
+            path: /^\/.+id=.+/
         }, {
             host: /^(?:\w+\.)?(losstor\.com)$/,
             path: /^\/.+site=.+/
@@ -1160,6 +1163,7 @@
             case 'linkrex.net': return ujv();
             case 'linksad.net': return ujv();
             case 'linkshrink.net': return linkshrink();
+            case 'lonelymoon.net': return bagilagi();
             case 'losstor.com': return kurosafe();
             case 'lyon.kim': return ujv();
             case 'masmellow.com': return wikitrade();
