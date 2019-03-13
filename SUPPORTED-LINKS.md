@@ -1,5 +1,5 @@
 # Supported Links
-(total: 113)
+(total: 115)
 * *.u.safelinkview.com
 * 1ink.cc
 * 1tiny.net
@@ -107,8 +107,10 @@
 * tetew.info
 * tetewlink.me
 * tr.link
+* travelwithtricks.me
 * ujv.al
 * ujv.me
+* updatetribun.org
 * urlku.gq
 * vehicle-techno.cf
 * verydelicius.com
