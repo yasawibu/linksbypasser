@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LinksBypasser
 // @namespace    https://github.com/yasawibu/linksbypasser
-// @version      0.7.0
+// @version      0.7.1
 // @description  Decrease your wasting time on short links
 // @author       Putu Ardi Dharmayasa
 // @supportURL   https://github.com/yasawibu/linksbypasser/issues
@@ -336,6 +336,9 @@
             host: /^(?:\w+\.)?(tr\.link)$/,
             path: /^\/[^-/]+$/
         }, {
+            host: /^(?:\w+\.)?(travelwithtricks\.me)$/,
+            path: /^\/.+r=.+/
+        }, {
             host: /^(?:\w+\.)?(u\.safelinkview\.com)$/,
             path: /^\/.+id=.+/
         }, {
@@ -343,6 +346,9 @@
             path: /^\/[^-/]+$/
         }, {
             host: /^(?:\w+\.)?(ujv\.me)$/,
+            path: /^\/[^-/]+$/
+        }, {
+            host: /^(?:\w+\.)?(updatetribun\.org)$/,
             path: /^\/[^-/]+$/
         }, {
             host: /^(?:\w+\.)?(urlku\.gq)$/,
@@ -1206,9 +1212,11 @@
             case 'tetew.info': return siherp();
             case 'tetewlink.me': return vehicletechno();
             case 'tr.link': return shortad();
+            case 'travelwithtricks.me': return lindungin();
             case 'u.safelinkview.com': return safelinkview();
             case 'ujv.al': return ujval();
             case 'ujv.me': return ujv();
+            case 'updatetribun.org': return safelinku();
             case 'urlku.gq': return urlku();
             case 'vehicle-techno.cf': return vehicletechno();
             case 'verydelicius.com': return verydelicius();
