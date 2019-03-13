@@ -1,3 +1,9 @@
+## v0.7.1
+(13-Mar-2019)
+* **Added 2 supported links:**
+  * travelwithtricks.me
+  * updatetribun.org
+
 ## v0.7.0
 (27-Nov-2018)
 * **Added 1 supported links:**
