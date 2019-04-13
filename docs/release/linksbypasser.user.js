@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LinksBypasser
 // @namespace    https://github.com/yasawibu/linksbypasser
-// @version      0.7.1
+// @version      0.7.2
 // @description  Decrease your wasting time on short links
 // @author       Putu Ardi Dharmayasa
 // @supportURL   https://github.com/yasawibu/linksbypasser/issues
@@ -311,6 +311,9 @@
         }, {
             host: /^(?:\w+\.)?(speedcar\.club)$/,
             path: /^\/.+id=.+/
+        }, {
+            host: /^(?:\w+\.)?(suarankri\.me)$/,
+            path: /^\/[^-/]+$/
         }, {
             host: /^(?:\w+\.)?(sweetlantern\.com)$/,
             path: /^\/.+id=.+/
@@ -1204,6 +1207,7 @@
             case 'soralink.sinetronku.tv': return lindungin();
             case 'spacetica.com': return spacetica();
             case 'speedcar.club': return bagilagi();
+            case 'suarankri.me': return safelinku();
             case 'sweetlantern.com': return bagilagi();
             case 'swzz.xyz': return swzz();
             case 'teknosafe.teknologilink.com': return teknosafe();
