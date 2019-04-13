@@ -1,3 +1,8 @@
+## v0.7.2
+(13-Apr-2019)
+* **Added 1 supported links:**
+  * suarankri.me
+  
 ## v0.7.1
 (13-Mar-2019)
 * **Added 2 supported links:**
