@@ -1,5 +1,5 @@
 # Supported Links
-(total: 115)
+(total: 116)
 * *.u.safelinkview.com
 * 1ink.cc
 * 1tiny.net
@@ -99,6 +99,7 @@
 * soralink.sinetronku.tv
 * spacetica.com
 * speedcar.club
+* suarankri.me
 * sweetlantern.com
 * swzz.xyz
 * teknosafe.teknologilink.com
