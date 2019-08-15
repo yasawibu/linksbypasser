@@ -1,3 +1,5 @@
+# * This project will not maintain (hiatus) for 1 year, until 15 August 2020. Hope you guys can find an alternative :)
+
 # LinksBypasser
 &nbsp;&nbsp;&nbsp;"Decrease your wasting time on short links."
 
