@@ -1,4 +1,9 @@
-# * This project will not maintain (hiatus) for 1 year, until 15 August 2020. Hope you guys can find an alternative :)
+# * This project is discontinued.
+> Thanks for all of you guys who used and contributed to this project, because of the feedback from all of you I learn a lot from this project and become a better programmer. I made the choice to stop this project because I don't need this script anymore and can't allocate time for this because its too low priority for me. So, I hope you guys can move on to the better and up-to-date solution out there that can help solve your problem.
+
+> This is the end of my journey on this path, may we meet again in another journey if fate allow. (^_^)
+
+yasawibu, 09-09-2022.
 
 # LinksBypasser
 &nbsp;&nbsp;&nbsp;"Decrease your wasting time on short links."
